@@ -1,0 +1,168 @@
+{
+  "_source": {
+    "document": "中国科学院大学电子信息专业学位研究生培养方案（校发培养字〔2025〕92号）",
+    "local_copy": "~/Desktop/files/工作/硕士/0854-中国科学院大学电子信息专业学位研究生培养方案.pdf",
+    "extracted": "2026-09-27",
+    "extraction_method": "verbatim text extraction, section 第二部分 硕士专业学位研究生培养方案 + 六、必修环节及学分要求",
+    "note": "课程体系与学分要求参照国科大教务部最新文件调整；各培养单位可制定个性化要求 —— 本文件按校发口径，未含院系加码"
+  },
+  "programme": "085402 通信工程（0854 电子信息专业学位，2026 级，集中教学在玉泉路 Y）",
+  "degree_track": {
+    "master": {
+      "total_min_credits": 36,
+      "course_learning_min_credits": 24,
+      "required_practicum_credits": 12,
+      "public_degree_credits": 7,
+      "professional_degree_min_credits": 12
+    },
+    "combined_master_phd": {
+      "course_learning_min_credits": 32,
+      "public_degree_credits": 11,
+      "professional_degree_min_credits": 16,
+      "note": "转博考核的学分线按硕士课程学习 24 学分，不是 32（32 是转博后博士毕业前的要求）"
+    }
+  },
+  "semester_min_credits": {
+    "value": 10,
+    "applies_to": "秋季与春季每学期，不含人文讲座与科学前沿讲座",
+    "source": "教务部选课说明"
+  },
+  "categories": [
+    {
+      "id": "public_degree",
+      "name": "公共学位课",
+      "min_credits": 7,
+      "kind": "degree",
+      "fixed_components": [
+        {
+          "name_contains": [
+            "新时代中国特色社会主义理论与实践",
+            "中特"
+          ],
+          "credits": 2
+        },
+        {
+          "name_contains": [
+            "自然辩证法"
+          ],
+          "credits": 1
+        },
+        {
+          "name_contains": [
+            "学术道德与学术写作规范"
+          ],
+          "credits": 1,
+          "note": "通论与分论各 0.5，须合计 1"
+        },
+        {
+          "name_contains": [
+            "硕士学位英语",
+            "英语A"
+          ],
+          "credits": 3,
+          "note": "免修免考记 EX，学分照得；用户已走免修路径"
+        }
+      ]
+    },
+    {
+      "id": "professional_degree_core",
+      "name": "专业学位课·核心课",
+      "min_credits": 4,
+      "min_courses": 2,
+      "kind": "degree",
+      "matches_attributes": [
+        "学科核心课",
+        "专业核心课"
+      ],
+      "note": "官方定义：核心课 = 学科核心课 ∪ 专业核心课；须是本专业学位类别/领域的核心课"
+    },
+    {
+      "id": "professional_degree_major",
+      "name": "专业学位课·专业课",
+      "min_credits": 4,
+      "min_courses": 2,
+      "kind": "degree",
+      "matches_attributes": [
+        "专业课"
+      ],
+      "note": "从本专业学位类别/领域的专业课中选"
+    },
+    {
+      "id": "public_required_nondegree",
+      "name": "公共必修非学位课",
+      "min_credits": 1,
+      "kind": "non_degree",
+      "matches_names": [
+        "工程伦理"
+      ]
+    },
+    {
+      "id": "public_elective",
+      "name": "公共选修课",
+      "min_credits": 2,
+      "kind": "non_degree",
+      "matches_attributes": [
+        "公共选修课"
+      ],
+      "also_allows": [
+        "人文系列讲座"
+      ],
+      "note": "人文讲座 20 学时 = 1 学分，学年内有效"
+    },
+    {
+      "id": "professional_elective",
+      "name": "专业选修课",
+      "min_credits": 2,
+      "kind": "non_degree",
+      "matches_attributes": [
+        "学科核心课",
+        "专业核心课",
+        "专业课",
+        "研讨课",
+        "实验课",
+        "实践课"
+      ],
+      "also_allows": [
+        "科学前沿讲座"
+      ]
+    },
+    {
+      "id": "required_practicum",
+      "name": "必修环节",
+      "min_credits": 12,
+      "kind": "non_course",
+      "fixed_components": [
+        {
+          "name": "专业实践",
+          "credits": 6
+        },
+        {
+          "name": "开题报告",
+          "credits": 2
+        },
+        {
+          "name": "中期考核",
+          "credits": 2
+        },
+        {
+          "name": "学术报告和社会实践",
+          "credits": 2
+        }
+      ]
+    }
+  ],
+  "known_modelling_gaps": [
+    {
+      "gap": "数据源里的 attribute 只有『公共必修课』一个值，无法区分公共学位课（中特/自辩/学术规范/英语）与公共必修非学位课（工程伦理）",
+      "resolution": "按课程名称规则匹配，已在 public_degree.fixed_components 与 public_required_nondegree.matches_names 中编码"
+    },
+    {
+      "gap": "『学位课 / 非学位课』是学生选课时设置的一个属性，不是课程固有属性；同一门核心课可以既算专业学位课也可算专业选修课",
+      "resolution": "本工具按『可计入』处理：一门课可同时出现在多个类别的候选中，但计分时每个类别独立核算，并在输出中标注该课程被算入了哪些类别"
+    },
+    {
+      "gap": "『本专业学位类别/领域的核心课』需要核心课列表的『共享学科所属一级学科/专业学位』列来判定，课程数据里没有该列",
+      "resolution": "需要人工确认或补充该列的映射；未确认前，核心课一律先按属性列入候选并标注待核"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Private / personal working files -- never commit these.
+# The derived, publishable snapshot lives in raw/sections-snapshot.json instead.
+*.xlsx
+~$*
+选课地图-本地备份*.json
+raw/private/
+
+# prototype artifact embeds the personal selection plan -- generator is committed instead
+prototype/*.html
+
+# raw HTML cache from the official-database crawl (re-fetchable, large)
+raw/official-cache/
+prototype/*.png
