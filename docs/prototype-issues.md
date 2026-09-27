@@ -1,6 +1,6 @@
 # Prototype build: problems met while building
 
-- Build run: 2026-09-27 17:01
+- Build run: 2026-09-27 17:16
 - Artifact: `prototype/选课参考系统.html` (local only -- embeds the personal plan, gitignored)
 - Source: **official** `jwba.ucas.ac.cn` crawl (`raw/official/`)
 
