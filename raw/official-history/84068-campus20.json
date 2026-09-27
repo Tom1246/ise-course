@@ -1,0 +1,10808 @@
+{
+ "campus_code": "20",
+ "crawled_at": "2026-09-27 20:24:05",
+ "rows": [
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "张三国",
+   "code": "180080025200M1002Y",
+   "course_id": "307132",
+   "credit": "2.00",
+   "department": "数学科学学院",
+   "enrolled": "7",
+   "hours": "40",
+   "name": "抽样调查",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼204"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       8
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼204"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       8
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "804ff64decbea40f9a5a97aa8ec7dcf1d6a15edd289714e9436cba4bbda3406f",
+   "seq": "1",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180080025200M3003Y",
+   "course_id": "307134",
+   "credit": "2.00",
+   "department": "数学科学学院",
+   "enrolled": "13",
+   "hours": "40",
+   "name": "Python统计分析",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼204"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       8
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼221（玉泉路机房二）"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       8
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ffa83612324f298c8146bdf00bdd44a84bbbb46a67709b50b8ce5c399d1b9d70",
+   "seq": "2",
+   "teacher": "姜志鹏"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "骆文于",
+   "code": "180081070206P3003Y",
+   "course_id": "305049",
+   "credit": "3.00",
+   "department": "物理科学学院",
+   "enrolled": "6",
+   "hours": "60",
+   "name": "计算海洋声学",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "a8707492d6cf8c23d9ed045fe275f1995ba1a0850d523af7a05778a02b429c7f",
+   "seq": "3",
+   "teacher": ""
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "265",
+   "chief": "",
+   "code": "180086081200PB001Y",
+   "course_id": "305099",
+   "credit": "0.50",
+   "department": "计算机科学与技术学院",
+   "enrolled": "143",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-分论",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       4,
+       8
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "9d7e51b74f06579fe5592db121e6575ab24ed0f6e5f56de3c6c6c01cdef3cdf6",
+   "seq": "4",
+   "teacher": "刘兴武"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "265",
+   "chief": "",
+   "code": "180086081201P3001Y",
+   "course_id": "305069",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "251",
+   "hours": "40",
+   "name": "智能计算系统",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "4bab19ff26f2af55041770d29cba63bca08f9e93eb22a02f2bcb7ec14d5a02e0",
+   "seq": "5",
+   "teacher": "支天 黄迪"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "",
+   "code": "180086081202PX005Y",
+   "course_id": "305201",
+   "credit": "1.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "12",
+   "hours": "40",
+   "name": "面向对象程序设计—C++",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼204"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "db317d59cbe053323189586b7aa73ca423de688dedf1785e198953d37eb06192",
+   "seq": "6",
+   "teacher": "黎雷生"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "72",
+   "chief": "",
+   "code": "180086081202PX006Y",
+   "course_id": "305098",
+   "credit": "1.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "33",
+   "hours": "40",
+   "name": "Java语言程序设计",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "人文楼教一1"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d6a16824cf795e7dda19e41f30d59180c1861a8b5009fee1f58d080212cc7797",
+   "seq": "7",
+   "teacher": "彭启民"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "104",
+   "chief": "",
+   "code": "180086081202PX007Y",
+   "course_id": "305200",
+   "credit": "1.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "46",
+   "hours": "40",
+   "name": "Python编程基础",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      3
+     ],
+     "rooms": [
+      "教学楼阶二4"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "9c52afccbd0977a33ab9d852ddfb802f77baf3028c4b7ebe0b4cb16eedd24e39",
+   "seq": "8",
+   "teacher": "李保滨"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "",
+   "code": "180086081203P3006Y",
+   "course_id": "305071",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "45",
+   "hours": "40",
+   "name": "强化学习",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "073a96af5d1476b475e429e173ca23b4bbc87e08ba45d7a9c3d216f384156a33",
+   "seq": "9",
+   "teacher": "林姝"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "265",
+   "chief": "",
+   "code": "180086081203P3007Y",
+   "course_id": "305225",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "215",
+   "hours": "40",
+   "name": "深度学习",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "28f3b75e98f6106c26996bb3852d1a5e7849974f4be9b8b47dbc6943e3369777",
+   "seq": "10",
+   "teacher": "张新峰"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "94",
+   "chief": "夏时洪",
+   "code": "180086081203P3008Y",
+   "course_id": "305070",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "53",
+   "hours": "40",
+   "name": "计算机图形学",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼阶一2"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼阶一2"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       5,
+       5
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼阶一2"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       15,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一2"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       15,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "2a5c9366ccf9d142f448a0683b9f6ee52243ac7633701c59a33aceba75d3776a",
+   "seq": "11",
+   "teacher": "高林"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "45",
+   "chief": "黄庆明",
+   "code": "180086081203P4003Y",
+   "course_id": "305223",
+   "credit": "1.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "40",
+   "hours": "20",
+   "name": "视觉信息学习与分析",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       3,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "a6a406b2c306bb7cbf026cbbe59e712435c0882f5e2cebe95a9682901273b212",
+   "seq": "12",
+   "teacher": "苏荔 李亮"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "162",
+   "chief": "",
+   "code": "180086085404M3001Y",
+   "course_id": "305067",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "85",
+   "hours": "40",
+   "name": "计算机动画",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f5b6b1052c8e7c36cba9e668dd78f7f5ca539755ee1b87e3f03f22adffe26657",
+   "seq": "13",
+   "teacher": "蒋浩 毛天露"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "72",
+   "chief": "卜东波",
+   "code": "180086085404M3006Y",
+   "course_id": "305076",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "27",
+   "hours": "40",
+   "name": "生物信息学中的机器学习",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "人文楼教一1"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       6
+      ],
+      [
+       8,
+       14
+      ],
+      [
+       17,
+       17
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "人文楼教一1"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       16,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "9d5eb1d882b3d9e90e05aab7081595a3a3290cd94311aae5de5bc152cf6261ea",
+   "seq": "14",
+   "teacher": "孙世伟"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "单桂华",
+   "code": "180086085404M4001Y",
+   "course_id": "305101",
+   "credit": "1.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "41",
+   "hours": "20",
+   "name": "可视化与可视计算",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       9
+      ],
+      [
+       11,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ed68aa46d03944507c9fb331f1819404ac17878d7caa115d62820e484eb340de",
+   "seq": "15",
+   "teacher": "刘俊"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "265",
+   "chief": "苏荔",
+   "code": "180086085404P2001Y",
+   "course_id": "305063",
+   "credit": "3.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "191",
+   "hours": "60",
+   "name": "高级人工智能",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       3,
+       3
+      ],
+      [
+       6,
+       6
+      ],
+      [
+       14,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d2bc4f05de32e0dfb5d5fc59199b2c38466c6ec065bee2a6206e48b4ef79741a",
+   "seq": "16",
+   "teacher": "李国荣"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "162",
+   "chief": "贾伟乐",
+   "code": "180086085404P2002Y",
+   "course_id": "305061",
+   "credit": "3.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "129",
+   "hours": "60",
+   "name": "并行处理",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       18
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       13,
+       13
+      ],
+      [
+       17,
+       17
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "fef24c323e13e9ee97d6cfb1f2587b958462504790cc0523dda03b01944e2bf3",
+   "seq": "17",
+   "teacher": "王银山"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "162",
+   "chief": "王石",
+   "code": "180086085404P2009Y",
+   "course_id": "305062",
+   "credit": "3.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "70",
+   "hours": "60",
+   "name": "自然语言处理",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       2
+      ],
+      [
+       4,
+       12
+      ],
+      [
+       14,
+       18
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       4,
+       4
+      ],
+      [
+       6,
+       6
+      ],
+      [
+       8,
+       8
+      ],
+      [
+       12,
+       13
+      ],
+      [
+       17,
+       17
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "cfd22c2dcb49e75be89fb0a9af4d43f99a683318a6130dd8e8a4db3dcd2297dd",
+   "seq": "18",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "蒋树强",
+   "code": "180086085404P3004Y",
+   "course_id": "305064",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "78",
+   "hours": "40",
+   "name": "计算机视觉",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       1
+      ],
+      [
+       3,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "0ab766fcfa2abc07ace83072d445b155afb5b22ba324c739258fe24b80b15c60",
+   "seq": "19",
+   "teacher": "卿来云"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "孙毅",
+   "code": "180086085404P3006Y",
+   "course_id": "305224",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "15",
+   "hours": "40",
+   "name": "区块链理论与技术",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "182ed2704588d4c556bdc2ae5d401d659964fb73dc685922a599f74368d5ff6c",
+   "seq": "20",
+   "teacher": "贾林鹏"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "265",
+   "chief": "何苯",
+   "code": "180086085404P3008Y",
+   "course_id": "305068",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "266",
+   "hours": "40",
+   "name": "推荐系统",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       11
+      ]
+     ]
+    },
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "430bdf41a0f84cc720ffee3ca0334ac10af7a99e5ae8c6b658eadc050f28e8bc",
+   "seq": "21",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "94",
+   "chief": "张玉清",
+   "code": "180086085404P3020Y",
+   "course_id": "305075",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "73",
+   "hours": "40",
+   "name": "网络与信息系统安全",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一2"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       8
+      ],
+      [
+       10,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "822067f92ba0a96fa1d75c96608c7bd39ca378d04ffc2dfbbbfdd74b05375164",
+   "seq": "22",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "162",
+   "chief": "",
+   "code": "180086085404P3023Y",
+   "course_id": "305066",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "87",
+   "hours": "40",
+   "name": "医学图像处理与分析",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      3
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ddfdb08194c1ea19993649d937214a2b3ccd4a8de980bee09dddf560720385d8",
+   "seq": "23",
+   "teacher": "刘艳"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180086085404P4004Y",
+   "course_id": "305077",
+   "credit": "1.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "20",
+   "hours": "20",
+   "name": "网络与系统安全前沿",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "8a64d8256703b85829ac7ade0c79440a397e69e1e24b557a94a231dcbb1940ff",
+   "seq": "24",
+   "teacher": "张玉清"
+  },
+  {
+   "attribute": "实验课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180086085404P5003Y",
+   "course_id": "305078",
+   "credit": "1.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "10",
+   "hours": "30",
+   "name": "软件与系统安全应用与实践",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       8
+      ],
+      [
+       10,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "43b928022b324dd54e2b55f4bf19bc8e06fadc1a04bdf7c212562ded99a0766c",
+   "seq": "25",
+   "teacher": "张玉清"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "李会元",
+   "code": "180086085405M3002Y",
+   "course_id": "305074",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "50",
+   "hours": "40",
+   "name": "高性能计算编程",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f50acbcb38a88e524deee7adb83aa869c292cad2801a22052ba11d82d1b5d52f",
+   "seq": "26",
+   "teacher": "黎雷生"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "马翠霞",
+   "code": "180086085405M3007Y",
+   "course_id": "305073",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "10",
+   "hours": "40",
+   "name": "用户界面设计与评估",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "13b23c40779f380a7510152c6eb31ddaafc291894bcd264bc22aa3012db1a36f",
+   "seq": "27",
+   "teacher": "邓小明"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "金蓓弘",
+   "code": "180086085405M3008Y",
+   "course_id": "305079",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "68",
+   "hours": "40",
+   "name": "分布式与并行计算技术",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       6
+      ],
+      [
+       8,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "db706eb9e548c2274c35e377d739c3cfe6b0a9ebd97aca128ea9de086458b338",
+   "seq": "28",
+   "teacher": "刘莹"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "沈志宏",
+   "code": "180086085405M4002Y",
+   "course_id": "305080",
+   "credit": "1.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "38",
+   "hours": "20",
+   "name": "开源软件",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b093a91253599cac6f930dd8611ee07679afc8fdb4766821b18963e1db977ef7",
+   "seq": "29",
+   "teacher": "王华进"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "王文成",
+   "code": "180086085405M4003Y",
+   "course_id": "305081",
+   "credit": "1.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "13",
+   "hours": "20",
+   "name": "图像编辑技术",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f14438d45751d608b9134307aff0c05710d5af94f005ebc9bb21352e92e60dd0",
+   "seq": "30",
+   "teacher": "侯飞"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "99",
+   "chief": "吴国全",
+   "code": "180086085405P2003Y",
+   "course_id": "305218",
+   "credit": "3.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "40",
+   "hours": "60",
+   "name": "现代软件开发方法",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶二2"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       18
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       7,
+       7
+      ],
+      [
+       14,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "bb2a544b43127fa1d186ea33f4195319e85ac0d9bbbdee289d935f531e2c7c58",
+   "seq": "31",
+   "teacher": "朱家鑫"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "170",
+   "chief": "徐俊刚",
+   "code": "180086085405P3003Y",
+   "course_id": "305072",
+   "credit": "2.00",
+   "department": "计算机科学与技术学院",
+   "enrolled": "92",
+   "hours": "40",
+   "name": "高级数据管理",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "3d1d28169c0a9902038614317d867c935f1aa066d98d466e0c969baa252fe74d",
+   "seq": "32",
+   "teacher": ""
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "",
+   "code": "180087120200MX010Y",
+   "course_id": "304132",
+   "credit": "1.00",
+   "department": "经济与管理学院",
+   "enrolled": "54",
+   "hours": "30",
+   "name": "国际商务礼仪",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "72d032b6a183bfdaad0dcfea42ae4b2309951b9b4018795d9839e93154410a06",
+   "seq": "33",
+   "teacher": "张秋柳"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "",
+   "code": "180087120200MX011Y",
+   "course_id": "304133",
+   "credit": "1.00",
+   "department": "经济与管理学院",
+   "enrolled": "46",
+   "hours": "30",
+   "name": "国内外市场营销经典案例分析",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼514"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "994dd7d495c31221043175e4e372f6b0d65e894c56e24330ab4d1dc41a53155e",
+   "seq": "34",
+   "teacher": "张秋柳"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "",
+   "code": "180087120200MX016Y",
+   "course_id": "304057",
+   "credit": "1.00",
+   "department": "经济与管理学院",
+   "enrolled": "95",
+   "hours": "30",
+   "name": "诗词鉴赏与管理应用",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一3"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       7
+      ],
+      [
+       9,
+       9
+      ],
+      [
+       11,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "7dc281bac2461b59c6e92bd3463e47d3349a8b08031e032d64860789203f9bd8",
+   "seq": "35",
+   "teacher": "王冬梅"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "265",
+   "chief": "",
+   "code": "180087120500MX007Y",
+   "course_id": "303994",
+   "credit": "1.00",
+   "department": "经济与管理学院",
+   "enrolled": "22",
+   "hours": "40",
+   "name": "数据科学R与Python实践",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       3
+      ],
+      [
+       6,
+       11
+      ]
+     ]
+    },
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "45c66dc65df405f7f1bc8672e49878e9336ebbafc2c91b4b01f9673fe6c28285",
+   "seq": "36",
+   "teacher": "顾立平"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "57",
+   "chief": "",
+   "code": "180087120500PX008Y",
+   "course_id": "303995",
+   "credit": "1.00",
+   "department": "经济与管理学院",
+   "enrolled": "51",
+   "hours": "30",
+   "name": "科技信息检索与利用（计算机领域）",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼205（玉泉路机房一）"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       9
+      ],
+      [
+       11,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "545c11f30b8d7d8a8c54e3b2c1015eca7404903b24d0ef56a9b3c9e8a59adfc8",
+   "seq": "37",
+   "teacher": "李玲"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "",
+   "code": "180088010104MX003Y",
+   "course_id": "306181",
+   "credit": "1.00",
+   "department": "人文学院",
+   "enrolled": "48",
+   "hours": "40",
+   "name": "逻辑与科学论证",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼519"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "4c503e21d4c6516693116de0810ebfa8595881eec56636782566363adcdaa62d",
+   "seq": "38",
+   "teacher": "张立英"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "104",
+   "chief": "",
+   "code": "180088071200MX014Y",
+   "course_id": "306398",
+   "credit": "1.00",
+   "department": "人文学院",
+   "enrolled": "107",
+   "hours": "40",
+   "name": "植物学史",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       1
+      ],
+      [
+       3,
+       3
+      ],
+      [
+       5,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ca4bcb2c98f45f65ac76fceba7558eed8852527e834eda4c920a0005513e0714",
+   "seq": "39",
+   "teacher": "蒋洪恩"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "",
+   "code": "180088071200MX015Y",
+   "course_id": "307185",
+   "credit": "1.00",
+   "department": "人文学院",
+   "enrolled": "42",
+   "hours": "30",
+   "name": "中国铁路史话",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼505"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       6
+      ],
+      [
+       8,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "c169ab131623a94e1ede8c52b697433ed3adb446342dc8760a50fbda7ba5464c",
+   "seq": "40",
+   "teacher": "王斌"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "104",
+   "chief": "",
+   "code": "180088071200MX020Y",
+   "course_id": "306310",
+   "credit": "1.00",
+   "department": "人文学院",
+   "enrolled": "106",
+   "hours": "40",
+   "name": "中国历史地理",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       10
+      ],
+      [
+       12,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "343eeee1ef509da2ffdad6729d5f2fb98116e64c696773833abdef204cfc5e68",
+   "seq": "41",
+   "teacher": "陈晓珊"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "162",
+   "chief": "",
+   "code": "180088071200MX045Y",
+   "course_id": "306306",
+   "credit": "1.00",
+   "department": "人文学院",
+   "enrolled": "148",
+   "hours": "40",
+   "name": "玻璃史话",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       6
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       13,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      6,
+      8
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       14,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "af61d7cf68205adbc9797b5f513177938585f0eced56da132ae14c4c47e8feda",
+   "seq": "42",
+   "teacher": "杨益民"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "38",
+   "chief": "",
+   "code": "180089050200DB001Y-L501",
+   "course_id": "306535",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "25",
+   "hours": "32",
+   "name": "英语B-501班（玉）-高级听说",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼505"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "93cfe37f26a3ce0fa64a75e4a6595874234ae3174ee0e06fe49ccaea791bd4fd",
+   "seq": "43",
+   "teacher": "洪雷"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "38",
+   "chief": "",
+   "code": "180089050200DB001Y-L503",
+   "course_id": "306536",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "28",
+   "hours": "32",
+   "name": "英语B-503班（玉）-高级听说",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "教学楼505"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b861d2765c3ebe1bf26fd46e1c42b07b30222706587aef6f894e55925a0c43b8",
+   "seq": "44",
+   "teacher": "洪雷"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "38",
+   "chief": "",
+   "code": "180089050200DB001Y-L505",
+   "course_id": "307623",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "30",
+   "hours": "32",
+   "name": "英语B-505班（玉）-高级听说",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼505"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "8989f534119ff0bce936357e9f5f4a561833b5482836cff371c17392aac87ce6",
+   "seq": "45",
+   "teacher": "杨莉"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "38",
+   "chief": "",
+   "code": "180089050200DB001Y-R504",
+   "course_id": "306538",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "14",
+   "hours": "32",
+   "name": "英语B-504班（玉）-高级读写",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼404"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "913f30d67f32afd9060d6685e2acb200799519843c32b252bfb5b79a269753f2",
+   "seq": "46",
+   "teacher": "孙海洋"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "38",
+   "chief": "",
+   "code": "180089050200DB001Y-W502",
+   "course_id": "306537",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "30",
+   "hours": "32",
+   "name": "英语B-502班（玉）-高级写作",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "教学楼505"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼505"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    },
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "教学楼421"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       11,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "08fb2ce8e910e88b2739a088b4286aa788ff8c9b3413e7fb50b1480400677c39",
+   "seq": "47",
+   "teacher": "杨莉"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "38",
+   "chief": "",
+   "code": "180089050200DB001Y-W506",
+   "course_id": "307624",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "39",
+   "hours": "32",
+   "name": "英语B-506班（玉）-高级写作",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼505"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "571a689b1475645c42ccb186c347f621e382151c02b4657113cc470823be311d",
+   "seq": "48",
+   "teacher": "杨莉"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "31",
+   "chief": "",
+   "code": "180089050200MB001Y-038",
+   "course_id": "306605",
+   "credit": "3.00",
+   "department": "外语系",
+   "enrolled": "31",
+   "hours": "32",
+   "name": "英语A-38班（玉）",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "人文楼教一4"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "人文楼教一2"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       9,
+       9
+      ],
+      [
+       14,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "0ff8ccd9ebce1ed0f5ac4ee16f66a7d0992842e95052c60f9941a0d5b84b9643",
+   "seq": "49",
+   "teacher": "姜文东"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "31",
+   "chief": "",
+   "code": "180089050200MB001Y-039",
+   "course_id": "306606",
+   "credit": "3.00",
+   "department": "外语系",
+   "enrolled": "36",
+   "hours": "32",
+   "name": "英语A-39班（玉）",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "人文楼教一4"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "人文楼教一4"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       14,
+       14
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      3
+     ],
+     "rooms": [
+      "人文楼教一2"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       9,
+       9
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d38098593aeff4133368102ceecce0a872bc85ff06103bf65d274a68c99fee13",
+   "seq": "50",
+   "teacher": "姜文东"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "31",
+   "chief": "",
+   "code": "180089050200MB001Y-040",
+   "course_id": "306607",
+   "credit": "3.00",
+   "department": "外语系",
+   "enrolled": "23",
+   "hours": "32",
+   "name": "英语A-40班（玉）",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "bb9c8760a4dcde06ab1df8e9fbeade5ed558ded6b5fb533b8c6529d5ab7bfe2d",
+   "seq": "51",
+   "teacher": "安帅"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "31",
+   "chief": "",
+   "code": "180089050200MB001Y-041",
+   "course_id": "306608",
+   "credit": "3.00",
+   "department": "外语系",
+   "enrolled": "31",
+   "hours": "32",
+   "name": "英语A-41班（玉）",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "11f6e99a88db84aa080b135940a8f6c6896d0a3066106ec508012a3299476b5b",
+   "seq": "52",
+   "teacher": "安帅"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "31",
+   "chief": "",
+   "code": "180089050200MB001Y-042",
+   "course_id": "306609",
+   "credit": "3.00",
+   "department": "外语系",
+   "enrolled": "31",
+   "hours": "32",
+   "name": "英语A-42班（玉）",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "c3729f5251ab562963c87f7ec028ad38f3040944e8b42229057d693cb72401fa",
+   "seq": "53",
+   "teacher": "李富强"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "31",
+   "chief": "",
+   "code": "180089050200MB001Y-043",
+   "course_id": "306610",
+   "credit": "3.00",
+   "department": "外语系",
+   "enrolled": "31",
+   "hours": "32",
+   "name": "英语A-43班（玉）",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d8d5850815c57432311e4cdaac1698e14f38d675f1049aabec3a99c69164b283",
+   "seq": "54",
+   "teacher": "李富强"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "31",
+   "chief": "",
+   "code": "180089050200MB001Y-044",
+   "course_id": "306611",
+   "credit": "3.00",
+   "department": "外语系",
+   "enrolled": "31",
+   "hours": "32",
+   "name": "英语A-44班（玉）",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼421"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼421"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "5b2b10a0b33aeafdd364010fc79406547070d900341f05691364ea4540643ab1",
+   "seq": "55",
+   "teacher": "龚世琳"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "33",
+   "chief": "",
+   "code": "180089050200MX007Y",
+   "course_id": "306418",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "1",
+   "hours": "60",
+   "name": "法语（中级）",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼405"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼405"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "12c02ed95f6567e64137a96a5c4dfeff646e0828af89050b25de9823ad36a5f8",
+   "seq": "56",
+   "teacher": "王昕彦"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "35",
+   "chief": "",
+   "code": "180089050200MX009Y",
+   "course_id": "306316",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "35",
+   "hours": "60",
+   "name": "德语（中级）",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       6,
+       6
+      ],
+      [
+       10,
+       10
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f590b7c78616cab048820144d3ec91b80ea51a5a22343aa77121da74c3387c5a",
+   "seq": "57",
+   "teacher": "孙瑾琳"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180089050200MX011Y",
+   "course_id": "305817",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "27",
+   "hours": "30",
+   "name": "英语美文赏析",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "cce9de971cc9d824021223c67ff8fc9a144bcbda27fc400066e73bff168943ca",
+   "seq": "58",
+   "teacher": "杜朋"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "36",
+   "chief": "",
+   "code": "180089050200MX017Y",
+   "course_id": "306315",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "23",
+   "hours": "60",
+   "name": "日语（中级）",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼417"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼417"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b4c16fd931793bc2ce2a72ece95b33e75ed2ccd769095899f8488084f924d0cd",
+   "seq": "59",
+   "teacher": "马潇漪"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180089050200MX024Y",
+   "course_id": "305818",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "19",
+   "hours": "30",
+   "name": "语言、认知与文化",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       10
+      ],
+      [
+       12,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "80a86f823fbd288c62ab809c7ad53576ade62c3ba78ff0cb5c7a59d4aacc60a5",
+   "seq": "60",
+   "teacher": "杜静"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180089050200MX025Y",
+   "course_id": "305816",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "30",
+   "hours": "30",
+   "name": "英美诗歌鉴赏",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       8
+      ],
+      [
+       10,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      12,
+      13
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       10,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "6f152b618c383802a7c69be3b9f4e957e307ab4d41d8c0a90ec4a585bb23c7f2",
+   "seq": "61",
+   "teacher": "盛钰"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050200PB002Y",
+   "course_id": "301489",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "5",
+   "hours": "60",
+   "name": "德语（二外）（中级）",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "外语系二外教室-2"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "外语系二外教室-2"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "a8c3a76024122d92aee372271ac017c376b446cac71e238e7dc1014d38776630",
+   "seq": "62",
+   "teacher": "孙瑾琳"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050200PB003Y",
+   "course_id": "301491",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "4",
+   "hours": "60",
+   "name": "日语（二外）（中级）",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "外语系二外教室-3"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "外语系二外教室-3"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "06e2964603116bdd109458c509fce9832e614486f0d3e017b254885232a4c074",
+   "seq": "63",
+   "teacher": "马潇漪"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050200PB004Y",
+   "course_id": "302004",
+   "credit": "0.50",
+   "department": "外语系",
+   "enrolled": "16",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-分论",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       5
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "80bb6c62180d8f28c845d28d43d719e55abd3b62f5797716bb1010d2d2e37002",
+   "seq": "64",
+   "teacher": "杜静"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050201M3003Y",
+   "course_id": "301492",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "4",
+   "hours": "36",
+   "name": "英美现代主义文学",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "人文楼教一3"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       16,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼417"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       9
+      ],
+      [
+       11,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "3c060fdd04039953b18a74351e77a1e8f4cfcdd00455e09553e628906ab90a3b",
+   "seq": "65",
+   "teacher": "熊净雅"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050201M3004Y",
+   "course_id": "301484",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "4",
+   "hours": "36",
+   "name": "19世纪英国小说",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "人文楼教一4"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "6f6bb22b37e5499b0cc65830a4c463ee548dcbf606798419698b05191afb916d",
+   "seq": "66",
+   "teacher": "安帅"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050201M3005Y",
+   "course_id": "301485",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "4",
+   "hours": "36",
+   "name": "现代心理分析与意识流小说",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼421"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "人文楼教一3"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       6,
+       6
+      ],
+      [
+       11,
+       11
+      ],
+      [
+       14,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ac1a322a37a848ae314ee3b4d92f68ea7d9d26bbc9ace0bca36569bcee8bbca7",
+   "seq": "67",
+   "teacher": "杨莉"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050201M3010Y",
+   "course_id": "302005",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "4",
+   "hours": "36",
+   "name": "比较文学概论",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼421"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    },
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "教学楼421"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "37827ed9a45b37c11ba56fe3ed2c1ea574899fb2da041f1ce522bde680965c28",
+   "seq": "68",
+   "teacher": "龚世琳"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050211M2004Y",
+   "course_id": "301475",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "12",
+   "hours": "36",
+   "name": "研究设计与统计",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼221（玉泉路机房二）"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       14,
+       14
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼221（玉泉路机房二）"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       16,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼221（玉泉路机房二）"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "eea1976709fef5d634bb5439a266834ec365e41f1ac30fa84d60b6a505eadf1e",
+   "seq": "69",
+   "teacher": "孙海洋"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050211M2005Y",
+   "course_id": "301476",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "12",
+   "hours": "36",
+   "name": "语义学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "02e6facedef772f5e0016fa9b9e1a83b96b3fb32898ff440a99294179bcfe215",
+   "seq": "70",
+   "teacher": "李晰"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050211M3009Y",
+   "course_id": "301486",
+   "credit": "1.00",
+   "department": "外语系",
+   "enrolled": "12",
+   "hours": "18",
+   "name": "语篇分析",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       9
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "503e3b3dd31ca07a3ac947b2b0a8f8b8c12aed7878326382632fa97769d39bec",
+   "seq": "71",
+   "teacher": "郑群"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180089050211M3010Y",
+   "course_id": "301477",
+   "credit": "2.00",
+   "department": "外语系",
+   "enrolled": "16",
+   "hours": "36",
+   "name": "学术写作",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼405"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       17
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼405"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       17,
+       17
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "36f1b3ddcd19de51225b95f2fd16e16720ce051ed433e5bb5cbc07aaac0a2767",
+   "seq": "72",
+   "teacher": "张文力"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "姜卉",
+   "code": "180090125600M1001Y",
+   "course_id": "300890",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "96",
+   "hours": "40",
+   "name": "工程伦理",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       8,
+       8
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       17,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "39db6f072edb1001a809934a5fdb08e205b94ae595759f81958e68e117cac765",
+   "seq": "73",
+   "teacher": ""
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "朱建明",
+   "code": "180090125600M1002Y",
+   "course_id": "300708",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "96",
+   "hours": "40",
+   "name": "定量分析：模型与方法",
+   "schedule": [
+    {
+     "periods": [
+      9,
+      12
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "447e7d6e283d4b65ffd8b05d9d44dba36f2e3808504bda04b0e4d24cbaea541a",
+   "seq": "74",
+   "teacher": ""
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180090125600M1005Y-01",
+   "course_id": "306494",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "96",
+   "hours": "40",
+   "name": "项目计划与控制",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       6
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       6
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "5cfc34468c981d92dfa65ba33f12bb0d5c54d8c9cc73c68da89f5276ec40ed41",
+   "seq": "75",
+   "teacher": "隋杰"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "3000",
+   "chief": "",
+   "code": "180090125600PB001Y",
+   "course_id": "305450",
+   "credit": "1.00",
+   "department": "工程科学学院",
+   "enrolled": "1089",
+   "hours": "20",
+   "name": "工程伦理（玉泉路慕课）",
+   "schedule": [],
+   "schedule_pages_sha256": "d127a38b2cbb03eff85967847cda9ec9bcca31e01f1f2499cb9532a60c147344",
+   "seq": "76",
+   "teacher": "王生 李增喜 姜卉 陈德元 王楠 王晓东 陆忠兵 肖康 魏龙"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "",
+   "code": "180090125601M2002Y",
+   "course_id": "300912",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "46",
+   "hours": "40",
+   "name": "工程管理案例",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二1"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       7,
+       8
+      ],
+      [
+       11,
+       15
+      ],
+      [
+       17,
+       18
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "教学楼阶二1"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       18,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b038b47ac1dec0e9c14b058a2f26e9d03a0f8193175d2783fb41ae3cd9cc48af",
+   "seq": "77",
+   "teacher": "詹伟"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "杨文国",
+   "code": "180090125601M2003Y-01",
+   "course_id": "302489",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "50",
+   "hours": "40",
+   "name": "项目风险管理-1班",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二2"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       7,
+       8
+      ],
+      [
+       11,
+       15
+      ],
+      [
+       17,
+       18
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "教学楼阶二2"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       18,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d2941743e43ea515bea21cc00c43a97ceb6cf3547990b94ad3999c101fce1f65",
+   "seq": "78",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180090125601M3002Y-01",
+   "course_id": "302491",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "41",
+   "hours": "40",
+   "name": "人工智能概论-1班",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "教学楼阶二1"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "1e39c8672c9ae1c7813f4f1f33f90594855f168e3e70d0a91720fdcdd9a18dc1",
+   "seq": "79",
+   "teacher": "赵亚伟"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180090125601M3004Y-01",
+   "course_id": "302493",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "23",
+   "hours": "40",
+   "name": "质量管理-1班",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "教学楼阶二2"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       2,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "52c352077653dfb2fedb37fefccd65e0dbfcbf019bc500986ea80f1f2f02cd75",
+   "seq": "80",
+   "teacher": "王富良"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "45",
+   "chief": "王国庆",
+   "code": "180090125603M2001Y",
+   "course_id": "300887",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "21",
+   "hours": "40",
+   "name": "运营与管理",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "32a24b8f182f9ea3bd70ec9715da5ed1961f170e235881e32362883977df9cb6",
+   "seq": "81",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "吕科",
+   "code": "180090125603M2003Y-01",
+   "course_id": "302495",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "60",
+   "hours": "40",
+   "name": "大数据技术-1班",
+   "schedule": [
+    {
+     "periods": [
+      9,
+      12
+     ],
+     "rooms": [
+      "教学楼阶二1"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       11,
+       13
+      ]
+     ]
+    },
+    {
+     "periods": [
+      9,
+      13
+     ],
+     "rooms": [
+      "教学楼阶二1"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       14,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "fcdd262a362e246000a63f04083d867c27e39797a140b0cae36a7fc246be1704",
+   "seq": "82",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "薛健",
+   "code": "180090125603M3001Y",
+   "course_id": "300709",
+   "credit": "2.00",
+   "department": "工程科学学院",
+   "enrolled": "20",
+   "hours": "40",
+   "name": "云计算",
+   "schedule": [
+    {
+     "periods": [
+      9,
+      12
+     ],
+     "rooms": [
+      "教学楼阶二2"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       11,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "482264659110d17e253b0bd30c818731f68c178ecfb9e73333defe9654a8649d",
+   "seq": "83",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "",
+   "code": "180092085407M2001Y",
+   "course_id": "306866",
+   "credit": "3.00",
+   "department": "材料科学与光电技术学院",
+   "enrolled": "40",
+   "hours": "60",
+   "name": "数学物理方法基础",
+   "schedule": [
+    {
+     "periods": [
+      6,
+      8
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       12
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "6b43620065825ab1875d3af43ed71daa8b51922cd36676355be38e72e56e60c9",
+   "seq": "84",
+   "teacher": "齐拴虎"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "80",
+   "chief": "",
+   "code": "180093080900P1001Y",
+   "course_id": "305274",
+   "credit": "3.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "17",
+   "hours": "60",
+   "name": "矩阵论",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "738eca6d62221bb7a315bdf11a34b06e77903e61894097934a51f3475fc72505",
+   "seq": "85",
+   "teacher": "马坷"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "刘文鑫",
+   "code": "180093080901P3001Y",
+   "course_id": "305685",
+   "credit": "2.50",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "13",
+   "hours": "50",
+   "name": "太赫兹真空电子学器件的原理与技术",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       17
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "人文楼教一2"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       15,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "2f829637cd30449a909b84cb66403c3c8d5a6fae994690858858b8bc0e08b22b",
+   "seq": "86",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "94",
+   "chief": "谭荣清",
+   "code": "180093080901P3002Y",
+   "course_id": "305270",
+   "credit": "2.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "48",
+   "hours": "40",
+   "name": "激光技术及应用",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一2"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "739e7420bfc173703ff75803051e283110375aa703bf19e552fa2acb0d17e482",
+   "seq": "87",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "100",
+   "chief": "王晓东",
+   "code": "180093080903P2001Y",
+   "course_id": "305268",
+   "credit": "2.50",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "31",
+   "hours": "50",
+   "name": "半导体微纳加工技术",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼阶一3"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       12
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       13,
+       13
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼阶一3"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "5893062326c6a7a33e6342886f3e8cbab1193ee0fa4723c5be40f1e9a3484e7a",
+   "seq": "88",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "许军",
+   "code": "180093080903P2003Y",
+   "course_id": "305277",
+   "credit": "3.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "12",
+   "hours": "60",
+   "name": "半导体器件物理学",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "3034d775c49a82decf7aa16c7400ecfc72eb5192106a615df2a5bf1873e624c9",
+   "seq": "89",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "80",
+   "chief": "韩郑生",
+   "code": "180093080903P2004Y",
+   "course_id": "305275",
+   "credit": "2.50",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "19",
+   "hours": "50",
+   "name": "半导体工艺与制造技术",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       17
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       6,
+       6
+      ],
+      [
+       10,
+       10
+      ],
+      [
+       13,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "cc8b84872e6270187b41eef62a75e340f8fa92b809f100bb68c31fd89722b1ea",
+   "seq": "90",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "",
+   "code": "180093081001P2002Y-2",
+   "course_id": "305321",
+   "credit": "3.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "17",
+   "hours": "60",
+   "name": "高级通信原理II二班",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼204"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼204"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "e09b2d4a6ccde4a00d678ca9f6b15f56eb45c01e7d3e9ffb65f43f316fc14ce9",
+   "seq": "91",
+   "teacher": "陈永锐"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "60",
+   "chief": "程晓斌",
+   "code": "180093081002M4001Y",
+   "course_id": "305278",
+   "credit": "1.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "14",
+   "hours": "20",
+   "name": "DSP原理及其C编程开发技术",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       8,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d18523ef0019a7c7f906c83c337d09775e1aac3590c0ad65901f3b015c6dcb64",
+   "seq": "92",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "杨军",
+   "code": "180093081002P2003Y",
+   "course_id": "305280",
+   "credit": "2.50",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "39",
+   "hours": "50",
+   "name": "自适应滤波理论和应用",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       9
+      ],
+      [
+       11,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d0a70e5b35cf8cb63271a7badc4dd5c28a7b27ed1d0d65128f530574129146e7",
+   "seq": "93",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "265",
+   "chief": "耿修瑞",
+   "code": "180093081002P3009Y",
+   "course_id": "305271",
+   "credit": "2.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "228",
+   "hours": "40",
+   "name": "数据处理中的矩阵方法",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       9
+      ],
+      [
+       11,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "37d3b9754cb52d61b656d7edcd370e309a9bff0c73b7c79856570ba1c0a96b82",
+   "seq": "94",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "武作兵",
+   "code": "180093081002P3010Y",
+   "course_id": "305263",
+   "credit": "2.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "20",
+   "hours": "40",
+   "name": "非线性信息处理",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       12
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "66dcca6c2898c13c4b1388b76174ede03244b7f111c386b2750f9e4e4e4f4ab0",
+   "seq": "95",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "80",
+   "chief": "杨海钢",
+   "code": "180093085401M3003Y",
+   "course_id": "305267",
+   "credit": "2.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "65",
+   "hours": "40",
+   "name": "传感器信号接口与处理电路设计",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "032733734d6463a2015df1b1e012f6011268323c736cd83ad9589b88eea8b097",
+   "seq": "96",
+   "teacher": "尹韬"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "100",
+   "chief": "李卫军",
+   "code": "180093085401M3004Y",
+   "course_id": "305265",
+   "credit": "2.50",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "98",
+   "hours": "50",
+   "name": "视觉信息处理与FPGA实现",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    },
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "687f99a81761accc9e68dcc8c8fb850b61ea5a7aa827eebaa9b1e0b4e902bc1d",
+   "seq": "97",
+   "teacher": "肖宛昂"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "刘力源",
+   "code": "180093085401M4002Y",
+   "course_id": "305273",
+   "credit": "1.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "28",
+   "hours": "20",
+   "name": "模数转换器电路设计实践和新进展",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "fbf87d78d42b185add6404a3469bf7b5c7339911dbd8882245df232dc8ac6842",
+   "seq": "98",
+   "teacher": ""
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "冯鹏",
+   "code": "180093085401M4003Y",
+   "course_id": "305269",
+   "credit": "1.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "14",
+   "hours": "20",
+   "name": "无线身份识别传感器原理及应用",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       7
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       8,
+       8
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "bf81687f6d71413b3a369a0b7f606d18fc89c95a9e808522d8ea95daa7b966f3",
+   "seq": "99",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "70",
+   "chief": "吴鹏",
+   "code": "180093085401P3004Y",
+   "course_id": "305276",
+   "credit": "2.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "60",
+   "hours": "40",
+   "name": "相控阵天线技术",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一2"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "c24cfd23efd6c0344a4f26924f34d457a22f9ca5b30b46393edb1f7f7b90db7c",
+   "seq": "100",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "肖宛昂",
+   "code": "180093085402M3002Y",
+   "course_id": "305279",
+   "credit": "2.50",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "18",
+   "hours": "50",
+   "name": "无线通信基带芯片设计",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "7e9303c95af18e09e30c497872d96c687ba367cd848f87db6507585814b034e0",
+   "seq": "101",
+   "teacher": "覃鸿"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "45",
+   "chief": "杨飞然",
+   "code": "180093085402P2002Y",
+   "course_id": "305536",
+   "credit": "2.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "43",
+   "hours": "40",
+   "name": "高级通信原理",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      9
+     ],
+     "rooms": [
+      "教学楼604"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "789ba34adb7f49c6db65b2df38b3ba48b68c05ac87a2c64c09f0c70d2f78ddab",
+   "seq": "102",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "吕晓德",
+   "code": "180093085402P2008Y",
+   "course_id": "305288",
+   "credit": "2.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "104",
+   "hours": "40",
+   "name": "雷达技术基础及发展",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      9
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "48f129b522b4a4ff03f599539e8789bd364a71b05771fa4102328335105ba565",
+   "seq": "103",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "胡小青",
+   "code": "180093085402P3004Y",
+   "course_id": "305282",
+   "credit": "2.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "50",
+   "hours": "40",
+   "name": "声学传感器网络",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "94daa02d4b8ea7e6dd92a0890e447699391431df3ce6ef2ac51673a75f911dc3",
+   "seq": "104",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "45",
+   "chief": "王晓明",
+   "code": "180093085402P3007Y",
+   "course_id": "307247",
+   "credit": "2.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "44",
+   "hours": "40",
+   "name": "卫星导航定位技术与应用",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b1b07ec6f19f2610c7c27438512e5d2cfaf56f6262cee467c99d61f6f4b45479",
+   "seq": "105",
+   "teacher": ""
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "李峰",
+   "code": "180093085402P4001Y",
+   "course_id": "305287",
+   "credit": "1.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "11",
+   "hours": "20",
+   "name": "时空信息检索与挖掘分析技术应用",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       4,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f558805eacc1ce64ce720cef99c6875aac325f2e1a0b63c0be82ec2711c7aa4d",
+   "seq": "106",
+   "teacher": ""
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "100",
+   "chief": "韩冰",
+   "code": "180093085402P4002Y",
+   "course_id": "305281",
+   "credit": "1.00",
+   "department": "电子电气与通信工程学院",
+   "enrolled": "17",
+   "hours": "20",
+   "name": "合成孔径雷达海洋观测数据处理与应用",
+   "schedule": [
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b051abfe2f5ea7c7c19ca6c8c520480a92a3321d6958378ffc2628df2f11dc75",
+   "seq": "107",
+   "teacher": ""
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180096030100MX014Y",
+   "course_id": "305376",
+   "credit": "1.00",
+   "department": "公共政策与管理学院",
+   "enrolled": "33",
+   "hours": "30",
+   "name": "科研成果的保护和利用",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "人文楼教一3"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "6799454bcc6a2681331408da5b781ab6c9014b8f73c8b4ae6cafbb8b2ed4ce02",
+   "seq": "108",
+   "teacher": "刘海波"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180096120400MX008Y",
+   "course_id": "305373",
+   "credit": "1.00",
+   "department": "公共政策与管理学院",
+   "enrolled": "35",
+   "hours": "30",
+   "name": "科研项目质量管理",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "人文楼教一3"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "88c349dd2a8a879b205659d8cff34c3970d2ddd955d1b2abdae12ba453860929",
+   "seq": "109",
+   "teacher": "王富良"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180096120400MX020Y",
+   "course_id": "305380",
+   "credit": "1.00",
+   "department": "公共政策与管理学院",
+   "enrolled": "32",
+   "hours": "30",
+   "name": "科技创新政策分析",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "人文楼教一3"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "24dad31890e8ba66e8f8264405e00f653d11dd6ea8e30fa4ebf06a304342e1af",
+   "seq": "110",
+   "teacher": "黄天航"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "180096120400MX021Y",
+   "course_id": "305375",
+   "credit": "1.00",
+   "department": "公共政策与管理学院",
+   "enrolled": "40",
+   "hours": "30",
+   "name": "科学与智库",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "人文楼教一3"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       9
+      ],
+      [
+       11,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b1827eb23e5f2b73971844a61b244b0b79444aa39063408d44f18a23013b3871",
+   "seq": "111",
+   "teacher": "陈安"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "170",
+   "chief": "",
+   "code": "180096120400PB001Y-01",
+   "course_id": "302213",
+   "credit": "0.50",
+   "department": "公共政策与管理学院",
+   "enrolled": "47",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-通论",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       3,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "2d90745b8f60f214e9efb6573145973eba97a4bd30fe889c05f17ac3ba102bea",
+   "seq": "112",
+   "teacher": "袁军鹏"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "170",
+   "chief": "",
+   "code": "180096120400PB001Y-02",
+   "course_id": "305344",
+   "credit": "0.50",
+   "department": "公共政策与管理学院",
+   "enrolled": "106",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-通论",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       3,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "43410ef2194721f78dd3023b1179ea031813520f02268dcd9707834b5b586b16",
+   "seq": "113",
+   "teacher": "袁军鹏"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "170",
+   "chief": "",
+   "code": "180096120400PB001Y-03",
+   "course_id": "305346",
+   "credit": "0.50",
+   "department": "公共政策与管理学院",
+   "enrolled": "81",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-通论",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       3,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "6900b454c526704c47ebdfa959898cd82cecd86a3dac1d40ac6e666de54f4243",
+   "seq": "114",
+   "teacher": "张古鹏"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "110",
+   "chief": "",
+   "code": "180096120400PB001Y-04",
+   "course_id": "305347",
+   "credit": "0.50",
+   "department": "公共政策与管理学院",
+   "enrolled": "88",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-通论",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       3,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "9ba80d0f15878fb3173257809b2f77a99a44c1904c58a1eb1aefcd74e41fd35f",
+   "seq": "115",
+   "teacher": "张古鹏"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "265",
+   "chief": "",
+   "code": "180096120400PB001Y-05",
+   "course_id": "305348",
+   "credit": "0.50",
+   "department": "公共政策与管理学院",
+   "enrolled": "130",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-通论",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       3,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "1f6f43777fa143b1454491afb73743867dd33f11dea2ba9e15097598fe632d91",
+   "seq": "116",
+   "teacher": "梁洪力"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "170",
+   "chief": "",
+   "code": "180096120400PB001Y-06",
+   "course_id": "305349",
+   "credit": "0.50",
+   "department": "公共政策与管理学院",
+   "enrolled": "149",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-通论",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       3,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "c0f7bd3089ba9a8ac4bb7956aa74e0e1d452dce5834863a6b0ed5071fb900844",
+   "seq": "117",
+   "teacher": "梁洪力"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "谢黎明",
+   "code": "1801010703I0P1004Y",
+   "course_id": "300525",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "13",
+   "hours": "52",
+   "name": "纳米电子材料",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       5,
+       12
+      ],
+      [
+       14,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "90654a4a3f7bd286fdca77099959857fe0e24a072cd07645bf573df38fa25ad9",
+   "seq": "118",
+   "teacher": ""
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "赵健",
+   "code": "1801010703I0P1005Y",
+   "course_id": "300523",
+   "credit": "2.00",
+   "department": "国际学院",
+   "enrolled": "16",
+   "hours": "40",
+   "name": "DNA纳米生物技术",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼421"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "22b4d67d45785e121ac9480f4a5ea86f86a3fc1c1bb42b41887556b3c657cd50",
+   "seq": "119",
+   "teacher": "李梦圆"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "方小敏",
+   "code": "1801010705I0P1001Y",
+   "course_id": "300534",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "40",
+   "hours": "60",
+   "name": "自然地理学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼320"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d1f189701691b54ad9b50dfdf9b34927773a808c195bb073d2275062cf958612",
+   "seq": "120",
+   "teacher": "朱立平 张凡"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "戚友存",
+   "code": "1801010705I0P1003Y",
+   "course_id": "300531",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "9",
+   "hours": "60",
+   "name": "遥感在气候变化,土地科学和强天气的应用",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       13
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "11d9f0d6d79592f317d62161977f102661192a21eea970fdfaa7010efe1ea666",
+   "seq": "121",
+   "teacher": "陈昊明"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "董金玮",
+   "code": "1801010705I0P1012Y",
+   "course_id": "300536",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "16",
+   "hours": "50",
+   "name": "遥感云计算与科学分析",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "7af4b88107f0b07c249295f75e6fe3137b5098d27db3de3b1473f8fe857527fd",
+   "seq": "122",
+   "teacher": "付东杰"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "宋现锋",
+   "code": "1801010705I0P2001Y",
+   "course_id": "300515",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "13",
+   "hours": "50",
+   "name": "Python空间数据处理",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼205（玉泉路机房一）"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       5
+      ],
+      [
+       7,
+       12
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼205（玉泉路机房一）"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       8,
+       8
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "df34a35319e8745c2d82b513d249b5c2cb619bb8f7f34fe6d53cac930f54427d",
+   "seq": "123",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "吴骅",
+   "code": "1801010705I0P2002Y",
+   "course_id": "300535",
+   "credit": "2.00",
+   "department": "国际学院",
+   "enrolled": "11",
+   "hours": "40",
+   "name": "热红外遥感",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼205（玉泉路机房一）"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼205（玉泉路机房一）"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       12,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d2396a0f79d9b3e3a9713e52e47397afee54b347f00d5dc210603ae4750f1b54",
+   "seq": "124",
+   "teacher": "倪丽"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "马耀明",
+   "code": "1801010706I0P1002Y",
+   "course_id": "300533",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "29",
+   "hours": "64",
+   "name": "气候变化",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       13
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "23cd5721489e77fa02a3e7e92f38409c63a2df7553009f6ddc4b1517c66b4f4b",
+   "seq": "125",
+   "teacher": "徐柏青 王磊 刘屹岷"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "丁林",
+   "code": "1801010709I0P1001Y",
+   "course_id": "300521",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "6",
+   "hours": "50",
+   "name": "板块构造与青藏高原演化",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       11
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "0776667d7ee0ae19c2951590b5850416a9fe033599b702074822972e0fcd7c7f",
+   "seq": "126",
+   "teacher": "白玲 史仁灯 颜茂都 何建坤"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "陈德亮",
+   "code": "1801010710I0P1005Y",
+   "course_id": "300527",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "22",
+   "hours": "50",
+   "name": "纳米生物学",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       12,
+       12
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "c445a34af01a7da52f1a0ba862cf57273e43cbf6f3eafaa5e8b4a53b126c08b2",
+   "seq": "127",
+   "teacher": ""
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "李向东",
+   "code": "1801010710I0P1007Y",
+   "course_id": "300524",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "14",
+   "hours": "50",
+   "name": "分子昆虫和植物病理学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       10
+      ],
+      [
+       13,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       12,
+       12
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼320"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       10,
+       10
+      ],
+      [
+       15,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b822999cf7c4df26b6fee9046a296ea029353d4d7b86a517fa8523130d92f958",
+   "seq": "128",
+   "teacher": "刘俊 葛斯琴"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "钟良玮",
+   "code": "1801010710I0P1008Y",
+   "course_id": "300513",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "27",
+   "hours": "60",
+   "name": "生物化学",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       6
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "28ab983d80457cfdc9532751adafd8d0d9615294531f3b66a29633e72cfc6566",
+   "seq": "129",
+   "teacher": "张竹青"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "蒋志刚",
+   "code": "1801010710I0P1009Y",
+   "course_id": "300514",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "11",
+   "hours": "60",
+   "name": "保护生物学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       10,
+       10
+      ],
+      [
+       15,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "12bee56377cd773a397239901e9271d050e04eabe161c6e60e4cd9e2f5a10b69",
+   "seq": "130",
+   "teacher": ""
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "张晓明",
+   "code": "1801010710I0P1010Y",
+   "course_id": "300522",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "33",
+   "hours": "60",
+   "name": "表观遗传学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "243e64ca3b1aa856dc6780497a9e965565ab7d643a0d98cdc1bcc013cc6744e7",
+   "seq": "131",
+   "teacher": "王宪辉 钱伟强"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "李乐乐",
+   "code": "1801010710I0P1011Y",
+   "course_id": "300512",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "17",
+   "hours": "60",
+   "name": "纳米生物传感与检测",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼611"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "人文楼教一2"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       15,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "5d6db20eb46a2843442f07a6c37aa43befa1b9508666847cbed3227d1a322b3a",
+   "seq": "132",
+   "teacher": "李梦圆"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "朱朝东",
+   "code": "1801010710I0P1013Y",
+   "course_id": "300532",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "21",
+   "hours": "51",
+   "name": "整合生物系统学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d7e82b0285ec634cdd120606be1db3b604d401e4d74d33557d21163d3c1f7b24",
+   "seq": "133",
+   "teacher": "罗阿蓉 Douglas Chesters"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "汪涛",
+   "code": "1801010713I0P1001Y",
+   "course_id": "300520",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "33",
+   "hours": "60",
+   "name": "全球变化生态学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "bc0f1a4fddf686355b7596cbee96904caf52f734e39d95b26a8803ec4938b1f1",
+   "seq": "134",
+   "teacher": "汪诗平 梁尔源 张更新"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "曲来叶",
+   "code": "1801010713I0P1002Y",
+   "course_id": "300529",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "10",
+   "hours": "51",
+   "name": "植物生理生态学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "50c3f49c2fb6388cef2a7c989859988cdcc6a288b70fbfe867e4f3e9b6a4d174",
+   "seq": "135",
+   "teacher": ""
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "60",
+   "chief": "",
+   "code": "1801010714I0P1002Y",
+   "course_id": "300530",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "56",
+   "hours": "50",
+   "name": "应用统计学",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      3
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "3238cd9de0325530b3ed82ca99e57b87ba35dae6332c4e9a6f07192a54786705",
+   "seq": "136",
+   "teacher": "王谦"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "易卫东",
+   "code": "1801010812I0P1004Y",
+   "course_id": "300508",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "20",
+   "hours": "50",
+   "name": "物联网基础及其应用",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       16,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       15,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "e4a1839c32f9f2310905e52abf2fb684176528fa0d127f058ee45a136dafd73e",
+   "seq": "137",
+   "teacher": ""
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "",
+   "code": "1801010812I0P1006Y",
+   "course_id": "300509",
+   "credit": "2.00",
+   "department": "国际学院",
+   "enrolled": "16",
+   "hours": "40",
+   "name": "机器视觉与机器学习",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       12
+      ],
+      [
+       14,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "aacde4b724b6d514334c16d7304744aa5a3c9c9963c039ab9586d51b52ed0b69",
+   "seq": "138",
+   "teacher": "王伟强"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "李春山",
+   "code": "1801010817I0P1001Y",
+   "course_id": "300510",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "7",
+   "hours": "60",
+   "name": "化学反应工程",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       12
+      ],
+      [
+       14,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       11,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "54bb0d8841da4cc31354d27099887cf111dfa474e5c9ccf7ec64ff496fb45504",
+   "seq": "139",
+   "teacher": "徐宝华"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "张光晋",
+   "code": "1801010817I0P1002Y",
+   "course_id": "300511",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "8",
+   "hours": "60",
+   "name": "绿色化学工程",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       11
+      ],
+      [
+       13,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "43eb463e1f716cd1fa8917c81c0f1969131ea3de5f42bcfb103f5cbbc27aa854",
+   "seq": "140",
+   "teacher": ""
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "李松庚",
+   "code": "1801010817I0P1003Y",
+   "course_id": "300528",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "9",
+   "hours": "60",
+   "name": "能源化学与化工",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼405"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼405"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       10,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "a30cb4644c26bf52c06f271c8e3ac92e52cfc55f9efe610424dcdd63c402c5d2",
+   "seq": "141",
+   "teacher": "王泽"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "李飞",
+   "code": "1801010817I0P1004Y",
+   "course_id": "300519",
+   "credit": "3.00",
+   "department": "国际学院",
+   "enrolled": "5",
+   "hours": "60",
+   "name": "流态化工程和多相流体力学",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼611"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "3261725d6e122926ecb04b34605b8ae1c2839076fdfd42819cf36cc5d17a3749",
+   "seq": "142",
+   "teacher": "陈延佩"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "董慧峪",
+   "code": "1801010830I0P1008Y",
+   "course_id": "301710",
+   "credit": "2.50",
+   "department": "国际学院",
+   "enrolled": "27",
+   "hours": "50",
+   "name": "分析化学与检测应用",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       10
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       4
+      ],
+      [
+       6,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "c80c8b51588dcf6eb72f76d418c7d08d1133cf9172085aa78fb8c3dce2017f2b",
+   "seq": "143",
+   "teacher": "贲伟伟"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "15",
+   "chief": "",
+   "code": "18017B040300PX003Y-01",
+   "course_id": "305886",
+   "credit": "0.50",
+   "department": "体育部",
+   "enrolled": "15",
+   "hours": "30",
+   "name": "网球",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "运动场网球"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       5
+      ],
+      [
+       7,
+       9
+      ],
+      [
+       11,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      3
+     ],
+     "rooms": [
+      "运动场网球"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       6,
+       6
+      ],
+      [
+       10,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ad06093f4566153f2358382e475cd2a150d304e84e46b2d8cfb52d9bb2e1063f",
+   "seq": "144",
+   "teacher": "廖小龙"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "15",
+   "chief": "",
+   "code": "18017B040300PX004Y-01",
+   "course_id": "305889",
+   "credit": "0.50",
+   "department": "体育部",
+   "enrolled": "11",
+   "hours": "30",
+   "name": "足球",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "运动场足球"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f72573659827e4a56caf032689b8df7c261594dd7910d500ee40403f13ce5026",
+   "seq": "145",
+   "teacher": "陈琪"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "15",
+   "chief": "",
+   "code": "18017B040300PX009Y-01",
+   "course_id": "305892",
+   "credit": "0.50",
+   "department": "体育部",
+   "enrolled": "11",
+   "hours": "30",
+   "name": "篮球",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "运动场篮球1"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "846cb518297c78db4105f029af6323cbdb5c4fd0d0705ca87e33483c51562d65",
+   "seq": "146",
+   "teacher": "陈赞宇"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "15",
+   "chief": "",
+   "code": "18017B040300PX009Y-02",
+   "course_id": "305893",
+   "credit": "0.50",
+   "department": "体育部",
+   "enrolled": "9",
+   "hours": "30",
+   "name": "篮球",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "运动场篮球1"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "025caf607327d69e9d0d10ef7987c4d3508791cd74b15a1077a3703c8c7caa24",
+   "seq": "147",
+   "teacher": "陈赞宇"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "15",
+   "chief": "",
+   "code": "18017B040300PX009Y-04",
+   "course_id": "305895",
+   "credit": "0.50",
+   "department": "体育部",
+   "enrolled": "9",
+   "hours": "30",
+   "name": "篮球",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "运动场篮球1"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d1799fb8433a99f40ca765b89325319d4f96e4705678aac1fd3d5ede9cedf59c",
+   "seq": "148",
+   "teacher": "陈赞宇"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "15",
+   "chief": "",
+   "code": "18017B040300PX010Y-01",
+   "course_id": "305897",
+   "credit": "0.50",
+   "department": "体育部",
+   "enrolled": "11",
+   "hours": "30",
+   "name": "瑜伽",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "二公寓多功能厅（玉泉路）"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "007adbb7bcc8081890443b3b171b5b13e887b7fd5d6e2af9df14c2db41752dfd",
+   "seq": "149",
+   "teacher": "陈静"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "15",
+   "chief": "",
+   "code": "18017B040300PX010Y-02",
+   "course_id": "305898",
+   "credit": "0.50",
+   "department": "体育部",
+   "enrolled": "9",
+   "hours": "30",
+   "name": "瑜伽",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "二公寓多功能厅（玉泉路）"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "二公寓多功能厅（玉泉路）"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       16,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d71a51274afd9880573ea37e2759f9edaa5e1ad4175e3b0a07fdd53a05571c9e",
+   "seq": "150",
+   "teacher": "陈静"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "100",
+   "chief": "",
+   "code": "180201070400MX003Y",
+   "course_id": "306399",
+   "credit": "1.00",
+   "department": "天文与空间科学学院",
+   "enrolled": "81",
+   "hours": "40",
+   "name": "天文学漫谈",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       8
+      ],
+      [
+       10,
+       10
+      ],
+      [
+       12,
+       14
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       11,
+       11
+      ]
+     ]
+    },
+    {
+     "periods": [
+      9,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       14,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "46cb87697e336e78fc6a2cabce8f55c340c8f8801c68dddf6a4dd76f56babf20",
+   "seq": "151",
+   "teacher": "蔡肇伟"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "24",
+   "chief": "罗卫军",
+   "code": "180202085403M4002Y",
+   "course_id": "304961",
+   "credit": "1.00",
+   "department": "集成电路学院",
+   "enrolled": "16",
+   "hours": "20",
+   "name": "微波集成电路设计与实践",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼406"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f045ebb6284411548e032dabc205ca2622a3c06f448611ef6cb12eba53bc953f",
+   "seq": "152",
+   "teacher": ""
+  },
+  {
+   "attribute": "实验课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "赵野",
+   "code": "180202085403M5001Y",
+   "course_id": "304954",
+   "credit": "1.00",
+   "department": "集成电路学院",
+   "enrolled": "25",
+   "hours": "30",
+   "name": "EDA工具及设计实践-模拟集成电路",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼221（玉泉路机房二）"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f80c0ff8f846de9bc6598e7f82ddab11a6f7d4d78460dd0aae48add55e7f21b5",
+   "seq": "153",
+   "teacher": ""
+  },
+  {
+   "attribute": "实验课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "张锋",
+   "code": "180202085403M5002Y",
+   "course_id": "304955",
+   "credit": "1.00",
+   "department": "集成电路学院",
+   "enrolled": "29",
+   "hours": "30",
+   "name": "EDA工具及设计实践-数字集成电路",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      9
+     ],
+     "rooms": [
+      "教学楼221（玉泉路机房二）"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       6,
+       11
+      ]
+     ]
+    },
+    {
+     "periods": [
+      7,
+      9
+     ],
+     "rooms": [
+      "教学楼221（玉泉路机房二）"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       12,
+       14
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼221（玉泉路机房二）"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       15,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "9ee523f0f3f35fdd2b1c259d79cce311e800429d0ff84994fc9f6865b15100c5",
+   "seq": "154",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "200",
+   "chief": "王晓磊",
+   "code": "180202085403P3002Y",
+   "course_id": "307191",
+   "credit": "2.50",
+   "department": "集成电路学院",
+   "enrolled": "200",
+   "hours": "50",
+   "name": "半导体材料与器件的分析与表征",
+   "schedule": [
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       7,
+       9
+      ],
+      [
+       11,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       7,
+       8
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      13
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       15,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "eaf972d5e6af52a151506bc41047d8c02f3e8856849f7d897b6b0faf004db336",
+   "seq": "155",
+   "teacher": "罗庆"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "160",
+   "chief": "李春龙",
+   "code": "180202085403P3004Y",
+   "course_id": "304962",
+   "credit": "2.00",
+   "department": "集成电路学院",
+   "enrolled": "160",
+   "hours": "40",
+   "name": "先进集成电路制造品质控制",
+   "schedule": [
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "cbb46576500ed43f87929de232227ec1eb9785c3db7a1ec361ffc612e44c42cc",
+   "seq": "156",
+   "teacher": "王桂磊"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "265",
+   "chief": "李文昌",
+   "code": "180202085403P3005Y",
+   "course_id": "304957",
+   "credit": "2.00",
+   "department": "集成电路学院",
+   "enrolled": "226",
+   "hours": "40",
+   "name": "集成电路可靠性设计与实践",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "579e108cbe459eb9950daefa13e7f8e70e5feb0479b2839a359d8477d2c510c0",
+   "seq": "157",
+   "teacher": "曹晓东"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "140",
+   "chief": "WEI YAYI",
+   "code": "180202085403P3006Y",
+   "course_id": "304965",
+   "credit": "2.50",
+   "department": "集成电路学院",
+   "enrolled": "91",
+   "hours": "50",
+   "name": "集成电路先进光刻与设计工艺协同优化",
+   "schedule": [
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       14,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d3d94b918ef489246dfd5137a2585321f026cf567add94645301e6314182b421",
+   "seq": "158",
+   "teacher": "董立松"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "夏志良",
+   "code": "180202085403P3007Y",
+   "course_id": "305149",
+   "credit": "2.00",
+   "department": "集成电路学院",
+   "enrolled": "53",
+   "hours": "40",
+   "name": "存储器工艺与器件技术",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      3
+     ],
+     "rooms": [
+      "教学楼阶一2"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      3
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       11,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "cf87cecad17a62995f15328c5fc45a20f0bedc5c08445f0b8f81e9593a4d06e9",
+   "seq": "159",
+   "teacher": "靳磊"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "70",
+   "chief": "乔树山",
+   "code": "180202085403P4003Y",
+   "course_id": "304956",
+   "credit": "1.00",
+   "department": "集成电路学院",
+   "enrolled": "15",
+   "hours": "20",
+   "name": "SOC设计与实践",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       8,
+       8
+      ],
+      [
+       10,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d5f6a6823265b118a14498a9f773b0bd14028d78bff1102a8d140d62949c7f9a",
+   "seq": "160",
+   "teacher": ""
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "200",
+   "chief": "",
+   "code": "180202085403PB001Y",
+   "course_id": "304964",
+   "credit": "0.50",
+   "department": "集成电路学院",
+   "enrolled": "188",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-分论",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      11
+     ],
+     "rooms": [
+      "教学楼阶一6"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       5
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d2b44dc7f6cdd59f154f26566c950fcbb987f539e4e076ba288fcb2821c2d989",
+   "seq": "161",
+   "teacher": "李泠"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "罗庆",
+   "code": "180202140100M4001Y",
+   "course_id": "304967",
+   "credit": "1.00",
+   "department": "集成电路学院",
+   "enrolled": "26",
+   "hours": "20",
+   "name": "新型存储及其前沿应用",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       8,
+       8
+      ],
+      [
+       10,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "32e8b0a4e46587a522659f5a5b88896d3650d5be7ba8b55dff6970a821cb5950",
+   "seq": "162",
+   "teacher": "窦春萌 毕冲"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "樊中朝",
+   "code": "180202140100P3001Y",
+   "course_id": "304963",
+   "credit": "2.00",
+   "department": "集成电路学院",
+   "enrolled": "79",
+   "hours": "40",
+   "name": "新型微纳电子器件",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       14
+      ]
+     ]
+    },
+    {
+     "periods": [
+      13,
+      13
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       14,
+       14
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "80697728370c0d51653ec04cdd898eac3412dc47cbe3ba18eff2357a4e0d0de3",
+   "seq": "163",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "99",
+   "chief": "刘飞",
+   "code": "180202140100P3005Y",
+   "course_id": "304960",
+   "credit": "2.00",
+   "department": "集成电路学院",
+   "enrolled": "42",
+   "hours": "40",
+   "name": "数模混合集成电路设计",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      9
+     ],
+     "rooms": [
+      "教学楼阶二1"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "66926a4546950ff07bc0099f81ec238c2848a24a9dba55b495c54993e7626771",
+   "seq": "164",
+   "teacher": "刘畅"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "100",
+   "chief": "刘昱",
+   "code": "180202140100P3006Y",
+   "course_id": "304959",
+   "credit": "2.50",
+   "department": "集成电路学院",
+   "enrolled": "68",
+   "hours": "50",
+   "name": "射频集成电路与系统",
+   "schedule": [
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "4bc13a2ad1aa3368c6449d25ac0d8f3aaf9ce9307ea828fceec86d70fb155982",
+   "seq": "165",
+   "teacher": "李志强"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "60",
+   "chief": "鲁华祥",
+   "code": "180202140100P4007Y",
+   "course_id": "304958",
+   "credit": "1.00",
+   "department": "集成电路学院",
+   "enrolled": "56",
+   "hours": "20",
+   "name": "人工智能芯片设计",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ca86230ea4527a6479ad56a3292a193b868552cf4efde778ff0be1ce8df3eb4c",
+   "seq": "166",
+   "teacher": "陈刚"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "150",
+   "chief": "周晓飞",
+   "code": "180203083900P1002Y",
+   "course_id": "304684",
+   "credit": "3.00",
+   "department": "网络空间安全学院",
+   "enrolled": "61",
+   "hours": "60",
+   "name": "机器学习",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ba3a3c831a0362a62eda95f7bf76e8335bb536bfbaf0a0b5bd5fdce3bf96b9ae",
+   "seq": "167",
+   "teacher": ""
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "110",
+   "chief": "",
+   "code": "180203083900PB001Y",
+   "course_id": "304682",
+   "credit": "0.50",
+   "department": "网络空间安全学院",
+   "enrolled": "110",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-分论",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       5
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "027a2fed5ba8e579cb132189859c2f0402b4787ca972886d31ce50add98ff375",
+   "seq": "168",
+   "teacher": "林东岱"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "170",
+   "chief": "",
+   "code": "180203083900PX001Y",
+   "course_id": "304683",
+   "credit": "1.00",
+   "department": "网络空间安全学院",
+   "enrolled": "165",
+   "hours": "30",
+   "name": "网络犯罪与安全治理",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶二5"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "bf8b6e7ee0fddcca0e45e632111b480441773223b5430ad3d16c0f78dc94e9c4",
+   "seq": "169",
+   "teacher": "姜建国"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "162",
+   "chief": "王伟平",
+   "code": "1802030839X2P3002Y",
+   "course_id": "304690",
+   "credit": "2.00",
+   "department": "网络空间安全学院",
+   "enrolled": "150",
+   "hours": "40",
+   "name": "大数据安全",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "74cf70200d8b3a74741283a7daaaf055e4173838abf6494cbada599121e1aba8",
+   "seq": "170",
+   "teacher": "李杨"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "孙利民",
+   "code": "1802030839X3P3004Y",
+   "course_id": "304851",
+   "credit": "2.00",
+   "department": "网络空间安全学院",
+   "enrolled": "25",
+   "hours": "40",
+   "name": "工业互联网安全",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       3
+      ],
+      [
+       5,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "752088d92b0379022fca35cd5fe4fc97690e4455ebeee7a79ff9a4fd53b60c85",
+   "seq": "171",
+   "teacher": "潘志文"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "刘宝旭",
+   "code": "1802030839X5P3004Y",
+   "course_id": "305104",
+   "credit": "2.00",
+   "department": "网络空间安全学院",
+   "enrolled": "30",
+   "hours": "40",
+   "name": "网络威胁感知与溯源",
+   "schedule": [
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼204"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "6ea539ec259a3e3c366828caf89d0b04b9ecde3e2e1e3cb2258fd5e6124c241d",
+   "seq": "172",
+   "teacher": "李宁"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "110",
+   "chief": "柳厅文",
+   "code": "180203085412P2001Y",
+   "course_id": "304885",
+   "credit": "3.00",
+   "department": "网络空间安全学院",
+   "enrolled": "55",
+   "hours": "60",
+   "name": "跨模态智能计算及其应用",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一3"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       18
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一3"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       7,
+       8
+      ],
+      [
+       12,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "7c02329fbd8e745061fdd0772e55cc1fb9d0c8699feda5de5ce4054a0837ec05",
+   "seq": "173",
+   "teacher": "盛傢伟"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "160",
+   "chief": "苏璞睿",
+   "code": "180203085412P2003Y",
+   "course_id": "305365",
+   "credit": "2.50",
+   "department": "网络空间安全学院",
+   "enrolled": "145",
+   "hours": "50",
+   "name": "软件安全漏洞分析与发现",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       14,
+       14
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       17
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d96f47caa53871a3e2ad536585e20047747fe76cfd0e97d44f1ae1e396022fd6",
+   "seq": "174",
+   "teacher": "杨轶"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "110",
+   "chief": "",
+   "code": "180203085412P3004Y",
+   "course_id": "304850",
+   "credit": "2.00",
+   "department": "网络空间安全学院",
+   "enrolled": "95",
+   "hours": "40",
+   "name": "多媒体生成及其信息挖掘",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一4"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "46e10f2718587146ea5f705e7177054b4d1c104bc99b20eeed20a2b619661a76",
+   "seq": "175",
+   "teacher": "曹纭"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "虎嵩林",
+   "code": "180203085412P4002Y",
+   "course_id": "305314",
+   "credit": "1.00",
+   "department": "网络空间安全学院",
+   "enrolled": "5",
+   "hours": "20",
+   "name": "虚假信息检测导论",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       11,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "000f8095f37048fa594bfad5aa5b2a5b6f154506a514bd4481d400c4a3685c50",
+   "seq": "176",
+   "teacher": "朱福庆"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "刘奇旭",
+   "code": "180203085412P4003Y",
+   "course_id": "304854",
+   "credit": "1.00",
+   "department": "网络空间安全学院",
+   "enrolled": "27",
+   "hours": "20",
+   "name": "web追踪前沿",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       7,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "5e84de81c33d0be6936e1264ea38d24579ca620181b2bf457c7b8eba8b998266",
+   "seq": "177",
+   "teacher": "冯云"
+  },
+  {
+   "attribute": "实验课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "刘超",
+   "code": "180203085412P5001Y",
+   "course_id": "304852",
+   "credit": "1.00",
+   "department": "网络空间安全学院",
+   "enrolled": "10",
+   "hours": "30",
+   "name": "计算机检查与取证技术实验",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       3,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "a81c6f879ae10a7002d71fd884a2204d660d9ee16509405ca5e5afc09a321b3e",
+   "seq": "178",
+   "teacher": "李梅梅"
+  },
+  {
+   "attribute": "实验课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "180203085412P5009Y",
+   "course_id": "305106",
+   "credit": "1.00",
+   "department": "网络空间安全学院",
+   "enrolled": "11",
+   "hours": "30",
+   "name": "网络威胁感知与溯源实践",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       3,
+       6
+      ],
+      [
+       8,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f42fb59ddccd7fa50d9675723674c14e23ac64c80ded6f0aca90f2ac1e302868",
+   "seq": "179",
+   "teacher": "李宁 姚叶鹏"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "160",
+   "chief": "",
+   "code": "180206081100PB001Y",
+   "course_id": "305300",
+   "credit": "0.50",
+   "department": "人工智能学院",
+   "enrolled": "125",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-分论",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "0f99aac69f5c49a490087003841e325f6b455c9b15edbd31dccbc579a90ebdc8",
+   "seq": "180",
+   "teacher": "吕宜生"
+  },
+  {
+   "attribute": "实践课",
+   "campus": "玉泉路",
+   "capacity": "29",
+   "chief": "李恩",
+   "code": "180206085406M6001Y",
+   "course_id": "305301",
+   "credit": "1.00",
+   "department": "人工智能学院",
+   "enrolled": "15",
+   "hours": "30",
+   "name": "机器人实践",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "综合楼404（人工智能学院教学实验室）"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       9
+      ],
+      [
+       11,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "7f5e44538967fdd29716c6cee063f0b52b779622bbdb664a9c682ca394c50a38",
+   "seq": "181",
+   "teacher": "杨国栋"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "125",
+   "chief": "",
+   "code": "180206085410M3007Y",
+   "course_id": "300764",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "120",
+   "hours": "40",
+   "name": "强化学习基础",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "107a2b0a9847543196b96530e068c96d21a15363273d0bd9bd16b2a110a979bd",
+   "seq": "182",
+   "teacher": "岩延"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "90",
+   "chief": "",
+   "code": "180206085410M3012Y-01",
+   "course_id": "305334",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "90",
+   "hours": "40",
+   "name": "自然语言处理与应用",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一2"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "9c0cda98529b7e485d340eaa58cf9d420c593678ce7432209883f51d1eb7c356",
+   "seq": "183",
+   "teacher": "唐海娜"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "100",
+   "chief": "",
+   "code": "180206085410M3012Y-02",
+   "course_id": "305336",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "101",
+   "hours": "40",
+   "name": "自然语言处理与应用",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       11,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "06019fd527ea75b9bc84fda6c908c987f49d06f487dc8e1c0b9d1e75d2827bb4",
+   "seq": "184",
+   "teacher": "唐海娜"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "110",
+   "chief": "",
+   "code": "180206085410M3013Y",
+   "course_id": "300768",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "40",
+   "hours": "40",
+   "name": "智能移动机器人",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一3"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       8
+      ],
+      [
+       10,
+       10
+      ],
+      [
+       12,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "7e7373b59d1f7508a1a27248a26939dcc995381288258ac10304a8830952e205",
+   "seq": "185",
+   "teacher": "艾云峰"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "160",
+   "chief": "",
+   "code": "180206085410M3016Y",
+   "course_id": "305342",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "40",
+   "hours": "40",
+   "name": "并行计算与实现技术",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "38514cf234c31a7d1e84e1870aa9eb6d80aaa4ef798103f930ae37f058650cba",
+   "seq": "186",
+   "teacher": "缪青海"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "110",
+   "chief": "姚郑",
+   "code": "180206085410M3017Y",
+   "course_id": "300770",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "97",
+   "hours": "40",
+   "name": "智能系统质量保证技术",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "af824dc807e18097bdb816e6a735c2cd08050d21bdf94d68da5a2c07494044e3",
+   "seq": "187",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "25",
+   "chief": "",
+   "code": "180206085410M3019Y",
+   "course_id": "300767",
+   "credit": "1.50",
+   "department": "人工智能学院",
+   "enrolled": "10",
+   "hours": "30",
+   "name": "文献阅读与科技论文写作",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "综合楼404（人工智能学院教学实验室）"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       1,
+       3
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       11,
+       11
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "综合楼404（人工智能学院教学实验室）"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       12,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d3b4d48381e92674af1719fa275fac42bfe8446aa35eebc39743c113351466d6",
+   "seq": "188",
+   "teacher": "肖俊"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "110",
+   "chief": "",
+   "code": "180206085410M3021Y-01",
+   "course_id": "305377",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "106",
+   "hours": "40",
+   "name": "语义网络与知识图谱",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "faa8c0dd9e07b0e9f93a2c815d34d94e332bdf1dce7794d9283f6fbe2e3f8a24",
+   "seq": "189",
+   "teacher": "黄敏"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "100",
+   "chief": "",
+   "code": "180206085410M3021Y-02",
+   "course_id": "305378",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "33",
+   "hours": "40",
+   "name": "语义网络与知识图谱",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      13
+     ],
+     "rooms": [
+      "教学楼阶一3"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "560b9c574841ab84ad67b1e6ed9152ddb28123493c3e204b92bcebe70ea3a0b5",
+   "seq": "190",
+   "teacher": "黄敏"
+  },
+  {
+   "attribute": "实验课",
+   "campus": "玉泉路",
+   "capacity": "25",
+   "chief": "",
+   "code": "180206085410M5001Y",
+   "course_id": "300766",
+   "credit": "1.00",
+   "department": "人工智能学院",
+   "enrolled": "15",
+   "hours": "40",
+   "name": "机器学习算法实验",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      13
+     ],
+     "rooms": [
+      "综合楼404（人工智能学院教学实验室）"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f9dc8bc98d134c3447962b0c8fbd88bd16b9c1431d3e7ebc28bd7b38d16332f1",
+   "seq": "191",
+   "teacher": "王泳"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "125",
+   "chief": "",
+   "code": "180206085410MX001Y",
+   "course_id": "300795",
+   "credit": "1.00",
+   "department": "人工智能学院",
+   "enrolled": "120",
+   "hours": "30",
+   "name": "金融数字化",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      13
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       11,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "92149d91cf0ee5ab9fc9a812f97ef41936a31eac85e661169c9069b04a2b606b",
+   "seq": "192",
+   "teacher": "马光悌"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "85",
+   "chief": "",
+   "code": "180206085410P2005Y-01",
+   "course_id": "305339",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "66",
+   "hours": "40",
+   "name": "深度学习理论与实践",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶二1"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "e323e84712b0db9c2688f7fb3a96442149a9c18fcb3c3b08cd27c7c5a7571685",
+   "seq": "193",
+   "teacher": "姜海勇"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "120",
+   "chief": "",
+   "code": "180206085410P2005Y-02",
+   "course_id": "305340",
+   "credit": "2.00",
+   "department": "人工智能学院",
+   "enrolled": "120",
+   "hours": "40",
+   "name": "深度学习理论与实践",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ceefb7a6d488521a622197d89795da1fabd75ee2217badff28a24b22e4e90469",
+   "seq": "194",
+   "teacher": "姜海勇"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "99",
+   "chief": "",
+   "code": "180207040200MX001Y",
+   "course_id": "305400",
+   "credit": "1.00",
+   "department": "心理学系",
+   "enrolled": "94",
+   "hours": "30",
+   "name": "大脑的毕生发展与健康维护",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶二2"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "5618a42a70472c4637a86a0d561c40ecb8aa2ebe6d8095eaf67ec3ae5ce16b79",
+   "seq": "195",
+   "teacher": "李锐"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "99",
+   "chief": "",
+   "code": "180207040200MX002Y",
+   "course_id": "305404",
+   "credit": "1.00",
+   "department": "心理学系",
+   "enrolled": "94",
+   "hours": "30",
+   "name": "环境心理学",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶二1"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       3
+      ],
+      [
+       5,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "791d754ca1e830e0fb502604834fca42b30cb1b3c46bc01682b8d2cedcda01e5",
+   "seq": "196",
+   "teacher": "王妍"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "99",
+   "chief": "",
+   "code": "180207040200MX005Y",
+   "course_id": "305401",
+   "credit": "1.00",
+   "department": "心理学系",
+   "enrolled": "90",
+   "hours": "30",
+   "name": "老年人的心理健康维护与促进",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶二1"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       2,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d3306807a4316c391d884da52d527ca237f276216581515f4804abc347dea574",
+   "seq": "197",
+   "teacher": "郑志伟"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "99",
+   "chief": "",
+   "code": "180207040200MX007Y",
+   "course_id": "305399",
+   "credit": "1.00",
+   "department": "心理学系",
+   "enrolled": "72",
+   "hours": "40",
+   "name": "生活中的心理学",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      3
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "7faac6c8b4c45017c82256ed4eaa72680c7b14dbb42c8aaf749725b9c9dd82bb",
+   "seq": "198",
+   "teacher": "丁金丰"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "120",
+   "chief": "",
+   "code": "180207040200MX009Y",
+   "course_id": "305403",
+   "credit": "1.00",
+   "department": "心理学系",
+   "enrolled": "114",
+   "hours": "30",
+   "name": "心理学与行为改善",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一5"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       9
+      ],
+      [
+       11,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "dac4b43705f6173c784bd60e24a6d5f18d65a898686ee2aaeb30933fbd5ed2ce",
+   "seq": "199",
+   "teacher": "刘萍萍"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "刘振安",
+   "code": "180208082700P1008Y",
+   "course_id": "305164",
+   "credit": "3.00",
+   "department": "核科学与技术学院",
+   "enrolled": "12",
+   "hours": "60",
+   "name": "高等核电子学",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "cba534f407e34d23ae55122c11afac43a57f7a3a4237b55616eccef0ac487758",
+   "seq": "200",
+   "teacher": "赵京周"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "程耀东",
+   "code": "180208082703P3003Y",
+   "course_id": "305008",
+   "credit": "2.00",
+   "department": "核科学与技术学院",
+   "enrolled": "7",
+   "hours": "40",
+   "name": "高能物理实验的大数据管理技术",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       11
+      ]
+     ]
+    },
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼317"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       11,
+       11
+      ]
+     ]
+    },
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    },
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       10,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "ed7d92b4596585de41e4a7be3f84a2891cfff83b24dd466b67922fe272ebb3ad",
+   "seq": "201",
+   "teacher": "李海波"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "章红宇",
+   "code": "180208082703P3020Y",
+   "course_id": "305165",
+   "credit": "2.00",
+   "department": "核科学与技术学院",
+   "enrolled": "30",
+   "hours": "40",
+   "name": "先进电子学和数据获取",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "62a92379db410f2d95b8a205b66d1670a53856e5574897221d93c955f2e06c49",
+   "seq": "202",
+   "teacher": "赵豫斌 常劲帆"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "张志刚",
+   "code": "180211080300M1006Y",
+   "course_id": "305332",
+   "credit": "3.00",
+   "department": "光电学院",
+   "enrolled": "8",
+   "hours": "60",
+   "name": "激光原理与技术",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "4910b42d320aee079a18566a58019da3ebc9de0c14b6c00f57748725223b1f4c",
+   "seq": "203",
+   "teacher": "张鸿博"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "70",
+   "chief": "陈笑",
+   "code": "180211080300M1007Y",
+   "course_id": "305333",
+   "credit": "2.50",
+   "department": "光电学院",
+   "enrolled": "47",
+   "hours": "50",
+   "name": "现代光学设计",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼205（玉泉路机房一）"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "0d5e7257fb89d5dcc9dc51faf8dc572a4ff8be8605ee74bd493b615b589011dc",
+   "seq": "204",
+   "teacher": ""
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "",
+   "code": "180211080300PB001Y-1",
+   "course_id": "305357",
+   "credit": "0.50",
+   "department": "光电学院",
+   "enrolled": "11",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-分论",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼404"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       6
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b6bbaa3fdeea85cf1c77df5bd088b2e768a9864103ffaa051e3fe832e4e8b83d",
+   "seq": "205",
+   "teacher": "屈一至"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "",
+   "code": "180211080300PB001Y-2",
+   "course_id": "305359",
+   "credit": "0.50",
+   "department": "光电学院",
+   "enrolled": "5",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-分论",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       5,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "00b7f3d114a8cf73a8e862addabc50a08b49e72edbaa40abf3a43d821e474031",
+   "seq": "206",
+   "teacher": "赵天卓"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "孙志斌",
+   "code": "1802110803X2M3002Y",
+   "course_id": "305331",
+   "credit": "2.50",
+   "department": "光电学院",
+   "enrolled": "13",
+   "hours": "50",
+   "name": "飞行时间三维成像实验",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "97b058509c405a7fd5a6c77726dc73af3b39cb4f387aba4cb13e64e88dfd9f24",
+   "seq": "207",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "董国艳",
+   "code": "1802110803X4P2002Y",
+   "course_id": "305327",
+   "credit": "3.00",
+   "department": "光电学院",
+   "enrolled": "28",
+   "hours": "60",
+   "name": "微纳光子学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       12
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       10
+      ],
+      [
+       12,
+       12
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "4091b90d274b652cab80f86068bb66378d17a7238cc415971c6b82c41a57e667",
+   "seq": "208",
+   "teacher": ""
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "郑义军",
+   "code": "1802110803X5P4003Y",
+   "course_id": "305330",
+   "credit": "1.00",
+   "department": "光电学院",
+   "enrolled": "24",
+   "hours": "20",
+   "name": "激光前沿技术导论",
+   "schedule": [
+    {
+     "periods": [
+      8,
+      9
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       3,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "615765128c991bd97d893f58448ea9872492bb89e47b134efbf4a8c1fdaa159d",
+   "seq": "209",
+   "teacher": ""
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "杨林",
+   "code": "180211085408M2002Y",
+   "course_id": "305329",
+   "credit": "3.00",
+   "department": "光电学院",
+   "enrolled": "35",
+   "hours": "60",
+   "name": "集成光电子学",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "90dec68850b88e742de94fb3cb42911d492415892abd4b57e56baceb335c2339",
+   "seq": "210",
+   "teacher": "杨跃德"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "100",
+   "chief": "刘春雨",
+   "code": "180211085408M3001Y",
+   "course_id": "305324",
+   "credit": "2.00",
+   "department": "光电学院",
+   "enrolled": "83",
+   "hours": "40",
+   "name": "工程光学技术与应用",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼阶二3"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       2,
+       7
+      ],
+      [
+       9,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "9c0b0ebfd4e7a8791b6960002b9bcb4f4fbd4bf466cff5f91d9a1ae654f3fd43",
+   "seq": "211",
+   "teacher": "刘帅"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "张鸿博",
+   "code": "180211085408P2008Y",
+   "course_id": "305328",
+   "credit": "2.00",
+   "department": "光电学院",
+   "enrolled": "29",
+   "hours": "40",
+   "name": "全固态激光及频率变换原理与技术",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       6,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       6,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f0e98e53f910ca4ec63fcb74921169087af9858c4338c44f772945d3a503d49a",
+   "seq": "212",
+   "teacher": ""
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "400",
+   "chief": "",
+   "code": "180213010108MB001Y-01",
+   "course_id": "302118",
+   "credit": "1.00",
+   "department": "马克思主义学院",
+   "enrolled": "280",
+   "hours": "36",
+   "name": "自然辩证法概论",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "玉泉礼堂"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       1,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "3fd2efe57f495279e956a1fe341008258b8da4c17a6f1d2cec18381b0fc29812",
+   "seq": "213",
+   "teacher": "刘洋"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "黄小茹",
+   "code": "180213030500D1003Y",
+   "course_id": "301918",
+   "credit": "3.00",
+   "department": "马克思主义学院",
+   "enrolled": "6",
+   "hours": "60",
+   "name": "思想政治理论课教学与研究",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼611"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       9
+      ],
+      [
+       11,
+       18
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼611"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       10,
+       10
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼611"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       17,
+       18
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼611"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       6,
+       6
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "785e97d306dfbab388cda61287d51c1fc4a480e16f7aaec8930361f5a6d15453",
+   "seq": "214",
+   "teacher": "侯玉环"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180213030500D1004Y",
+   "course_id": "302016",
+   "credit": "3.00",
+   "department": "马克思主义学院",
+   "enrolled": "3",
+   "hours": "60",
+   "name": "马克思主义研究方法",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       15
+      ],
+      [
+       17,
+       18
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       16,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       17,
+       18
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "6944fef2fc0da2c6ca15144a0a29bdd1f62f52bf8b48af94904c6111151c5f96",
+   "seq": "215",
+   "teacher": "庄忠正 郑吉伟 汪亭友"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "350",
+   "chief": "",
+   "code": "180213030500DB001Y-01",
+   "course_id": "305668",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "161",
+   "hours": "36",
+   "name": "中国马克思主义与当代",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "玉泉礼堂"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "86342171c12b0a99e95999e3274910167664fb473804aabe825e6d0eb9c0778f",
+   "seq": "216",
+   "teacher": "陈天嘉 魏建武 赵俊海 董天美 董艺 董昊 肖遥 黄龙光 田曦"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180213030500M1002Y",
+   "course_id": "301924",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "7",
+   "hours": "40",
+   "name": "国外马克思主义评介",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       1,
+       7
+      ],
+      [
+       9,
+       17
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       8,
+       8
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "29cf2a9aef29f59bf02c9b6b5ade22189b7c804dcfcf0fc024b3d3f76db9baf4",
+   "seq": "217",
+   "teacher": "孟建伟"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180213030500M1007Y",
+   "course_id": "300414",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "7",
+   "hours": "40",
+   "name": "马克思主义理论研究方法",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼214"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       11,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "99e058dff43d00ca2f92fd21a69d835df97326dcfc9446d4cbfa58db899ffba4",
+   "seq": "218",
+   "teacher": "田曦"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180213030500M1008Y",
+   "course_id": "301889",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "30",
+   "hours": "40",
+   "name": "毛泽东著作选读",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       2
+      ],
+      [
+       4,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "462f25870871d37dd252f01f9583ac183b7a76e6d27ebf5e5d971ddcd5caf7d5",
+   "seq": "219",
+   "teacher": "曹志红"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180213030500M1009Y",
+   "course_id": "301886",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "5",
+   "hours": "40",
+   "name": "习近平新时代中国特色社会主义思想",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼320"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       12
+      ],
+      [
+       14,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "e71db0d94ffdcfda1682e07736caaea3a06ddf637703a4ad18302b9aa4a68407",
+   "seq": "220",
+   "teacher": "李志红"
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "111",
+   "chief": "",
+   "code": "180213030500MB001Y-01",
+   "course_id": "307391",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "95",
+   "hours": "36",
+   "name": "新时代中国特色社会主义理论与实践",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼阶一1"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       3,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "80af1fa1ff560bafd13a5f5c4cdc1394caa78a010c55132b5af3e0995881c3db",
+   "seq": "221",
+   "teacher": "常征 黄小茹 王庭大 侯玉环 董昊 陈筠淘 和谐 田曦"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180213030501M3001Y",
+   "course_id": "301888",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "7",
+   "hours": "40",
+   "name": "恩格斯思想研究",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       5
+      ],
+      [
+       7,
+       9
+      ],
+      [
+       11,
+       15
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼413"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       6,
+       6
+      ],
+      [
+       10,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "45ef35e2b8d30cbfb66b76ea5a022c81f09f3ff2b4aaa711e82e9572a95bb453",
+   "seq": "222",
+   "teacher": "赵俊海"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180213030503M3001Y",
+   "course_id": "301919",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "30",
+   "hours": "40",
+   "name": "习近平文化思想研究",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼420"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d00cee3e89000d5f87685c2b88943708fa488351cb5d5378fd443d9b0a642d44",
+   "seq": "223",
+   "teacher": "陈筠淘"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180213030505M3001Y",
+   "course_id": "301887",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "29",
+   "hours": "40",
+   "name": "中国古代道德教育名著选读",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼313"
+     ],
+     "weekday": 3,
+     "weeks": [
+      [
+       1,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "1313614e8e4f3a9f90014bc31ca42c353d38597b1d4ce40a10c87359c8de4bf8",
+   "seq": "224",
+   "teacher": "秦维红"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "王庭大",
+   "code": "1802130305Z1M3001Y",
+   "course_id": "301920",
+   "credit": "2.00",
+   "department": "马克思主义学院",
+   "enrolled": "9",
+   "hours": "40",
+   "name": "党的建设前沿问题研究",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼620"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "589e1ebc1ac70d194d1e6df554ccd0b90e919aee2d295f14f6cb8c85eb81756c",
+   "seq": "225",
+   "teacher": "董天美"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "58",
+   "chief": "李明涛",
+   "code": "180215082500P1002Y",
+   "course_id": "304806",
+   "credit": "3.00",
+   "department": "星际航行学院",
+   "enrolled": "16",
+   "hours": "60",
+   "name": "航天器轨道姿态动力学与控制",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       2,
+       3
+      ],
+      [
+       5,
+       5
+      ],
+      [
+       8,
+       8
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "23dd64c82656e0b856d3571dad187b24474aeff1c20c6ad25730d5225f405aec",
+   "seq": "226",
+   "teacher": "高东"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "陈博",
+   "code": "180215082500P1003Y",
+   "course_id": "304805",
+   "credit": "2.50",
+   "department": "星际航行学院",
+   "enrolled": "4",
+   "hours": "50",
+   "name": "航天器热控制技术原理及其应用",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼316"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       16
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "3f15e7ef04ff7eabe49779c1b30e4ed256454091787d8e153e3acfa1e4905747",
+   "seq": "227",
+   "teacher": ""
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "80",
+   "chief": "",
+   "code": "180215082500PB001Y",
+   "course_id": "304822",
+   "credit": "0.50",
+   "department": "星际航行学院",
+   "enrolled": "44",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-分论",
+   "schedule": [
+    {
+     "periods": [
+      3,
+      4
+     ],
+     "rooms": [
+      "教学楼305"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       3
+      ],
+      [
+       5,
+       5
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "7e077d481dd84ee9e9c2e3de99e87966de7b525d7bd805829a24eb1c80a4ecee",
+   "seq": "228",
+   "teacher": "胡斌"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "舒磊正",
+   "code": "180215082501P2001Y",
+   "course_id": "304824",
+   "credit": "2.00",
+   "department": "星际航行学院",
+   "enrolled": "18",
+   "hours": "40",
+   "name": "航天器轨道确定与自主导航",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      3
+     ],
+     "rooms": [
+      "教学楼212"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       1,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "f32078b9ece311311731633526c13da07cfeacae46728cda3a1b3c1eafef9b4b",
+   "seq": "229",
+   "teacher": "毛新愿"
+  },
+  {
+   "attribute": "专业核心课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "韩建伟",
+   "code": "180215082501P2002Y",
+   "course_id": "304810",
+   "credit": "2.50",
+   "department": "星际航行学院",
+   "enrolled": "12",
+   "hours": "50",
+   "name": "航天器空间环境效应",
+   "schedule": [
+    {
+     "periods": [
+      6,
+      8
+     ],
+     "rooms": [
+      "教学楼320"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       2
+      ],
+      [
+       4,
+       16
+      ]
+     ]
+    },
+    {
+     "periods": [
+      6,
+      8
+     ],
+     "rooms": [
+      "教学楼320"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       2,
+       2
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "13a10b8d262be10e2bbbc59c0dac2a5d970223266145419f93e796520e12b6ad",
+   "seq": "230",
+   "teacher": "蔡明辉"
+  },
+  {
+   "attribute": "实验课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "董文博",
+   "code": "180215082501P5003Y",
+   "course_id": "304804",
+   "credit": "1.00",
+   "department": "星际航行学院",
+   "enrolled": "7",
+   "hours": "30",
+   "name": "空间载荷电子控制系统-实验课",
+   "schedule": [
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼204"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       3,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "0d3f504f914cb7c6db50342d9c585151bce62f92858cbe3ed6956d0eb89222bf",
+   "seq": "231",
+   "teacher": "张文彬"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "荆继武",
+   "code": "180229145200M1002Y",
+   "course_id": "305034",
+   "credit": "3.00",
+   "department": "密码学院",
+   "enrolled": "6",
+   "hours": "60",
+   "name": "密钥管理原理与技术",
+   "schedule": [
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼404"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       10
+      ]
+     ]
+    },
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "教学楼404"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       11
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "95bbc487ecf5a2c08e0d3d2f4773d3e0adbba9fd7d456a7b2c67892e1d8f3b26",
+   "seq": "232",
+   "teacher": "刘丽敏"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "徐静",
+   "code": "180229145200M3007Y",
+   "course_id": "305687",
+   "credit": "2.00",
+   "department": "密码学院",
+   "enrolled": "6",
+   "hours": "40",
+   "name": "密码协议原理与应用",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      6
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       13,
+       14
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "77d774cc28092359d71e065e17f95a0839de82d4c9aab6a67305e2153c602970",
+   "seq": "233",
+   "teacher": "倪佩芳"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "孙思维",
+   "code": "180229145200M4001Y",
+   "course_id": "305689",
+   "credit": "1.00",
+   "department": "密码学院",
+   "enrolled": "10",
+   "hours": "20",
+   "name": "基于杂凑函数的抗量子计算攻击数字签名",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      3
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       1,
+       6
+      ]
+     ]
+    },
+    {
+     "periods": [
+      1,
+      2
+     ],
+     "rooms": [
+      "教学楼412"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       7,
+       7
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "85b43cef186e83cea663184d3148e9a6dd5689a7ae7885e5760f2e2a248dc740",
+   "seq": "234",
+   "teacher": ""
+  },
+  {
+   "attribute": "公共必修课",
+   "campus": "玉泉路",
+   "capacity": "100",
+   "chief": "",
+   "code": "180232085600PB002Y",
+   "course_id": "305355",
+   "credit": "0.50",
+   "department": "现代产业学院",
+   "enrolled": "11",
+   "hours": "10",
+   "name": "学术道德与学术写作规范-分论",
+   "schedule": [
+    {
+     "periods": [
+      7,
+      8
+     ],
+     "rooms": [
+      "教学楼420"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       5
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "4a785779cc0940b8174608c124ab660920a1dc5374ceaf829b2216d5c3e658de",
+   "seq": "235",
+   "teacher": "卢涛"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "55",
+   "chief": "",
+   "code": "180232120100MX014Y",
+   "course_id": "305319",
+   "credit": "1.00",
+   "department": "现代产业学院",
+   "enrolled": "42",
+   "hours": "30",
+   "name": "创业企业经营决策模拟",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼205（玉泉路机房一）"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "b4e43505f1950dfda763a0ff903ea14c83d5e4373a20dc8c8e6d55b45f1bacc0",
+   "seq": "236",
+   "teacher": "卢涛"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180232125601M3033Y",
+   "course_id": "306368",
+   "credit": "2.00",
+   "department": "现代产业学院",
+   "enrolled": "22",
+   "hours": "40",
+   "name": "知识产权管理",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      13
+     ],
+     "rooms": [
+      "人文楼教一2"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       11,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "817ed2543d4e9094345bbb8b374e8a2daa129fddaceaaf860df316b8c2e39240",
+   "seq": "237",
+   "teacher": "罗先觉 宋河发"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180232125601M3035Y",
+   "course_id": "306369",
+   "credit": "2.00",
+   "department": "现代产业学院",
+   "enrolled": "22",
+   "hours": "40",
+   "name": "技术创新管理",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "人文楼教一2"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "bf020b83b614f5063b86f756bc7ccb6a663c1f404f1ac2ab15bb9834e4043347",
+   "seq": "238",
+   "teacher": "卢涛"
+  },
+  {
+   "attribute": "研讨课",
+   "campus": "玉泉路",
+   "capacity": "30",
+   "chief": "",
+   "code": "180232125601M4004Y",
+   "course_id": "306370",
+   "credit": "1.00",
+   "department": "现代产业学院",
+   "enrolled": "20",
+   "hours": "20",
+   "name": "前沿科技发展及应用系列研讨",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "人文楼教一2"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       13,
+       15
+      ],
+      [
+       17,
+       17
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "233379a463ca5efbc71028994c534efa2b5c8d9dc4771f2effe9bb57f425faf9",
+   "seq": "239",
+   "teacher": "卢涛"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "120",
+   "chief": "",
+   "code": "180233081301PX003Y",
+   "course_id": "306862",
+   "credit": "1.00",
+   "department": "人居科学学院",
+   "enrolled": "120",
+   "hours": "30",
+   "name": "建筑技术与艺术简史",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "教学楼阶二4"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       10
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "dc0883fb8ec78457c5deb59cf7e5a94b7ca5719ac262e782b6e399115dcc682a",
+   "seq": "240",
+   "teacher": "王一钧"
+  },
+  {
+   "attribute": "公共选修课",
+   "campus": "玉泉路",
+   "capacity": "50",
+   "chief": "",
+   "code": "1802331301X2PX006Y",
+   "course_id": "306842",
+   "credit": "1.00",
+   "department": "人居科学学院",
+   "enrolled": "42",
+   "hours": "40",
+   "name": "中国艺术歌曲与嗓音科学训练",
+   "schedule": [
+    {
+     "periods": [
+      10,
+      12
+     ],
+     "rooms": [
+      "玉泉礼堂"
+     ],
+     "weekday": 1,
+     "weeks": [
+      [
+       2,
+       15
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "6d234642b6399862c5958ae36daa218fe7890d88aa950753fc8d948eb9ef192d",
+   "seq": "241",
+   "teacher": "李哲夫"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "18087B025100M1003Y",
+   "course_id": "304352",
+   "credit": "3.00",
+   "department": "MBA",
+   "enrolled": "34",
+   "hours": "48",
+   "name": "公司金融",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼320"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "2d09dc17a9e2550df9f6bd68c5229b88c86166bfda2b74c8c89cfbfe3c4d99ef",
+   "seq": "242",
+   "teacher": "张矢的"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "18087B025100M1005Y",
+   "course_id": "304351",
+   "credit": "3.00",
+   "department": "MBA",
+   "enrolled": "34",
+   "hours": "48",
+   "name": "高级计量经济学",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼504"
+     ],
+     "weekday": 5,
+     "weeks": [
+      [
+       10,
+       15
+      ],
+      [
+       17,
+       17
+      ]
+     ]
+    },
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼504"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       9,
+       12
+      ],
+      [
+       14,
+       17
+      ]
+     ]
+    },
+    {
+     "periods": [
+      2,
+      4
+     ],
+     "rooms": [
+      "教学楼504"
+     ],
+     "weekday": 7,
+     "weeks": [
+      [
+       13,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "578fb13a9a7b45cd85432b62ad4e897151fa3d941a7122830f13838d5d2251d5",
+   "seq": "243",
+   "teacher": "胡毅"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "18087B025100M3012Y",
+   "course_id": "304350",
+   "credit": "1.00",
+   "department": "MBA",
+   "enrolled": "34",
+   "hours": "16",
+   "name": "投资银行实务",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼211"
+     ],
+     "weekday": 6,
+     "weeks": [
+      [
+       2,
+       4
+      ],
+      [
+       6,
+       6
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "cd739c125813da521771b0a255726647735871fe9dab370df7e3b114d5f34e73",
+   "seq": "244",
+   "teacher": "许婉宁"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "40",
+   "chief": "",
+   "code": "18087B025100M3015Y",
+   "course_id": "304349",
+   "credit": "2.00",
+   "department": "MBA",
+   "enrolled": "33",
+   "hours": "32",
+   "name": "气候金融",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      7
+     ],
+     "rooms": [
+      "教学楼304"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       1,
+       4
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       9,
+       13
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "d113be58364d09542ff4cd5b198003724b27e9196978b806ab17c373ba712610",
+   "seq": "245",
+   "teacher": "郭琨"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "18087B125100M1002Y",
+   "course_id": "305326",
+   "credit": "2.00",
+   "department": "MBA",
+   "enrolled": "28",
+   "hours": "32",
+   "name": "商务英语B",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼404"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       9
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "4a3b9b65b0198b28193563d0a474d687eb782ba1e7e5b515a6d4d93b6d093377",
+   "seq": "246",
+   "teacher": "李兰欣"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "18087B125100M1009Y",
+   "course_id": "305423",
+   "credit": "2.00",
+   "department": "MBA",
+   "enrolled": "27",
+   "hours": "32",
+   "name": "运营管理",
+   "schedule": [
+    {
+     "periods": [
+      1,
+      4
+     ],
+     "rooms": [
+      "教学楼404"
+     ],
+     "weekday": 4,
+     "weeks": [
+      [
+       2,
+       9
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "6c3b0714411f73ad89418f01ed0f29c68cf7bc2822d914c50b8b9b01076067dd",
+   "seq": "247",
+   "teacher": "龚其国"
+  },
+  {
+   "attribute": "学科核心课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "18087B125100M1011Y",
+   "course_id": "305429",
+   "credit": "2.00",
+   "department": "MBA",
+   "enrolled": "28",
+   "hours": "32",
+   "name": "公司理财",
+   "schedule": [
+    {
+     "periods": [
+      5,
+      8
+     ],
+     "rooms": [
+      "教学楼404"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       9
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "a4c4cdd8b0fe796163f665dc5299671e8de5ca4b68a57782e5c4db8d471ac261",
+   "seq": "248",
+   "teacher": "张矢的"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "60",
+   "chief": "",
+   "code": "18087B125100M3019Y",
+   "course_id": "305478",
+   "credit": "2.00",
+   "department": "MBA",
+   "enrolled": "26",
+   "hours": "32",
+   "name": "投资学",
+   "schedule": [
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "人文楼教一1"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       2,
+       8
+      ],
+      [
+       11,
+       14
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "69b2ef3b3f9db70b885b6f3877ba417c8b990dd1f30fd277bd75d933ddc2012d",
+   "seq": "249",
+   "teacher": "杨海珍"
+  },
+  {
+   "attribute": "专业课",
+   "campus": "玉泉路",
+   "capacity": "/",
+   "chief": "",
+   "code": "18087B125100M3056Y",
+   "course_id": "305419",
+   "credit": "1.00",
+   "department": "MBA",
+   "enrolled": "35",
+   "hours": "16",
+   "name": "知识管理",
+   "schedule": [
+    {
+     "periods": [
+      11,
+      13
+     ],
+     "rooms": [
+      "人文楼教一1"
+     ],
+     "weekday": 2,
+     "weeks": [
+      [
+       15,
+       19
+      ]
+     ]
+    }
+   ],
+   "schedule_pages_sha256": "e22b79212e267f1249c871a2595cc87d5800f5869c426be93bc4e8dc019f5313",
+   "seq": "250",
+   "teacher": "张玲玲"
+  }
+ ],
+ "source": "https://jwba.ucas.ac.cn/sc/public/coursePublic",
+ "term_id": "84068",
+ "term_label": "2025—2026学年(春)第二学期"
+}

@@ -11,7 +11,7 @@ Layout mirrors https://courseplanner.cysdy.cn/ : notice bar, hero, metric chips,
 requirement checklist, selected courses, timetable grid, course catalogue, footer disclaimer.
 Single self-contained file: opens from disk, no server, no network.
 """
-import argparse, json, os, re, sys
+import argparse, glob, json, os, re, sys
 from collections import Counter
 from datetime import datetime
 
@@ -23,8 +23,15 @@ AUX2 = "raw/aux-sep-fields.json"            # 同上来源的扩展字段（授�
 REQ = "data/degree-requirements.json"
 OUT = "prototype/选课参考系统.html"
 ISSUES = "docs/prototype-issues.md"
-TERMS = {"89576": ("2026-2027 秋季", "秋季"), "89577": ("2026-2027 春季", "春季")}
-THIS_SEMESTER = "秋季"
+CURRENT_TERM = "89576"                       # 2026-2027 学年(秋)第一学期 = 本向导要规划的那个学期
+HIST_DIR = "raw/official-history"            # 往年学期（同一接口抓的）
+
+
+def season_of(label):
+    for k, v in (("(秋)", "秋季"), ("(春)", "春季"), ("(夏)", "夏季")):
+        if k in (label or ""):
+            return v
+    return ""
 PERIODS = [("1", "8:30–9:15"), ("2", "9:20–10:05"), ("3", "10:25–11:10"), ("4", "11:15–12:00"),
            ("5", "13:30–14:15"), ("6", "14:20–15:05"), ("7", "15:25–16:10"), ("8", "16:15–17:00"),
            ("9", "17:05–17:50"), ("10", "18:30–19:15"), ("11", "19:20–20:05"), ("12", "20:15–21:00"),
@@ -52,6 +59,7 @@ def main():
     ap.add_argument("--campus", default="20")
     a = ap.parse_args()
     gen = datetime.now().strftime("%Y-%m-%d %H:%M")
+    this_season = season_of(load("raw/official/terms.json", "terms", default={}).get(CURRENT_TERM, "")) or "秋季"
 
     sem_of = {}
     for c in load(SNAPSHOT, "run freeze_snapshot.py", default={"courses": []})["courses"]:
@@ -70,12 +78,29 @@ def main():
         plan_codes = [p["code"] for p in bak.get("plan", [])]
         backup_exported, english = bak.get("exportedAt", ""), bak.get("englishPath", "")
 
-    terms = {}
-    for tid, (label, sem) in TERMS.items():
-        path = OFFICIAL_DB.format(term=tid, campus=a.campus)
-        d = load(path, f"run fetch_official_db.py (term {tid})", default=None)
-        if not d:
+    # ---- 学期注册表：把抓过的所有学期都纳进来（raw/official + raw/official-history）----
+    labels = load("raw/official/terms.json", "term selector snapshot", default={})
+    term_files = {}
+    for d_ in ("raw/official", HIST_DIR):
+        for f in sorted(glob.glob(f"{d_}/*-campus{a.campus}.json")):
+            d = load(f, "term file", default=None)
+            if d and d.get("rows") is not None:
+                term_files[str(d["term_id"])] = (f, d)
+
+    # 官方口径的"开课学期"：某个编码在哪些季节的学期里被开过
+    sem_official = {}
+    for tid, (f, d) in term_files.items():
+        sea = season_of(d.get("term_label") or labels.get(tid, ""))
+        if not sea:
             continue
+        for r in d["rows"]:
+            sem_official.setdefault(r["code"], set()).add(sea)
+    print(f"[i] 学期文件 {len(term_files)} 个；官方口径推断出开课学期的编码 {len(sem_official)} 个")
+
+    terms = {}
+    for tid, (fpath, d) in sorted(term_files.items(), key=lambda kv: -int(kv[0])):
+        label = d.get("term_label") or labels.get(tid, "termId " + tid)
+        sea = season_of(label) or this_season
         rows, seen = [], Counter()
         for r in d["rows"]:
             seen[r["code"]] += 1
@@ -94,14 +119,15 @@ def main():
                 else:
                     note("容量字段格式异常", f"capacity={r['capacity']!r} enrolled={r['enrolled']!r}",
                          code=r["code"], name=r["name"])
-            sems = sorted(x for x in sem_of.get(r["code"], set()) if x)
-            if not sems:
-                note("官方公开库有、官方工作簿没有此课程编码",
-                     "因此无法判断它是否只在某一个学期开课（退化为 PU 档）",
-                     code=r["code"], name=r["name"])
+            off = sorted(x for x in sem_official.get(r["code"], set()) if x)
+            wb = sorted(x for x in sem_of.get(r["code"], set()) if x)
+            sems, src = (off, "官方公开库") if off else (wb, "官方工作簿") if wb else ([], "")
+            if tid == CURRENT_TERM and not sems:
+                note("两个官方来源都查不到它的开课学期 → 退化为 PU 档",
+                     "需要用其他学期再抓一次或人工确认", code=r["code"], name=r["name"])
             if not r.get("schedule"):
                 note("详情页没有解析出任何上课时间", "该课程无法参与冲突检测", code=r["code"], name=r["name"])
-            top = max((w[1] for s in r.get("schedule", []) for w in s["weeks"]), default=0)
+            top = max((w[1] for s2 in r.get("schedule", []) for w in s2["weeks"]), default=0)
             if top > 20:
                 note("周次超出学期长度（秋季 20 周）", f"最大到第 {top} 周", code=r["code"], name=r["name"])
             ax = aux.get(r["code"]) or (aux_base.get(r["code"].split("-")[0], [None])[0]
@@ -117,13 +143,15 @@ def main():
                 exam=(ax or {}).get("exam", "") or "",
                 teach_mode=(aux2.get(r["code"]) or {}).get("授课方式", ""),
                 aux_from="第三方课程库" if ax else "",
-                semester="/".join(sems), sem_sets=sems, term=sem,
-                sessions=[dict(wd=s["weekday"], ps=s["periods"][0], pe=s["periods"][1],
-                               rooms=s.get("rooms", []), weeks=s["weeks"]) for s in r.get("schedule", [])]))
+                semester="/".join(sems), sem_sets=sems, sem_source=src, term=sea,
+                sessions=[dict(wd=s2["weekday"], ps=s2["periods"][0], pe=s2["periods"][1],
+                               rooms=s2.get("rooms", []), weeks=s2["weeks"]) for s2 in r.get("schedule", [])]))
         for code, n in seen.items():
             if n > 1:
                 note("同一学期内课程编码重复", f"该编码在本学期出现 {n} 次", code=code)
-        terms[sem] = dict(term_id=tid, label=label, crawled_at=d.get("crawled_at", ""), rows=rows)
+        terms[tid] = dict(term_id=tid, label=label, season=sea, crawled_at=load and d.get("crawled_at", ""),
+                          rows=rows, is_current=(tid == CURRENT_TERM),
+                          past=(fpath.startswith(HIST_DIR)))
 
     cats = [dict(id=c["id"], name=c["name"], kind=c.get("kind", "degree"),
                  min_credits=c.get("min_credits", 0), min_courses=c.get("min_courses", 0),
@@ -132,7 +160,10 @@ def main():
                         for k in c.get("fixed_components", [])])
             for c in req["categories"]]
 
-    data = dict(generated=gen, this_semester=THIS_SEMESTER, periods=PERIODS,
+    cov_labels = [t["label"] for t in sorted(terms.values(), key=lambda x: x["term_id"]) if t["rows"]]
+    cov_seasons = sorted({t["season"] for t in terms.values() if t["rows"]})
+    data = dict(generated=gen, this_semester=this_season, current_term=CURRENT_TERM,
+                coverage=dict(labels=cov_labels, seasons=cov_seasons, n=len(cov_labels)), periods=PERIODS,
                 semester_min_credits=req["semester_min_credits"]["value"],
                 course_learning_min=req["degree_track"]["master"]["course_learning_min_credits"],
                 professional_degree_min=req["degree_track"]["master"]["professional_degree_min_credits"],
@@ -288,6 +319,9 @@ footer{margin-top:16px;font-size:12px;color:var(--ink2);line-height:1.8}
 <div class="notice" id="notice"></div>
 <div class="topbar">
   <div><div class="sem" id="heroSem"></div><h1>选课参考 · 向导</h1></div>
+  <div class="side" style="min-width:236px"><div class="k">学期（官方开课单）</div>
+    <select id="termSel" style="width:100%;margin-top:4px"></select>
+    <div id="termInfo" style="font-size:11.5px;opacity:.9;margin-top:4px"></div></div>
   <div class="side"><div class="k">硕士英语</div><div class="v" id="eng"></div></div>
   <div class="side" style="min-width:190px"><div class="k">配色</div><div class="pills" id="themePills"></div></div>
 </div>
@@ -403,11 +437,14 @@ const D = /*__DATA__*/;
 const WDN = ["","周一","周二","周三","周四","周五","周六","周日"];
 const MAIN_ATTRS = ["公共必修课","学科核心课","专业核心课","专业课"];
 const MAIN_NAMES = ["工程伦理"];
-let step = 1, sem = D.this_semester, week = 2;
+let step = 1, week = 2;
+let termId = D.current_term && D.terms[D.current_term] ? D.current_term : Object.keys(D.terms)[0];
+const term = () => D.terms[termId] || {rows: [], label: "", season: "", crawled_at: ""};
+const curSeason = () => term().season || D.this_semester;
 let main = new Set(), aux = new Set();
 let a2 = new Set(), a3 = new Set();
 const $ = s => document.querySelector(s);
-const rows = () => (D.terms[sem] || {rows: []}).rows;
+const rows = () => term().rows;
 const byCode = () => new Map(rows().map(c => [c.code, c]));
 const pick = (set) => [...set].map(k => byCode().get(k)).filter(Boolean);
 function bj(iso){ if(!iso) return "未知"; try{ return new Date(iso).toLocaleString("zh-CN",
@@ -439,12 +476,14 @@ function classify(c){
 }
 function tierOf(c){
   const s = c.sem_sets || [];
-  if(!s.length) return ["PU","学期未知：官方工作簿里没有这个编码"];
-  if(s.length===1 && s[0]!==D.this_semester) return ["PN", "本学期不开（" + s[0] + "）"];
+  const cov = "（依据已抓的 " + ((D.coverage||{}).n || 0) + " 个学期的官方开课单）";
+  if(!s.length) return ["PU","两个官方来源都查不到它的开课学期"];
+  if(s.length===1 && s[0]!==curSeason()) return ["PN", "所选学期不开（" + s[0] + "）" + cov];
   const urgent = !c.no_cap && c.left!==null && (c.left<=3 || (c.enrolled/c.capacity)>=0.9);
-  const only = s.length===1 && s[0]===D.this_semester;
-  if(only) return urgent ? ["P0","仅本学期开 + 已满/近满 → 第一个抢"] : ["P1","仅本学期开，不紧张"];
-  return urgent ? ["P2","春秋都开但有竞争"] : ["P3","春秋都开且不紧张"];
+  const only = s.length===1 && s[0]===curSeason();
+  if(only) return urgent ? ["P0","已抓学期里只在" + curSeason() + "出现 + 已满/近满 → 第一个抢" + cov]
+                         : ["P1","已抓学期里只在" + curSeason() + "出现，不紧张" + cov];
+  return urgent ? ["P2","春秋都开过但有竞争" + cov] : ["P3","春秋都开且不紧张" + cov];
 }
 function seatTag(c){
   if(c.no_cap) return '<span class="tag">不设限</span>';
@@ -492,7 +531,7 @@ function goto(n){ step = Math.min(4, Math.max(1, n)); renderStepper(); renderAll
 
 /* ---------- 步骤 1 ---------- */
 function renderS1(){
-  const t = D.terms[sem] || {};
+  const t = term();
   let h = "";
   for(const k of D.categories){
     if(k.kind === "non_course"){
@@ -670,7 +709,7 @@ function accounting(){
   for(const c of all){
     if(c.term === "博士"){ doctoral += c.credit; continue; }
     total += c.credit;
-    if((c.sem_sets||[]).includes(D.this_semester)) thisSem += c.credit;
+    if((c.sem_sets||[]).includes(curSeason())) thisSem += c.credit;
   }
   const got = {}, cnt = {};
   for(const c of all) for(const id of classify(c)){ got[id] = (got[id]||0) + c.credit; cnt[id] = (cnt[id]||0) + 1; }
@@ -745,9 +784,9 @@ function renderS4(){
   $("#s4order").innerHTML = block("主线（先保证这几门）", ord(main)) + block("辅助（有位置再加）", ord(aux));
 
   const lines = [];
-  lines.push("【选课参考单】" + ((D.terms[sem]||{}).label || sem) + " · 玉泉路");
+  lines.push("【选课参考单】" + (term().label || termId) + " · 玉泉路");
   lines.push("生成时间：" + (D.generated || "") + "　数据来源：官方教务公开库 jwba.ucas.ac.cn（抓取 " +
-    bj((D.terms[sem]||{}).crawled_at) + "）");
+    bj(term().crawled_at) + "）");
   lines.push("");
   lines.push("■ 主线（已冻结，共 " + pick(main).length + " 门）");
   pick(main).forEach((c,i) => lines.push("  " + (i+1) + ". " + c.name + "  " + c.credit.toFixed(1) + "分  " +
@@ -780,15 +819,28 @@ function renderAll(){
   renderTop(); renderS1(); renderS2(); renderS3(); renderS3conf(); renderS4(); renderStepper();
 }
 function renderTop(){
-  const t = D.terms[sem] || {};
-  $("#notice").innerHTML = '数据来源：<b>中国科学院大学教务公开库</b>（jwba.ucas.ac.cn）—— 开课校区、限选/已选、' +
-    '教学周与节次均为官方口径；开课学期取自官方工作簿。<br>抓取时点：<b>' + bj(t.crawled_at) +
+  const t = term();
+  const past = !t.is_current;
+  $("#notice").innerHTML = (past
+      ? '<b>你正在看往年的开课单</b>（' + t.label + '）：用来参考"这门课往年开不开、竞争多激烈"，' +
+        '规划请把学期切回 <b>' + ((D.terms[D.current_term]||{}).label || "本学期") + '</b>。<br>'
+      : "") + (t.rows.length ? "" : '<b>这个学期的开课表官方还没发布</b>（列表页 0 行）。<br>') +
+    '数据来源：<b>中国科学院大学教务公开库</b>（jwba.ucas.ac.cn）—— 开课校区、限选/已选、' +
+    '教学周与节次、开课学期均为官方口径（开课学期由多个学期的开课单推断）。<br>' +
+    '用于推断开课学期的官方开课单：<b>' + (((D.coverage||{}).labels)||[]).join('、') + '</b>（共 ' +
+    (((D.coverage||{}).n)||0) + ' 个学期，覆盖季节：' + ((((D.coverage||{}).seasons)||[]).join('/')) + '）<br>' +
+    '抓取时点：<b>' + bj(t.crawled_at) +
     '</b>（本机冻结，页面不联网）· 秋季学期共 20 教学周。<br>' +
     '课程名称／课程编号可点击，直达官方「课程大纲」／「时间地点」页。' +
     '本页仅供规划参考，<b>数据与选课结果请以学校官方系统为准</b>。';
-  $("#heroSem").textContent = t.label || sem;
+  $("#heroSem").textContent = t.label || termId;
   $("#eng").textContent = D.english;
-  $("#foot").innerHTML = '数据来源：中国科学院大学教务公开库（jwba.ucas.ac.cn）／官方开课计划工作簿；' +
+  const opts = Object.values(D.terms).sort((a,b) => (+b.term_id) - (+a.term_id));
+  $("#termSel").innerHTML = opts.map(x => '<option value="' + x.term_id + '"' + (x.term_id===termId ? " selected" : "") +
+    '>' + x.label + (x.is_current ? "（本学期）" : "") + ' · ' + x.rows.length + ' 门</option>').join("");
+  $("#termInfo").textContent = "抓取 " + bj(t.crawled_at) + " · " + t.rows.length + " 门 · " +
+    (t.past ? "往年数据" : "本学期数据");
+  $("#foot").innerHTML = '数据来源：中国科学院大学教务公开库（jwba.ucas.ac.cn，含往年多个学期的开课单）／官方开课计划工作簿；' +
     '学分要求取自《电子信息专业学位研究生培养方案》（校发培养字〔2025〕92号）。<br>' +
     '本页为本地原型，只读本地数据、不联网、不上传；<b>自动抢课与自动提交属明确非目标</b>。';
 }
@@ -817,6 +869,16 @@ $("#q2").oninput = renderS2; $("#onlyFree2").onchange = renderS2;
 $("#q3").oninput = renderS3; $("#onlyFree3").onchange = renderS3; $("#showAll3").onchange = renderS3;
 $("#clear2").onclick = () => { main.clear(); aux.clear(); renderAll(); };
 $("#thaw").onclick = () => goto(2);
+$("#termSel").onchange = (e) => {
+  termId = e.target.value;
+  const have = new Set(rows().map(c => c.code));
+  const beforeM = main.size, beforeA = aux.size;
+  main = new Set([...main].filter(k => have.has(k)));
+  aux = new Set([...aux].filter(k => have.has(k)));
+  const dropped = (beforeM - main.size) + (beforeA - aux.size);
+  renderFilters(); renderAll();
+  if(dropped) $("#termInfo").textContent += "　（已移除 " + dropped + " 门该学期没有的课）";
+};
 $("#copy").onclick = () => {
   const ta = $("#sheet"); ta.select();
   try{

@@ -145,7 +145,15 @@ def main():
     ap.add_argument("--campus", default="20", help="campusCode (20=玉泉路)")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--sleep", type=float, default=0.25)
+    ap.add_argument("--outdir", default="raw/official",
+                    help="where the frozen per-term JSON goes (use raw/official-history for past terms)")
     a = ap.parse_args()
+
+    labels = {}
+    try:
+        labels = json.load(open(os.path.join("raw", "official", "terms.json"), encoding="utf-8"))
+    except Exception:
+        pass                      # term id -> 学期名, fetched from the site's own selector
 
     stamp = time.strftime("%Y-%m-%d %H:%M:%S")
     report = [f"# Official course database crawl -- {stamp}", "",
@@ -181,15 +189,17 @@ def main():
                    f"- courses with a parsed schedule: {n_ok}",
                    f"- courses with NO parsed schedule: {n_no_sched}",
                    f"- courses whose detail page named them: {n_courses_named}", ""]
-        os.makedirs(OUTDIR, exist_ok=True)
-        out = f"{OUTDIR}/{term}-campus{a.campus}.json"
+        os.makedirs(a.outdir, exist_ok=True)
+        out = f"{a.outdir}/{term}-campus{a.campus}.json"
         with open(out, "w", encoding="utf-8") as fh:
-            json.dump(dict(term_id=term, campus_code=a.campus, source=LIST_URL, crawled_at=stamp,
-                           rows=rows), fh, ensure_ascii=False, indent=1, sort_keys=True)
+            json.dump(dict(term_id=term, term_label=labels.get(term, ""), campus_code=a.campus,
+                           source=LIST_URL, crawled_at=stamp, rows=rows),
+                      fh, ensure_ascii=False, indent=1, sort_keys=True)
             fh.write("\n")
         h = hashlib.sha256(open(out, "rb").read()).hexdigest()
         open(out + ".sha256", "w").write(f"{h}  {os.path.basename(out)}\n")
-        report += [f"- frozen output: `{out}`", f"- frozen output sha256: `{h}`", ""]
+        report += [f"- term label: {labels.get(term, '(unknown)')}",
+                   f"- frozen output: `{out}`", f"- frozen output sha256: `{h}`", ""]
         print(f"[ok] {out}  sha256={h[:16]}…")
 
     report += ["## Parse failures",
