@@ -20,3 +20,6 @@ prototype/*.html
 # raw HTML cache from the official-database crawl (re-fetchable, large)
 raw/official-cache/
 prototype/*.png
+
+# local backups before in-place doc edits
+docs/.backup-*
