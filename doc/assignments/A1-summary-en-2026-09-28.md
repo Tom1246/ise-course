@@ -17,4 +17,4 @@ Evidence comes from two official sources, the course-planning workbook (S1) and 
 The proposed tool takes a registration plan plus the programme's credit constraints, decides conflicts across weekday × period × teaching week, and outputs a conflict-free timetable plus a justified registration order. The target is under 5 minutes, against a measured manual baseline of about 30 minutes. Runs are reproducible from frozen snapshots carrying capture times and hashes, every number traces to its source, and the AI's overturned claims stay on record.
 <!-- SUMMARY-EN-END -->
 
-Repository:<to be filled at submission time>
+Repository: https://github.com/Tom1246/ise-course (tag `a1-v2`)

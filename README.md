@@ -3,7 +3,7 @@
 Submission for **ISE-A1 (Problem and Stakeholder Evidence Brief)**, course *Intelligent Software Engineering*,
 platform <https://learn.spaiq.ai>. Deadline **2026-09-28 16:30 (Asia/Shanghai)**.
 
-**Submission tag: `a1-v2`** (see *How to cite this revision* at the bottom). All commands below are relative to
+**Repository: <https://github.com/Tom1246/ise-course> — submission tag: `a1-v2`** (see *How to cite this revision* at the bottom). All commands below are relative to
 this repository root.
 
 ---
