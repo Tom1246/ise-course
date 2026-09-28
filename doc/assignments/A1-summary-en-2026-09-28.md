@@ -3,6 +3,8 @@
 Posted on learn.spaiq.ai. The requirement is **150-300 words**; the count below is produced
 mechanically by `python3 scripts/count_words.py` (not by eye).
 
+**Word count: 278** (script output, reproducible with that command).
+
 ## English (submitted)
 
 <!-- SUMMARY-EN-START -->
