@@ -1,17 +1,38 @@
-# ISE-A1 — Evidence Brief: course-plan conflicts and the order to grab seats
+# Intelligent Software Engineering — coursework repository
 
-Submission for **ISE-A1 (Problem and Stakeholder Evidence Brief)**, course *Intelligent Software Engineering*,
-platform <https://learn.spaiq.ai>. Deadline **2026-09-28 16:30 (Asia/Shanghai)**.
+Course **Intelligent Software Engineering**, UCAS, 2026 autumn term. Platform <https://learn.spaiq.ai>.
+**Repository: <https://github.com/Tom1246/ise-course>**
 
-**Repository: <https://github.com/Tom1246/ise-course> — submission tag: `a1-v2`** (see *How to cite this revision* at the bottom). All commands below are relative to
-this repository root.
+This repository carries the assignments for this course. Each assignment gets its own folder under
+`doc/assignments/<id>/` and its own tag. All of them share one discipline, because the course grades the
+evidence behind a result as much as the result itself:
+
+- every number is produced by a script that is committed next to it, and can be re-run;
+- raw outputs, frozen inputs and their hashes are committed;
+- **negative results stay in** — failed runs, overturned claims, dead ends, boundary cases the tool cannot settle;
+- no personal data, no credentials, nothing that identifies anyone else.
+
+## Assignments
+
+| # | Assignment | Due (course schedule) | Status | Artifacts | Tag |
+| --- | --- | --- | --- | --- | --- |
+| **A1** | Problem and Stakeholder Evidence Brief | 2026-09-28 | **submitted** | [`doc/assignments/a1/`](doc/assignments/a1/) — brief (zh + en), platform summary | `a1-v2` |
+| A2 | not released yet | 2026-10-12 | not started | — | — |
+| A3 | not released yet | 2026-10-26 | not started | — | — |
+| A4 | not released yet | 2026-11-09 | not started | — | — |
+| A5 | not released yet | 2026-11-23 | not started | — | — |
+| A6 | Reliability and Observability Evidence Lab *(title from the released file; brief not worked on yet)* | 2026-12-07 | not started | — | — |
 
 ---
 
+# A1 — Problem and Stakeholder Evidence Brief
+
+**Submitted 2026-09-28** (tag `a1-v2`). Topic: planning one semester of graduate courses — conflict
+checking plus the order to grab seats in.
+
 ## The claim
 
-Planning one semester of UCAS graduate courses cannot be done from any single source, and it is not only a
-conflict-checking problem.
+Planning one semester cannot be done from any single source, and it is not only a conflict-checking problem.
 
 - **Two official sources disagree.** For autumn 2026 the public course listing carries **282 course codes**; the
   official course-planning workbook lists **234 courses that open in autumn**. Only **223 are in both** — the public
@@ -20,26 +41,37 @@ conflict-checking problem.
   teaching-week value and **0** carry a weekday/period value. Those must be read course-by-course from the listing.
 - **A clash needs three conditions at once** (same weekday ∩ overlapping periods ∩ overlapping weeks). Screening on
   weekday + period alone both over-reports and under-reports.
-- **The pressure is real and measurable.** For the author's own plan, 4 of 8 sections of the New Era course sit at
+- **The pressure is real and measurable.** In the author's own plan, 4 of 8 sections of the New Era course sit at
   265/265, the Dialectics of Nature sections are at or over capacity (422/420 …), and the Academic Ethics
   Sub-track code is offered in autumn only.
-- **Both attempts failed.** Three of the 14 courses in the author's hand-made plan land in the same slot (Thursday
-  periods 10–12), and the AI-generated version misread teaching weeks, producing a wrong recommendation.
+- **Both attempts failed.** Three of the 14 courses in the hand-made plan land in the same slot (Thursday periods
+  10–12), and the AI-generated version misread teaching weeks, producing a wrong recommendation.
 - **Baseline ~30 minutes** for one manual pass (author's stopwatch); target **under 5 minutes**.
-
-See `doc/assignments/` for the brief itself and `doc/evidence-ledger.md` for claim → source → method → file.
 
 ## Read this first
 
 | File | What it is |
 | --- | --- |
-| `doc/assignments/A1-brief-zh-2026-09-28.pdf` | 简报（中文提交件）— the brief, Chinese |
-| `doc/assignments/A1-brief-en-2026-09-28.pdf` | The brief, English |
-| `doc/assignments/A1-summary-en-2026-09-28.md` | The 150–300 word summary posted on the platform (word count enforced by `scripts/count_words.py`) |
+| `doc/assignments/a1/A1-brief-zh-2026-09-28.pdf` | 简报（中文提交件） |
+| `doc/assignments/a1/A1-brief-en-2026-09-28.pdf` | The brief, English |
+| `doc/assignments/a1/A1-summary-en-2026-09-28.md` | The 150–300 word summary posted on the platform (count enforced by `scripts/count_words.py`) |
 | `ai/ai-use-log.md` | AI-use log: accepted advice, rejected advice, and how each claim was independently verified |
 | `ai/search-log.md` | Search record behind the "no tool covers this" claim, including the channel that failed |
 | `doc/evidence-ledger.md` | Every number in the brief traced to a source, method, date and file |
-| `doc/archive/` | Superseded first English draft and first summary (kept, not submitted) |
+| `doc/archive/` | Superseded drafts (first English draft, first summary, first A1 PDFs) |
+
+## Negative results kept on purpose (A1)
+
+- the AI plan version's week-range misreading, and the wrong recommendation it produced;
+- the overturned premise "no existing tool does this" — three UCAS course planners were found; the closest already
+  does week-level clash detection, so the claim was narrowed to what it does *not* cover (`ai/search-log.md`);
+- the failing search channel (Bing returned dictionary pages) — recorded as a channel failure, not as evidence of
+  absence;
+- the planner's own four import-defect messages, which independently corroborate the "0 of 732" finding;
+- boundary cases the tool cannot settle: uncovered courses (59 / 11), blank capacity cells (unknown, never
+  "unlimited"), over-capacity values (422/420), stale snapshots, half-semester courses sharing one slot.
+
+---
 
 ## Repository layout
 
@@ -47,7 +79,7 @@ See `doc/assignments/` for the brief itself and `doc/evidence-ledger.md` for cla
 .
 ├── README.md
 ├── doc/                          documentation
-│   ├── assignments/              ★ the submitted brief (zh + en) and the platform summary
+│   ├── assignments/a1/           ★ A1 submission: brief (zh + en) and the platform summary
 │   ├── evidence-ledger.md        claim -> source -> method -> file
 │   ├── data-authority.md         which source is authoritative for which field
 │   ├── priority-rules.md         the two orders: plan order vs grab order
@@ -76,7 +108,7 @@ See `doc/assignments/` for the brief itself and `doc/evidence-ledger.md` for cla
 | S3 | The author's two saved plan versions (09-05, 09-15) | own working record | manual export; **the .xlsx files are private and not committed** | `data/s3-my-plan-versions/plan-versions.md` |
 | S4 | The AI-generated plan (2026-08-28) | derived from S1 | — (used only as a failure case, not as a source) | `ai/ai-use-log.md`, `doc/prototype-issues.md` |
 | S5 | Programme requirements, 校发培养字〔2025〕92号 | official file | issued by the university | `data/s5-programme/degree-requirements.json` |
-| S6 | School notice on autumn course selection | official file | issued by the university | cited in `doc/assignments/` and `doc/evidence-ledger.md` |
+| S6 | School notice on autumn course selection | official file | issued by the university | cited in the A1 brief and `doc/evidence-ledger.md` |
 
 Independence, stated honestly: **official publications (S1, S2, S5, S6)** are one type, **the author's own working
 record (S3)** is the other. S4 is derived from S1 and is therefore *not* counted as an independent source.
@@ -95,34 +127,21 @@ python3 scripts/count_words.py            # enforces the 150–300 word summary
 python3 scripts/build_web_prototype.py    # rebuilds the prototype (output is git-ignored)
 ```
 
-Frozen inputs carry a sibling `.sha256` file. Offline scripts (the ones that do not fetch) re-run without network.
+Frozen inputs carry a sibling `.sha256` file. The offline scripts re-run without network.
 
 ## Deliberately not in this repository
 
 Personal data and anything re-fetchable:
 
-- the author's student ID, name and the personal plan spreadsheets (`*.xlsx` are git-ignored);
+- the author's student ID, name, programme code and the personal plan spreadsheets (`*.xlsx` are git-ignored);
 - any other student's selection record — the project never reads one;
 - per-course personal priority detail and the personal credit-gap file (`data/private/` is git-ignored);
 - the prototype HTML (it embeds the personal plan; the generator is committed instead);
-- the raw HTML cache from the listing crawl, and uncommitted bulk downloads (`data/s2-public-listing/cache/`);
+- the raw HTML cache from the listing crawl and uncommitted bulk downloads (`data/s2-public-listing/cache/`);
 - no credentials, tokens or cookies anywhere in the history.
 
-## Negative results kept on purpose
+## Tags and how to cite
 
-The assignment requires failed runs and evidence that challenges the claim, so these stay:
-
-- the AI plan version's week-range misreading, and its wrong recommendation (S4);
-- the overturned premise "no existing tool does this" — three UCAS course planners were found; the closest already
-  does week-level clash detection, so the claim was narrowed to what it does *not* cover (`ai/search-log.md`);
-- the failing search channel (Bing returned dictionary pages) — recorded as a channel failure, not as evidence of
-  absence;
-- the planner's own four import-defect messages, which independently corroborate the "0 of 732" finding;
-- boundary cases that the tool cannot settle: uncovered courses (59 / 11), blank capacity cells (unknown, never
-  "unlimited"), over-capacity values (422/420), stale snapshots, half-semester courses sharing one slot.
-
-## How to cite this revision
-
-- Tag **`a1-v2`** marks the state submitted for A1 (an earlier `a1-v1` tag is kept in the history).
-- The Chinese brief in `doc/assignments/` is the master; the English file is a translation of it. If the Chinese
-  text changes after submission day, re-translate — do not let the two drift apart.
+Every assignment is tagged when submitted: **A1 → `a1-v2`** (an earlier `a1-v1` tag is kept in the history).
+The Chinese brief under `doc/assignments/a1/` is the master for A1; the English file is its translation — if the
+Chinese text changes, re-translate rather than letting the two drift apart.

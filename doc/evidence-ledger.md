@@ -1,6 +1,6 @@
 # Evidence ledger
 
-Every claim in `doc/assignments/A1-brief-en-2026-09-28.md` traced to a source, the method used to obtain it, the date, and where the
+Every claim in `doc/assignments/a1/A1-brief-en-2026-09-28.md` traced to a source, the method used to obtain it, the date, and where the
 raw output lives. Regenerate everything with the commands in `README.md`.
 
 ## Sources

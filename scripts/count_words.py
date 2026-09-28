@@ -2,7 +2,7 @@
 """Count the words of the platform submission summary.
 
 Usage:
-    python3 scripts/count_words.py [doc/assignments/A1-summary-en-2026-09-28.md]
+    python3 scripts/count_words.py [doc/assignments/a1/A1-summary-en-2026-09-28.md]
 
 The English summary submitted on learn.spaiq.ai must be 150-300 words.  This
 script counts the words between the SUMMARY-EN markers in the file, so the
@@ -15,7 +15,7 @@ START = "<!-- SUMMARY-EN-START -->"
 END = "<!-- SUMMARY-EN-END -->"
 
 
-def count(path="doc/assignments/A1-summary-en-2026-09-28.md"):
+def count(path="doc/assignments/a1/A1-summary-en-2026-09-28.md"):
     if not os.path.exists(path):
         print(f"[!] not found: {path}")
         return 2

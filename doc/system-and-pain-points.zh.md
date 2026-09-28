@@ -1,7 +1,7 @@
 # 系统、流程与痛点（问题界定）
 
 > **这份文档的定位**：中文工作文档，不是提交件。它的作用是先把"这个系统是干什么的、流程怎样、痛在哪"讲清楚，
-> A1 正文（`doc/assignments/A1-brief-en-2026-09-28.md`，英文）的第 2、3 节就是在它基础上写的。所有数字都由 `scripts/` 里的脚本生成，
+> A1 正文（`doc/assignments/a1/A1-brief-en-2026-09-28.md`，英文）的第 2、3 节就是在它基础上写的。所有数字都由 `scripts/` 里的脚本生成，
 > 原始输出在各来源目录下（`data/s1-plan-workbook/`、`data/s2-public-listing/`、`data/s3-my-plan-versions/`、`data/derived/`）。
 
 ## 一、这个系统是干什么的
