@@ -1,6 +1,6 @@
 # Snapshot provenance
 
-- Source file (NOT committed): `/Users/tangliwei/Downloads/选课地图-本地备份 (3).json`
+- Source file (NOT committed): `~/Downloads/选课地图-本地备份 (3).json`
 - Source sha256: `62594e799e1c83a8fdc2cacd0239f36e14264b55282c768853c89f6690f463ad`
 - Snapshot: `data/s1-plan-workbook/sections-snapshot.json`
 - Snapshot sha256: `ffcf1ae023e59fe8a09d83584fe7ba8293eb982cce8887f51e7db140f98d8c9e`
