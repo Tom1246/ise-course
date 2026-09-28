@@ -8,18 +8,18 @@ __pycache__/
 .venv/
 
 # Private / personal working files -- never commit these.
-# The derived, publishable snapshot lives in raw/sections-snapshot.json instead.
+# The derived, publishable import lives in data/s1-plan-workbook/sections-snapshot.json instead.
 *.xlsx
 ~$*
 选课地图-本地备份*.json
-raw/private/
+data/private/
 
-# prototype artifact embeds the personal selection plan -- generator is committed instead
+# The prototype artifact embeds the personal selection plan -- the generator is committed instead
 prototype/*.html
-
-# raw HTML cache from the official-database crawl (re-fetchable, large)
-raw/official-cache/
 prototype/*.png
 
+# Raw HTML cache from the listing crawl (re-fetchable, large)
+data/s2-public-listing/cache/
+
 # local backups before in-place doc edits
-docs/.backup-*
+doc/.backup-*
