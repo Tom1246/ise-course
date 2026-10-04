@@ -19,11 +19,11 @@ evidence behind a result as much as the result itself:
 | # | Assignment | Due (course schedule) | Status | Artifacts | Tag |
 | --- | --- | --- | --- | --- | --- |
 | **A1** | Problem and Stakeholder Evidence Brief | 2026-09-28 | **submitted** | [`doc/assignments/a1/`](doc/assignments/a1/) — brief (zh + en), platform summary | `a1-v2` |
-| A2 | not released yet | 2026-10-12 | not started | — | — |
-| A3 | not released yet | 2026-10-26 | not started | — | — |
-| A4 | not released yet | 2026-11-09 | not started | — | — |
-| A5 | not released yet | 2026-11-23 | not started | — | — |
-| A6 | Reliability and Observability Evidence Lab *(title from the released file; brief not worked on yet)* | 2026-12-07 | not started | — | — |
+| **A2** | Domain Model and Testable Specification | 2026-10-12 | in progress (planning) | [`doc/assignments/a2/`](doc/assignments/a2/) | `a2-v1` (when final) |
+| A3 | Repository Investigation and Reproducible Build | 2026-10-26 | not started | — | — |
+| A4 | End-to-End Vertical Slice and Automated Verification | 2026-11-09 | not started | — | — |
+| A5 | Quality and Security Counterexample Study | 2026-11-23 | not started | — | — |
+| A6 | Reliability and Observability Evidence Lab | 2026-12-07 | not started | — | — |
 
 ---
 
