@@ -300,7 +300,9 @@ to ignore the output.
 | (a) student ID | **1** | `README.md:6` |
 | (b) name / handle | **6** | `README.md:4,6,125` (byline + repo URL `Tom1246`), `doc/assignments/a2/A2-summary-en-2026-10-04.md:31`, `doc/assignments/a1/A1-summary-en-2026-09-28.md:20`, `doc/archive/A1-brief-en-v1-2026-09-27.md:5` (`Author: Liwei Tang`) |
 | (c) programme code, anchored | **1** | `data/s5-programme/degree-requirements.json:9` (the programme string) |
-| (d) local paths | **10** | `scripts/{inspect_plan_versions,build_web_prototype,credit_gap,freeze_snapshot,rank_plan_priority}.py` (the `~/Downloads/选课地图-本地备份 (3).json` / `~/Downloads/选课规划-已选课程-*.xlsx` defaults), `doc/selection-design.md:102`, `data/s5-programme/degree-requirements.json:4` (`local_copy`), `data/s1-plan-workbook/snapshot-provenance.md:3`, and **`notebooks/a2-domain-model-walkthrough.ipynb:36`, which prints the full absolute path `/Users/tangliwei/Desktop/files/工作/…` — the machine username in a committed notebook** |
+| (d) local paths | **10** | `scripts/{inspect_plan_versions,build_web_prototype,credit_gap,freeze_snapshot,rank_plan_priority}.py` (the `~/Downloads/…` defaults), `doc/selection-design.md:102`, `data/s5-programme/degree-requirements.json:4` (`local_copy`), `data/s1-plan-workbook/snapshot-provenance.md:3`, and — before this pass — `notebooks/a2-domain-model-walkthrough.ipynb:36`, which printed the machine's absolute home path into a committed notebook |
+
+A defect this scan actually caught: the A2 notebook's first cell once printed the machine's absolute home path into its stored output (a full `/Users/...` path, i.e. the author's local directory layout). The notebook now prints only the repository folder name, and the path is gone from the committed output. The finding is kept here because the scan is the reason it is gone — and because the same failure mode (a tool printing its working directory into a stored artefact) will recur in A3 and beyond.
 
 **These non-zero hits are the honest part of the procedure.** As of A2 the repository still carries the author's
 name and student ID (`README.md`), the GitHub handle in four files, the programme code in the committed
