@@ -113,6 +113,28 @@ Planning one semester cannot be done from any single source, and it is not only 
 Independence, stated honestly: **official publications (S1, S2, S5, S6)** are one type, **the author's own working
 record (S3)** is the other. S4 is derived from S1 and is therefore *not* counted as an independent source.
 
+## Requirements and setup
+
+**Python 3.11+** (developed on 3.11.1). Only three third-party packages are needed, and only by three of the scripts:
+
+```bash
+git clone https://github.com/Tom1246/ise-course.git
+cd ise-course
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt        # beautifulsoup4 (HTML parsing), certifi (CA bundle), openpyxl (Excel)
+```
+
+Everything else is the standard library. **No credentials are needed for the offline steps** — the frozen inputs
+are already committed under `data/`, each with its own `.sha256` and provenance note. The two network scripts
+(`fetch_official_db.py`, `fetch_public_listing.py`) read public pages only and re-freeze the inputs; re-running them
+may change hashes and is not required to check the results.
+
+Quick sanity check that the checkout works:
+
+```bash
+python3 scripts/count_words.py          # prints the platform summary word count (150-300)
+```
+
 ## Reproduce
 
 ```bash

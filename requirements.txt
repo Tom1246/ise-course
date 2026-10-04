@@ -1,0 +1,12 @@
+# Runtime dependencies for scripts/ — developed and tested on Python 3.11.1 (macOS).
+#
+# The offline steps need openpyxl only (it reads the Excel workbooks).
+# The two network fetchers additionally need beautifulsoup4 (HTML parsing) and certifi (CA bundle,
+# needed on python.org builds where ssl.create_default_context() does not pick up certifi).
+#
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+beautifulsoup4==4.11.1
+certifi==2026.5.20
+openpyxl==3.1.2
