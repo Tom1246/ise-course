@@ -1,0 +1,58 @@
+// A2 图1 —— 限界上下文图 (Context Map)
+// 术语依据: doc/assignments/a2/domain-glossary.md
+// 渲染: dot -Tpng context-map.dot -o context-map.png
+digraph ContextMap {
+  graph [
+    fontname="PingFang SC",
+    label="图1 限界上下文图 (Context Map) —— 学期选课规划 Semester Course Planning",
+    labelloc="t",
+    fontsize=18,
+    rankdir=LR,
+    nodesep=0.7,
+    ranksep=1.4,
+    bgcolor="white",
+    pad=0.35
+  ];
+  node [fontname="PingFang SC", fontsize=13, shape=box, style="rounded,filled"];
+  edge [fontname="PingFang SC", fontsize=11, color="#555555"];
+
+  // ---- 上游 (Upstream, outside) ----
+  subgraph cluster_upstream {
+    label="上游 / Upstream —— 只读消费，不可更改 (read-only, cannot change)";
+    fontname="PingFang SC";
+    fontsize=12;
+    style="dashed";
+    color="#8A8A8A";
+    fontcolor="#555555";
+    margin=14;
+
+    offering [label="学校开课发布\n(Course Offering)\n《开课计划表》S1 ＋ 教务公开课表 S2", fillcolor="#E8F5E9", color="#3B8A4E"];
+    requirements [label="培养方案\n(Programme Requirements)\n校发培养字〔2025〕92号 ＋ 专业代码", fillcolor="#E8F5E9", color="#3B8A4E"];
+  }
+
+  // ---- 本上下文 (this bounded context) ----
+  planning [
+    label="学期选课规划\n(Semester Course Planning)\n【本上下文 / this bounded context】\n聚合 aggregate: 选课方案 Plan\n实体 entities: 课程 Course · 班次 Section · 学期 Term\n不变式 invariants: I1 时段不冲突 · I2 学分达标 · I3 容量可解释\n工作单元 unit of work: 一个学生 × 一个学期 × 一份方案",
+    fillcolor="#EAF2FB",
+    color="#2C6FB5",
+    penwidth=2.5,
+    fontsize=13
+  ];
+
+  // ---- 下游 (Downstream, out of scope) ----
+  subgraph cluster_downstream {
+    label="下游 / Downstream —— out of scope（不在自动范围内）";
+    fontname="PingFang SC";
+    fontsize=12;
+    style="dashed";
+    color="#C0392B";
+    fontcolor="#C0392B";
+    margin=14;
+
+    registration [label="注册\n(Registration)\n选课事务本身 —— 不自动化\n(registration transaction — not automated)\n本项目只输出顺序，从不执行抢课", fillcolor="#FDECEA", color="#C0392B", penwidth=2];
+  }
+
+  offering -> planning [label=" CoursePlanPublished\n CatalogueSnapshotTaken", style=bold, color="#3B8A4E", fontcolor="#2E6B3B"];
+  requirements -> planning [label=" 学分下限 credit floors", style=bold, color="#3B8A4E", fontcolor="#2E6B3B"];
+  planning -> registration [label=" 课表 ＋ 抢课顺序\n(timetable ＋ registration order)", style=dashed, color="#C0392B", fontcolor="#C0392B"];
+}

@@ -19,7 +19,7 @@ evidence behind a result as much as the result itself:
 | # | Assignment | Due (course schedule) | Status | Artifacts | Tag |
 | --- | --- | --- | --- | --- | --- |
 | **A1** | Problem and Stakeholder Evidence Brief | 2026-09-28 | **submitted** | [`doc/assignments/a1/`](doc/assignments/a1/) — brief (zh + en), platform summary | `a1-v2` |
-| **A2** | Domain Model and Testable Specification | 2026-10-12 | in progress (planning) | [`doc/assignments/a2/`](doc/assignments/a2/) | `a2-v1` (when final) |
+| **A2** | Domain Model and Testable Specification | 2026-10-12 | artifacts built — platform submission opens 2026-10-05 | [`doc/assignments/a2/`](doc/assignments/a2/) — glossary, diagrams, data dictionary, invariants + check, decision table, data governance, walkthrough, notebook | `a2-v1` |
 | A3 | Repository Investigation and Reproducible Build | 2026-10-26 | not started | — | — |
 | A4 | End-to-End Vertical Slice and Automated Verification | 2026-11-09 | not started | — | — |
 | A5 | Quality and Security Counterexample Study | 2026-11-23 | not started | — | — |
@@ -82,6 +82,8 @@ Planning one semester cannot be done from any single source, and it is not only 
 ├── README.md
 ├── doc/                          documentation
 │   ├── assignments/a1/           ★ A1 submission: brief (zh + en) and the platform summary
+│   ├── assignments/a2/           ★ A2 submission: glossary, figs/ (.dot + .png), data dictionary,
+│   │                               invariants, decision table, data governance, walkthrough, summary
 │   ├── evidence-ledger.md        claim -> source -> method -> file
 │   ├── data-authority.md         which source is authoritative for which field
 │   ├── priority-rules.md         the two orders: plan order vs grab order
@@ -149,6 +151,11 @@ python3 scripts/rank_plan_priority.py     # plan order + grab order
 python3 scripts/credit_gap.py             # credit gap against the programme
 python3 scripts/count_words.py            # enforces the 150–300 word summary
 python3 scripts/build_web_prototype.py    # rebuilds the prototype (output is git-ignored)
+
+# A2 — domain model and testable specification
+python3 scripts/a2_check_invariants.py     # the three invariants -> data/derived/a2/invariant-checks.md
+bash doc/assignments/a2/figs/render.sh     # diagrams: .dot -> .png (needs Graphviz `dot`)
+python3 -m nbconvert --to notebook --execute --inplace notebooks/a2-domain-model-walkthrough.ipynb
 ```
 
 Frozen inputs carry a sibling `.sha256` file. The offline scripts re-run without network.

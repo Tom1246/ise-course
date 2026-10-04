@@ -1,0 +1,42 @@
+// A2 图3 —— 班次状态机 (Section State Machine)
+// 术语依据: doc/assignments/a2/domain-glossary.md §2/§4, invariants.md I3
+// 渲染: dot -Tpng section-states.dot -o section-states.png
+digraph SectionStates {
+  graph [
+    fontname="PingFang SC",
+    label="图3 班次状态机 (Section State Machine)",
+    labelloc="t",
+    fontsize=18,
+    rankdir=LR,
+    nodesep=0.5,
+    ranksep=1.0,
+    bgcolor="white",
+    pad=0.35
+  ];
+  node [fontname="PingFang SC", fontsize=12, shape=box, style="rounded,filled"];
+  edge [fontname="PingFang SC", fontsize=10, color="#555555"];
+
+  start [shape=point, style=filled, fillcolor="#333333", color="#333333", width=0.16, label=""];
+
+  notopen [label="未开放\n(NotOpen)", fillcolor="#EEEEEE", color="#777777"];
+  open [label="开放\n(Open)", fillcolor="#E8F5E9", color="#3B8A4E"];
+  full [label="满员\n(SectionFull)\nenrolled = capacity", fillcolor="#FFF4E5", color="#C98A1B"];
+  closed [label="关闭\n(Closed)", shape=doublecircle, fillcolor="#FDECEA", color="#C0392B", penwidth=2];
+
+  over [label="越界态\n(SectionOverCapacity)\nenrolled > capacity > 0", fillcolor="#FDECEA", color="#C0392B"];
+  unknown [label="容量未知态\n(CapacityUnknown)\ncapacity 为空或 0\n（0 = 未设置哨兵）", fillcolor="#F3E8FD", color="#7B4FB5"];
+
+  // 主干
+  start -> notopen;
+  notopen -> open [label=" RegistrationWindowOpens\n(选课窗口开启)"];
+  open -> full [label=" SectionFull\n(enrolled = capacity)"];
+  full -> open [label=" 退选释放名额 (seat released)"];
+  open -> closed [label=" 选课窗口关闭 (window closes)"];
+  full -> closed [label=" 选课窗口关闭 (window closes)"];
+
+  // 越界态 / 未知态
+  open -> over [label=" SectionOverCapacity\n(已选 > 限选 且 限选 > 0)", style=dashed, color="#C0392B", fontcolor="#C0392B"];
+  over -> full [label=" 退选或限选上调\n(enrolled = capacity)", style=dashed, color="#C0392B", fontcolor="#C0392B"];
+  unknown -> open [label=" 容量补录 (capacity set)", style=dashed, color="#7B4FB5", fontcolor="#7B4FB5"];
+  over -> unknown [label=" 限选清空 (capacity 置空或 0)", style=dashed, color="#7B4FB5", fontcolor="#7B4FB5"];
+}

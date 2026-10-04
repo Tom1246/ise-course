@@ -34,4 +34,16 @@ def count(path="doc/assignments/a1/A1-summary-en-2026-09-28.md"):
 
 
 if __name__ == "__main__":
-    sys.exit(count(*sys.argv[1:]))
+    if len(sys.argv) > 1:
+        sys.exit(count(*sys.argv[1:]))
+    # no argument: check every assignment summary in the repository
+    import glob
+    paths = sorted(glob.glob("doc/assignments/*/*summary*.md"))
+    if not paths:
+        print("[!] no summary found under doc/assignments/*/")
+        sys.exit(2)
+    rc = 0
+    for p in paths:
+        rc |= count(p)
+        print()
+    sys.exit(rc)

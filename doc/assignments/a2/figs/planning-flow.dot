@@ -1,0 +1,61 @@
+// A2 图2 —— 流程与事件流 (Process / Event Flow)
+// 术语依据: doc/assignments/a2/domain-glossary.md §4
+// 主流程节点为方块；领域事件为虚线椭圆，用 rank=same 与对应步骤对齐。
+// 渲染: dot -Tpng planning-flow.dot -o planning-flow.png
+digraph PlanningFlow {
+  graph [
+    fontname="PingFang SC",
+    label="图2 流程与事件流 (Planning Flow & Domain Events)",
+    labelloc="t",
+    fontsize=18,
+    rankdir=LR,
+    nodesep=0.35,
+    ranksep=0.9,
+    bgcolor="white",
+    pad=0.35
+  ];
+  node [fontname="PingFang SC", fontsize=12, shape=box, style="rounded,filled"];
+  edge [fontname="PingFang SC", fontsize=10, color="#555555"];
+
+  // ---- 主流程 (main flow) ----
+  n1 [label="读培养方案\n(Read Programme Requirements)", fillcolor="#EAF2FB", color="#2C6FB5"];
+  n2 [label="取开课计划 S1\n(Fetch Course Offering)", fillcolor="#EAF2FB", color="#2C6FB5"];
+  n3 [label="抓取课表快照 S2\n(Take Catalogue Snapshot)", fillcolor="#EAF2FB", color="#2C6FB5"];
+  n4 [label="解析时段\n(Parse Slots)", fillcolor="#EAF2FB", color="#2C6FB5"];
+  n5 [label="冲突判定\n(Conflict Check · I1)", fillcolor="#FFF4E5", color="#C98A1B"];
+  n6 [label="排方案\n(Build Plan · I2)", fillcolor="#FFF4E5", color="#C98A1B"];
+  n7 [label="排抢课顺序\n(Order the Grab)", fillcolor="#E8F5E9", color="#3B8A4E"];
+
+  n1 -> n2 -> n3 -> n4 -> n5 -> n6 -> n7;
+
+  // ---- 领域事件 (domain events, dotted, no rank constraint) ----
+  node [shape=ellipse, style="dotted,filled", fillcolor="#F3E8FD", color="#7B4FB5", fontsize=11];
+
+  e2 [label="CoursePlanPublished\n(2026-08-28)"];
+  e3 [label="CatalogueSnapshotTaken\n(2026-09-27)"];
+  e4 [label="SectionFull\n(enrolled = capacity)"];
+  e5 [label="SectionSelected /\nSectionSwitched"];
+  e6 [label="PlanRevised\n(方案改版)"];
+  e7 [label="RegistrationWindowOpens\n(09-04 12:30 研一)"];
+  estale [label="SnapshotStaled\n(快照过期 · 方案只是假设)", fillcolor="#FDECEA", color="#C0392B"];
+
+  // 事件 -> 步骤（虚线，不参与分层）
+  e2 -> n2 [style=dotted, arrowhead=none, constraint=false, color="#7B4FB5"];
+  e3 -> n3 [style=dotted, arrowhead=none, constraint=false, color="#7B4FB5"];
+  e4 -> n4 [style=dotted, arrowhead=none, constraint=false, color="#7B4FB5"];
+  e5 -> n5 [style=dotted, arrowhead=none, constraint=false, color="#7B4FB5"];
+  e6 -> n6 [style=dotted, arrowhead=none, constraint=false, color="#7B4FB5"];
+  e7 -> n7 [style=dotted, arrowhead=none, constraint=false, color="#7B4FB5"];
+
+  // SnapshotStaled: 时间流逝后回到抓取快照（反馈环）
+  estale -> n3 [style=dashed, color="#C0392B", fontcolor="#C0392B", label=" 重新抓取 (re-crawl)"];
+
+  // 同一 rank 使事件与步骤竖直对齐
+  { rank=same; n1; }
+  { rank=same; n2; e2; }
+  { rank=same; n3; e3; estale; }
+  { rank=same; n4; e4; }
+  { rank=same; n5; e5; }
+  { rank=same; n6; e6; }
+  { rank=same; n7; e7; }
+}

@@ -1,0 +1,32 @@
+// A2 图4 —— 选课记录状态机 (Enrollment State Machine)
+// 术语依据: doc/assignments/a2/domain-glossary.md §2/§4
+// 渲染: dot -Tpng enrollment-states.dot -o enrollment-states.png
+digraph EnrollmentStates {
+  graph [
+    fontname="PingFang SC",
+    label="图4 选课记录状态机 (Enrollment State Machine)",
+    labelloc="t",
+    fontsize=18,
+    rankdir=LR,
+    nodesep=0.5,
+    ranksep=1.0,
+    bgcolor="white",
+    pad=0.35
+  ];
+  node [fontname="PingFang SC", fontsize=12, shape=box, style="rounded,filled"];
+  edge [fontname="PingFang SC", fontsize=10, color="#555555"];
+
+  start [shape=point, style=filled, fillcolor="#333333", color="#333333", width=0.16, label=""];
+
+  pending [label="待定\n(Pending)", fillcolor="#EEEEEE", color="#777777"];
+  selected [label="已选\n(Selected)", fillcolor="#E8F5E9", color="#3B8A4E"];
+  dropped [label="已退\n(Dropped)", shape=doublecircle, fillcolor="#EEEEEE", color="#777777", penwidth=2];
+  bumped [label="被挤掉\n(Bumped)", shape=doublecircle, fillcolor="#FDECEA", color="#C0392B", penwidth=2];
+
+  start -> pending;
+  pending -> selected [label=" SectionSelected (选中)"];
+  selected -> selected [label=" SectionSwitched\n(选中后改班次:\n退原班次 + 选新班次)", color="#2C6FB5", fontcolor="#2C6FB5"];
+  selected -> dropped [label=" SectionDropped (退选)"];
+  selected -> bumped [label=" SectionFull\n(名额被他人挤占)"];
+  bumped -> selected [label=" 重新选中 (re-selected)", style=dashed, color="#3B8A4E", fontcolor="#3B8A4E"];
+}
