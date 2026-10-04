@@ -3,6 +3,8 @@
 Course **Intelligent Software Engineering**, UCAS, 2026 autumn term. Platform <https://learn.spaiq.ai>.
 **Repository: <https://github.com/Tom1246/ise-course>**
 
+**Author:** 汤力为 (Liwei Tang), student ID **2026E8001082052** — University of Chinese Academy of Sciences.
+
 This repository carries the assignments for this course. Each assignment gets its own folder under
 `doc/assignments/<id>/` and its own tag. All of them share one discipline, because the course grades the
 evidence behind a result as much as the result itself:
