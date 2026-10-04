@@ -95,7 +95,7 @@ Planning one semester cannot be done from any single source, and it is not only 
 │   ├── s1-plan-workbook/         S1: official course-planning workbook import (+ sha256, provenance)
 │   ├── s2-public-listing/        S2: public course listing import, 2026-27 autumn + spring + 6 past terms
 │   ├── s3-my-plan-versions/      S3: evidence record for the author's two saved plan versions
-│   ├── s5-programme/             S5: programme credit requirements
+│   ├── s5-programme/             S5: programme credit requirements (+ .sha256, provenance.md with the source PDF hash)
 │   ├── derived/                  derived data: course-library snapshot, SEP aux fields, join / credit-gap / priority summaries
 │   └── private/                  git-ignored: per-course personal priority detail, personal credit gap
 ├── ai/                           ai-use-log.md, search-log.md

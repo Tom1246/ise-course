@@ -43,7 +43,7 @@ smoothing it (§5.6, §6 T8/T10).
 | `data/derived/course-library-snapshot.json` | `3724ade7ff05dcd3465c017f965feffe0eaa26cfbcaafebf976d268003122a69` | match ✓ |
 | `data/s1-plan-workbook/sections-snapshot.json` | `ffcf1ae023e59fe8a09d83584fe7ba8293eb982cce8887f51e7db140f98d8c9e` | match ✓ |
 | `data/s2-public-listing/89576-campus20.json` | `6510aa2e4127a096208de7d02916c6bc5c8643f66f050d68470cff2d83362db5` | match ✓ |
-| `data/s5-programme/degree-requirements.json` | `36f99278312e4954129c9bd1575a794859cf1b9840268bfc3cf512a061af1dc3` | *(no `.sha256` file committed)* |
+| `data/s5-programme/degree-requirements.json` | `36f99278312e4954129c9bd1575a794859cf1b9840268bfc3cf512a061af1dc3` | committed 2026-10-04 ✓ (source PDF hash recorded in `data/s5-programme/provenance.md`) |
 
 ### 0.3 Envelopes (the files are not bare arrays)
 
