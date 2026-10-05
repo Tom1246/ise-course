@@ -1,0 +1,585 @@
+diff --git a/.gitignore b/.gitignore
+index ef6f899..a8b8c73 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -36,3 +36,6 @@ next-env.d.ts
+ /.wrangler/
+ /outputs/
+ /work/
++
++# TypeScript incremental build cache (produced by any `tsc` run)
++*.tsbuildinfo
+diff --git a/app/page.tsx b/app/page.tsx
+index 1e35310..dea12ef 100644
+--- a/app/page.tsx
++++ b/app/page.tsx
+@@ -20,6 +20,17 @@ import {
+   X,
+ } from 'lucide-react';
+ 
++import { rankPlan } from '@/lib/priority';
++import { planCoursesFromRows } from '@/lib/priority-mapping';
++
++/** Labels for the slice's urgency levels; kept next to the import so the mapping is obvious. */
++const URGENCY_LABEL: Record<'critical' | 'high' | 'normal' | 'unknown', string> = {
++  critical: '优先抢',
++  unknown: '无法判断',
++  high: '尽快',
++  normal: '从容',
++};
++
+ type RawSession = {
+   weeks?: string;
+   dayPeriods?: string;
+@@ -671,6 +682,26 @@ export default function Home() {
+       new Set(conflicts.flatMap(([left, right]) => [left.code, right.code])),
+     [conflicts],
+   );
++  // A4 slice: registration order. Pure computation — it reads the plan, the page's own conflict
++  // result and the degree-course marks, and owns no state of its own.
++  const priority = useMemo(
++    () =>
++      rankPlan(
++        planCoursesFromRows(
++          plan.map((course) => ({
++            code: course.code,
++            name: course.name,
++            credit: course.credit,
++            capacity: (course as { capacity?: number }).capacity,
++            selected: (course as { selected?: number }).selected,
++            enrolmentAsOf: (course as { enrolmentAsOf?: string }).enrolmentAsOf,
++            required: degreeCodes.has(course.code),
++            clashes: conflictCodes.has(course.code),
++          })),
++        ),
++      ),
++    [plan, degreeCodes, conflictCodes],
++  );
+   const disciplineOptions = useMemo(
+     () =>
+       Array.from(new Set(catalog.flatMap(primaryDisciplineValues))).sort(
+@@ -1246,6 +1277,37 @@ export default function Home() {
+               </div>
+             )}
+           </div>
++          <div className="important-note" style={{ marginBottom: 12 }}>
++            <b>
++              <Info size={16} />
++              抢课顺序建议
++            </b>
++            {priority.order.length > 0 ? (
++              <ol style={{ margin: '6px 0 0 18px', padding: 0 }}>
++                {priority.order.map((item) => (
++                  <li key={item.code} style={{ marginBottom: 4 }}>
++                    <b>{URGENCY_LABEL[item.urgency.level]}</b>
++                    <span style={{ marginLeft: 6 }}>{item.name}</span>
++                    <em style={{ marginLeft: 6, opacity: 0.7 }}>{item.code}</em>
++                    <span style={{ marginLeft: 6, opacity: 0.8 }}>— {item.urgency.reason}</span>
++                  </li>
++                ))}
++              </ol>
++            ) : (
++              <span>先加入课程，这里会按名额风险给出先抢哪一门。</span>
++            )}
++            <ul style={{ margin: '6px 0 0 18px', padding: 0, fontSize: 12, opacity: 0.8 }}>
++              <li>
++                本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
++              </li>
++              <li>
++                报名数没有采集时间，因此只报班级容量，不把它当作「剩余名额」——旧快照不等于当前状态（A1 教训）。
++              </li>
++              {priority.caveats.map((caveat) => (
++                <li key={caveat}>{caveat}</li>
++              ))}
++            </ul>
++          </div>
+           <div className="important-note">
+             <b>
+               <Info size={16} />
+diff --git a/lib/priority-mapping.ts b/lib/priority-mapping.ts
+new file mode 100644
+index 0000000..4212da8
+--- /dev/null
++++ b/lib/priority-mapping.ts
+@@ -0,0 +1,66 @@
++/**
++ * A4 slice — mapping the planner's raw course rows onto the slice's capacity input.
++ *
++ * Why this is a separate, tested function: A3 and the A4 peer review established three facts about this
++ * data that a naive mapping gets wrong.
++ *   1. `capacity` and `selected` are present in public/data/courses.json but the application never reads
++ *      them (A3 architecture map §6, risk register R3).
++ *   2. `capacity === 0` is a "not set" sentinel, not "no places": 99 of 2,077 rows carry it (A2 finding,
++ *      confirmed on this file).
++ *   3. `selected` is 0 in 1,968 of the 1,978 rows that have a positive capacity (peer review, 2026-10-05),
++ *      and nothing in the file says **when** those figures were captured. Publishing
++ *      `capacity - selected` as "places left" would therefore dress a static section size up as live
++ *      registration pressure. It is only publishable when the caller can also supply a capture time —
++ *      which is exactly what A1 concluded after being burned by its own stale snapshot
++ *      (A1 brief :181).
++ */
++import type { Capacity, PlanCourse } from './priority.ts';
++
++export interface RawCourseRow {
++  code?: string;
++  name?: string;
++  credit?: number;
++  /** section limit from the data file; 0 means "not recorded" here */
++  capacity?: number;
++  /** enrolled count from the data file — unusable without `enrolmentAsOf` */
++  selected?: number;
++  /** capture time of the enrolment figure; absent in the shipped data */
++  enrolmentAsOf?: string;
++  required?: boolean;
++  autumnOnly?: boolean;
++  clashes?: boolean;
++}
++
++/**
++ * Decide whether this row supports a *dated* enrolment statement.
++ * Returns `unknown` with the reason, rather than a number the data cannot back.
++ */
++export function capacityFromRow(row: RawCourseRow): Capacity {
++  const limit = row.capacity;
++  const enrolled = row.selected;
++  const asOf = row.enrolmentAsOf;
++
++  if (typeof limit !== 'number' || !Number.isFinite(limit) || limit <= 0) {
++    return { kind: 'unknown', why: 'no-capacity-data' };      // includes the 0 sentinel and corrupt values
++  }
++  if (typeof enrolled !== 'number' || !Number.isFinite(enrolled) || enrolled < 0) {
++    return { kind: 'unknown', why: 'no-enrolment-provenance' };
++  }
++  if (typeof asOf !== 'string' || asOf.trim() === '') {
++    return { kind: 'unknown', why: 'no-enrolment-provenance' };
++  }
++  return { kind: 'known', limit, enrolled, asOf };
++}
++
++/** Build the slice's input from whatever the page holds for the plan. */
++export function planCoursesFromRows(rows: RawCourseRow[]): PlanCourse[] {
++  return rows.map((row) => ({
++    code: row.code ?? '',
++    name: row.name ?? '',
++    credit: typeof row.credit === 'number' ? row.credit : 0,
++    capacity: capacityFromRow(row),
++    required: row.required === true,
++    autumnOnly: row.autumnOnly === true,
++    clashes: row.clashes === true,
++  }));
++}
+diff --git a/lib/priority.ts b/lib/priority.ts
+new file mode 100644
+index 0000000..272fbfe
+--- /dev/null
++++ b/lib/priority.ts
+@@ -0,0 +1,170 @@
++/**
++ * A4 vertical slice — "which course do I register for first?"
++ *
++ * This module is the extractable, independently testable core that ADR-001 selected as the change
++ * boundary: pure functions, no React, no DOM, no storage, no network. The page component imports it;
++ * the tests in tests/ call it directly.
++ *
++ * The rule (traceable to the requirement, not invented here):
++ *   - A1's pain point: registration order was never fixed in advance, so by the time the student
++ *     registered for an important course the section was already full (A1 brief, pain point 1).
++ *   - Therefore what matters first is *how much room is left*, and only then the scheduling
++ *     constraints.
++ *
++ * Honesty rules in force (each with a test):
++ *   1. A number is only published when it is *knowable*. "Places left" needs a section limit **and**
++ *      an enrolment figure **and** a capture time for that figure. The course data shipped with this
++ *      repository has no capture time, so in practice the slice reports capacity and refuses to claim
++ *      "places left" — exactly what A1 recommended after being burned by a stale snapshot
++ *      ("the system cannot know by itself that the data is stale, only by stating the capture time in
++ *      the output", A1 brief :181).
++ *   2. `capacity === 0` means "not recorded" in this data set (99 of 2,077 rows), never "no places".
++ *   3. A course whose room is unknown is never presented as safe; it is labelled and ranked by what is
++ *      actually known (degree course, then code).
++ */
++
++export type Capacity =
++  | { kind: 'known'; limit: number; enrolled: number; asOf: string }
++  | { kind: 'unknown'; why: 'no-capacity-data' | 'no-enrolment-provenance' };
++
++export interface PlanCourse {
++  code: string;
++  name: string;
++  /** credits, as the planner stores them */
++  credit: number;
++  /** capacity information, as produced by lib/priority-mapping.ts */
++  capacity?: Capacity;
++  /** true when this course is required for the degree (public required course) */
++  required?: boolean;
++  /** true when this course's section runs in the autumn only */
++  autumnOnly?: boolean;
++  /** true when the course clashes with something else already in the plan */
++  clashes?: boolean;
++}
++
++export type Urgency =
++  | { level: 'critical'; reason: string }     // full, over-subscribed, or autumn-only required
++  | { level: 'high'; reason: string }         // few places left
++  | { level: 'normal'; reason: string }
++  | { level: 'unknown'; reason: string };     // room cannot be judged from the available data
++
++export interface RankedCourse {
++  rank: number;
++  code: string;
++  name: string;
++  urgency: Urgency;
++  /** remaining places, when a dated enrolment figure makes it knowable; null otherwise */
++  placesLeft: number | null;
++}
++
++export interface RankResult {
++  order: RankedCourse[];
++  /** codes whose room is unknown — surfaced, never silently treated as safe */
++  unknownCodes: string[];
++  /** human-readable notes about what the ranking could not take into account */
++  caveats: string[];
++}
++
++const FEW_PLACES = 10;
++
++/** Places left, or null when the caller cannot supply a dated enrolment figure (never guessed). */
++export function placesLeft(capacity?: Capacity): number | null {
++  if (!capacity || capacity.kind !== 'known') return null;
++  return capacity.limit - capacity.enrolled;
++}
++
++/** Map one course to its urgency level. Pure; deterministic; no I/O. */
++export function urgencyOf(course: PlanCourse): Urgency {
++  const capacity = course.capacity;
++  const left = placesLeft(capacity);
++
++  if (left === null) {
++    const why = capacity && capacity.kind === 'unknown' ? capacity.why : 'no-capacity-data';
++    return {
++      level: 'unknown',
++      reason:
++        why === 'no-enrolment-provenance'
++          ? '只有班级容量、没有带采集时间的报名数，因此无法判断剩余名额与抢课风险'
++          : '该班次没有容量数据，依据现有数据无法判断抢课风险',
++    };
++  }
++  if (left <= 0) {
++    const known = capacity as { limit: number; enrolled: number };
++    return { level: 'critical', reason: `该班次已满（${known.enrolled}/${known.limit}）` };
++  }
++  if (course.autumnOnly && course.required && left <= FEW_PLACES) {
++    return { level: 'critical', reason: `学位必修且仅秋季开课，只剩 ${left} 个名额` };
++  }
++  if (left <= FEW_PLACES) {
++    return { level: 'high', reason: `只剩 ${left} 个名额` };
++  }
++  return { level: 'normal', reason: `剩余 ${left} 个名额` };
++}
++
++const WEIGHT: Record<Urgency['level'], number> = { critical: 0, high: 1, normal: 2, unknown: 3 };
++
++/**
++ * Rank a plan into a registration order.
++ *
++ * Ordering rule (deliberately simple and explainable):
++ *   1. urgency level  — critical → high → normal → unknown
++ *      ("unknown" is last on purpose: it must not push a course out of a slot it demonstrably needs,
++ *       and it must never look safer or more urgent than a measured case)
++ *   2. required before elective at the same level
++ *   3. autumn-only before spring-capable at the same level
++ *   4. fewer places left first (only when known)
++ *   5. code, so the output is deterministic
++ *
++ * Excluded from ranking: anything already clashing inside the plan — A2's rule says such a
++ * combination must be resolved first, so advising an order for it would be advice about an
++ * impossible plan. Those codes are returned in `caveats` instead of being silently dropped.
++ */
++export function rankPlan(courses: PlanCourse[]): RankResult {
++  const clashing = courses.filter((c) => c.clashes).map((c) => c.code);
++  const rankable = courses.filter((c) => !c.clashes);
++
++  const scored = rankable.map((c) => ({ course: c, urgency: urgencyOf(c), left: placesLeft(c.capacity) }));
++  scored.sort((a, b) => {
++    const w = WEIGHT[a.urgency.level] - WEIGHT[b.urgency.level];
++    if (w !== 0) return w;
++    const r = Number(b.course.required ?? false) - Number(a.course.required ?? false);
++    if (r !== 0) return r;
++    const auto = Number(b.course.autumnOnly ?? false) - Number(a.course.autumnOnly ?? false);
++    if (auto !== 0) return auto;
++    if (a.left !== null && b.left !== null && a.left !== b.left) return a.left - b.left;
++    return a.course.code < b.course.code ? -1 : a.course.code > b.course.code ? 1 : 0;
++  });
++
++  const order: RankedCourse[] = scored.map((s, i) => ({
++    rank: i + 1,
++    code: s.course.code,
++    name: s.course.name,
++    urgency: s.urgency,
++    placesLeft: s.left,
++  }));
++
++  const unknownCodes = scored.filter((s) => s.left === null).map((s) => s.course.code);
++  const caveats: string[] = [];
++  if (unknownCodes.length) {
++    caveats.push(
++      `有 ${unknownCodes.length} 门课无法判断剩余名额（缺容量数据，或只有容量而没有带采集时间的报名数）；` +
++        `它们按"是否学位课 + 课程代码"参与排序，并统一标记为"无法判断"，而不是假定还有名额` +
++        `（${unknownCodes.join('、')}）`,
++    );
++    const noProvenance = scored.filter(
++      (s) => s.course.capacity?.kind === 'unknown' && s.course.capacity.why === 'no-enrolment-provenance',
++    );
++    if (noProvenance.length) {
++      caveats.push(
++        `其中 ${noProvenance.length} 门课有班级容量、但报名数没有采集时间：本切片只报容量，` +
++          `不把容量当成"剩余名额"（这正是 A1 记录的教训——旧快照被当成当前状态）`,
++      );
++    }
++  }
++  if (clashing.length) {
++    caveats.push(`未参与排序：它们在方案内部互相冲突，请先解决冲突（${clashing.join('、')}）`);
++  }
++  if (!courses.length) caveats.push('方案为空，没有需要排序的课程');
++
++  return { order, unknownCodes, caveats };
++}
+diff --git a/tests/priority.test.ts b/tests/priority.test.ts
+new file mode 100644
+index 0000000..41afac1
+--- /dev/null
++++ b/tests/priority.test.ts
+@@ -0,0 +1,221 @@
++/**
++ * A4 slice tests — local verification, no server, no browser, no network.
++ *
++ * Run:  node --experimental-strip-types --test tests/priority.test.ts
++ *
++ * Revised after the A4 peer review (2026-10-05). The review found that the slice was publishing
++ * `capacity - selected` as "places left" while treating the *absence* of capacity data with great care —
++ * inconsistent, and a false statement to the user, because the shipped data has no capture time for the
++ * enrolment figure and carries 0 for it in 1,968 of 1,978 rows. Tests below make the stricter rule
++ * explicit: a number may only be published when a dated enrolment figure exists.
++ */
++import { test } from 'node:test';
++import assert from 'node:assert/strict';
++import { rankPlan, urgencyOf, placesLeft, type PlanCourse } from '../lib/priority.ts';
++import { capacityFromRow, planCoursesFromRows, type RawCourseRow } from '../lib/priority-mapping.ts';
++
++const dated = (limit: number, enrolled: number) => ({ kind: 'known', limit, enrolled, asOf: '2026-09-05' } as const);
++const noProvenance = { kind: 'unknown', why: 'no-enrolment-provenance' } as const;
++const noCapacity = { kind: 'unknown', why: 'no-capacity-data' } as const;
++
++const course = (over: Partial<PlanCourse> & { code: string }): PlanCourse => ({
++  name: over.code,
++  credit: 1,
++  ...over,
++});
++
++// ---------------------------------------------------------------- the honesty rule
++
++void test('a number is published only with a dated enrolment figure', () => {
++  assert.equal(placesLeft(dated(170, 126)), 44);
++  assert.equal(placesLeft(noProvenance), null);
++  assert.equal(placesLeft(noCapacity), null);
++  assert.equal(placesLeft(undefined), null);
++});
++
++void test('capacity without a capture time is not turned into "places left"', () => {
++  const row = { code: 'A', name: '甲', capacity: 111, selected: 0 };
++  assert.deepEqual(capacityFromRow(row), noProvenance);
++  const r = rankPlan(planCoursesFromRows([row]));
++  assert.equal(r.order[0].placesLeft, null);
++  assert.equal(r.order[0].urgency.level, 'unknown');
++  assert.match(r.order[0].urgency.reason, /没有带采集时间的报名数/);
++  assert.match(r.caveats.join(' '), /采集时间/);
++});
++
++void test('a dated enrolment figure is published', () => {
++  const row = { code: 'A', name: '甲', capacity: 170, selected: 126, enrolmentAsOf: '2026-09-05' };
++  const [c] = planCoursesFromRows([row]);
++  assert.deepEqual(c.capacity, { kind: 'known', limit: 170, enrolled: 126, asOf: '2026-09-05' });
++  assert.equal(rankPlan([c]).order[0].placesLeft, 44);
++});
++
++// ---------------------------------------------------------------- the sentinel and corrupt data
++
++void test('capacity 0 is a sentinel, not a full section', () => {
++  assert.deepEqual(capacityFromRow({ capacity: 0, selected: 0, enrolmentAsOf: '2026-09-05' }), noCapacity);
++  const r = rankPlan(planCoursesFromRows([{ code: 'SENTINEL', name: '哨兵', capacity: 0, selected: 0 }]));
++  assert.equal(r.order[0].urgency.level, 'unknown');   // never 'critical'
++  assert.equal(r.unknownCodes.length, 1);
++});
++
++void test('corrupt capacity cannot outrank a genuinely full section', () => {
++  // the peer review's probe: a negative limit used to sort ahead of a real 265/265 section
++  const bad = planCoursesFromRows([{ code: 'BAD', name: '坏容量', capacity: -5, selected: 0, enrolmentAsOf: '2026-09-05' }]);
++  assert.equal(bad[0].capacity!.kind, 'unknown');
++  const r = rankPlan([...bad, course({ code: 'FULL', capacity: dated(265, 265) })]);
++  assert.deepEqual(r.order.map((o) => o.code), ['FULL', 'BAD']);
++  assert.equal(r.order[0].urgency.level, 'critical');
++  assert.equal(r.order[1].urgency.level, 'unknown');
++});
++
++void test('a negative enrolment count is not a figure', () => {
++  assert.deepEqual(capacityFromRow({ capacity: 200, selected: -3, enrolmentAsOf: '2026-09-05' }), noProvenance);
++});
++
++void test('non-numeric or missing fields never become numbers', () => {
++  assert.deepEqual(capacityFromRow({}), noCapacity);
++  const hostile = { capacity: '265', selected: 3, enrolmentAsOf: '2026-09-05' } as unknown as RawCourseRow;
++  assert.deepEqual(capacityFromRow(hostile), noCapacity);
++  assert.deepEqual(capacityFromRow({ capacity: 265 }), noProvenance);
++  assert.deepEqual(capacityFromRow({ capacity: 265, selected: 3, enrolmentAsOf: '   ' }), noProvenance);
++});
++
++void test('an over-subscribed section (more enrolled than places) is still critical', () => {
++  const u = urgencyOf(course({ code: 'A', capacity: dated(420, 422) }));
++  assert.equal(u.level, 'critical');
++});
++
++// ---------------------------------------------------------------- urgency levels
++
++void test('urgency: full section is critical', () => {
++  assert.equal(urgencyOf(course({ code: 'A', capacity: dated(265, 265) })).level, 'critical');
++});
++
++void test('urgency: required + autumn-only + few places is critical', () => {
++  const u = urgencyOf(course({ code: 'A', capacity: dated(170, 166), required: true, autumnOnly: true }));
++  assert.equal(u.level, 'critical');
++});
++
++void test('urgency: few places without those flags is high', () => {
++  assert.equal(urgencyOf(course({ code: 'A', capacity: dated(200, 193) })).level, 'high');
++});
++
++void test('urgency: roomy section is normal', () => {
++  assert.equal(urgencyOf(course({ code: 'A', capacity: dated(200, 20) })).level, 'normal');
++});
++
++void test('unknown is distinguishable by reason', () => {
++  assert.match(urgencyOf(course({ code: 'A', capacity: noProvenance })).reason, /采集时间/);
++  assert.match(urgencyOf(course({ code: 'A', capacity: noCapacity })).reason, /没有容量数据/);
++});
++
++// ---------------------------------------------------------------- ordering
++
++void test('measured cases come before unmeasurable ones', () => {
++  const r = rankPlan([
++    course({ code: 'MYSTERY' }),                       // unknown
++    course({ code: 'SAFE', capacity: dated(300, 0) }), // normal
++    course({ code: 'FULL', capacity: dated(265, 265) }),
++  ]);
++  assert.deepEqual(r.order.map((o) => o.code), ['FULL', 'SAFE', 'MYSTERY']);
++  assert.deepEqual(r.order.map((o) => o.urgency.level), ['critical', 'normal', 'unknown']);
++});
++
++void test('critical beats high beats normal', () => {
++  const r = rankPlan([
++    course({ code: 'NORMAL', capacity: dated(300, 0) }),
++    course({ code: 'HIGH', capacity: dated(200, 195) }),
++    course({ code: 'CRIT', capacity: dated(265, 265) }),
++  ]);
++  assert.deepEqual(r.order.map((o) => o.code), ['CRIT', 'HIGH', 'NORMAL']);
++});
++
++void test('at the same urgency, required beats elective and autumn-only beats spring-capable', () => {
++  const r = rankPlan([
++    course({ code: 'ELEC', capacity: dated(300, 100) }),
++    course({ code: 'REQ', capacity: dated(300, 100), required: true }),
++    course({ code: 'REQ-AUTO', capacity: dated(300, 100), required: true, autumnOnly: true }),
++  ]);
++  assert.deepEqual(r.order.map((o) => o.code), ['REQ-AUTO', 'REQ', 'ELEC']);
++});
++
++void test('among unknown courses the same tie-breaks apply, so the order is still useful', () => {
++  const r = rankPlan([
++    course({ code: 'B-ELECTIVE' }),
++    course({ code: 'A-REQUIRED', required: true }),
++  ]);
++  assert.deepEqual(r.order.map((o) => o.code), ['A-REQUIRED', 'B-ELECTIVE']);
++});
++
++void test('fewer places first when everything else ties', () => {
++  const r = rankPlan([
++    course({ code: 'B', capacity: dated(300, 100) }),   // 200 left
++    course({ code: 'A', capacity: dated(300, 290) }),   // 10 left
++  ]);
++  assert.deepEqual(r.order.map((o) => o.code), ['A', 'B']);
++});
++
++void test('full tie falls back to code, so output is deterministic', () => {
++  const mk = () => [course({ code: 'Z', capacity: dated(100, 50) }), course({ code: 'A', capacity: dated(100, 50) })];
++  const first = rankPlan(mk());
++  const second = rankPlan(mk());
++  assert.deepEqual(first, second);
++  assert.deepEqual(first.order.map((o) => o.code), ['A', 'Z']);
++});
++
++// ---------------------------------------------------------------- boundaries
++
++void test('a plan that clashes internally is not given an order for the clashing courses', () => {
++  const r = rankPlan([
++    course({ code: 'C1', capacity: dated(100, 50), clashes: true }),
++    course({ code: 'C2', capacity: dated(100, 50), clashes: true }),
++    course({ code: 'OK', capacity: dated(100, 50) }),
++  ]);
++  assert.deepEqual(r.order.map((o) => o.code), ['OK']);
++  assert.equal(r.caveats.some((c) => c.includes('C1') && c.includes('C2')), true);
++});
++
++void test('empty plan yields an empty order and says so', () => {
++  const r = rankPlan([]);
++  assert.deepEqual(r.order, []);
++  assert.equal(r.caveats.length, 1);
++  assert.match(r.caveats[0], /方案为空/);
++});
++
++void test('ranking is a permutation: nothing is lost or duplicated', () => {
++  const plan = [
++    course({ code: 'A', capacity: dated(300, 1) }),
++    course({ code: 'B' }),
++    course({ code: 'C', capacity: dated(265, 265) }),
++    course({ code: 'D', capacity: dated(50, 49), required: true }),
++  ];
++  const r = rankPlan(plan);
++  assert.equal(r.order.length, plan.length);
++  assert.deepEqual(r.order.map((o) => o.code).sort(), ['A', 'B', 'C', 'D']);
++  assert.deepEqual(r.order.map((o) => o.rank), [1, 2, 3, 4]);
++});
++
++void test('ranks are contiguous starting at 1 for a mixed plan', () => {
++  const r = rankPlan([
++    course({ code: 'X' }),
++    course({ code: 'Y', capacity: dated(265, 265) }),
++    course({ code: 'Z', capacity: dated(200, 190) }),
++  ]);
++  assert.deepEqual(r.order.map((o) => o.rank), [1, 2, 3]);
++  assert.deepEqual(r.order.map((o) => o.urgency.level), ['critical', 'high', 'unknown']);
++});
++
++void test('repeated calls on the same input give identical results and do not mutate the input', () => {
++  const plan = [
++    course({ code: 'A', capacity: dated(300, 10), required: true }),
++    course({ code: 'B', capacity: noProvenance, clashes: false }),
++    course({ code: 'C' }),
++  ];
++  const snapshot = JSON.stringify(plan);
++  const first = JSON.stringify(rankPlan(plan));
++  for (let i = 0; i < 1000; i += 1) {
++    assert.equal(JSON.stringify(rankPlan(plan)), first);
++  }
++  assert.equal(JSON.stringify(plan), snapshot, 'rankPlan must not mutate its input');
++});
+diff --git a/tsconfig.json b/tsconfig.json
+index 028e8df..855b9e3 100644
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -12,6 +12,7 @@
+     "types": ["node", "@cloudflare/workers-types", "vinext/types"],
+     "resolveJsonModule": true,
+     "isolatedModules": true,
++    "allowImportingTsExtensions": true,
+     "jsx": "react-jsx",
+     "incremental": true,
+     "paths": {

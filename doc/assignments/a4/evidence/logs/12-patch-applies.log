@@ -1,0 +1,6 @@
+### A4 原始证据 12：切片以 patch 形式交付的验证
+# 时间: 2026-10-05 13:40:37 +0800
+# 导出: git diff upstream/main > slice-731bc66.patch  (25623 字节 / 6 文件)
+# 验证: 全新克隆 git@github.com:HMBlankcat/UCAS-course-planner.git (68e7080)
+#       git apply --check 通过；git apply 后 6 个文件就位（lib/priority*.ts、tests/、app/page.tsx、tsconfig.json、.gitignore）
+# 结论: 评审者无需我们的仓库即可复现这一刀

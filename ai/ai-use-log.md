@@ -39,3 +39,16 @@ that they disagree, so the tool must emit a plan **and** a separate grab order �
 - The baseline stopwatch measurement (the "baseline" figure in the brief): **about 30 minutes** for one full manual pass
   (edit one plan version, then re-check the whole plan). This is the author's own stopwatch measurement; no AI estimate is
   used and no value is invented.
+
+## A4 (2026-10-05) — what the AI did, and what it got wrong
+
+- The agent implemented the slice (pure ranking layer + one panel), ran all local verification, and wrote the
+  documents. An independent subagent reviewed the diff **without** the author's explanations and produced
+  `review/peer-review.md`; its severest finding — that the panel published `capacity - selected` as "places left"
+  while `selected` is 0 in 1,968 of 1,978 rows and has no capture time — was **accepted and fixed**
+  (`review/response.md`).
+- Two of the agent's own fixtures were wrong before the code was: a first end-to-end case used courses that
+  genuinely clash, and a second compared slot strings instead of period ranges ("周六(7-8)" vs "周六(5-7)" share
+  period 7). Both failed runs are kept in `evidence/logs/`.
+- The agent also walked into this machine's npm `omit=dev` trap (first build failed); the correct command
+  (`npm ci --include=dev`) and the incident are recorded in `doc/pitfalls.md` §1.1.
