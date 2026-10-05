@@ -47,7 +47,7 @@ repository* but is purely an environment misconfiguration.
 | 6 | `npm run lint` | lint clean | `Found 0 warnings and 0 errors.` · `Finished in 2.6s on **5 files** with 208 rules using 8 threads.` · `EXIT=0` | `06` |
 | 7 | `npm run start` (`vinext start`) | production server up | `vinext start (port 3000)` · `[vinext] Production server running at http://0.0.0.0:3000` | `07` |
 | 8 | End-to-end path (inject plan via `localStorage`, let the app render) | conflict detection fires | positive: `badge='3 处时间冲突'`, `conflictCellLabels=3`; negative control: `badge='无时间冲突'`, `conflictCellLabels=0` | `08` |
-| 9 | `curl -i http://127.0.0.1:3000` (liveness) | HTTP 200 | **not recorded in logs 01–08 — unverified (see §6)** | — |
+| 9 | `curl -i http://127.0.0.1:3000` (liveness) | HTTP 200 | **HTTP 200 x3, ~0.012 s each; headers + page HTML captured** | `09-http-health.log` |
 
 Build-stage detail from `05-build.log` (the standalone `1.06s` figure is the final **ssr environment** step):
 
@@ -164,9 +164,11 @@ suffice.
 - **Build route classification is unknown.** `05-build.log` prints `Some routes could not be classified …
   cannot detect dynamic API usage`; the `/` route is listed as `? Unknown`. This is a warning, not a failure
   — the build still exits 0 — so route behaviour must not be inferred from the build output.
-- **HTTP 200 liveness value is unverified.** A `curl` returning `HTTP 200` (reported `0.14s`) is claimed,
-  **but no such line exists in logs `01`–`08`**. Treat the exact status/latency as unrecorded until a
-  `curl -i` capture is added to the evidence folder.
+- **HTTP 200 liveness — verified after the fact.** `09-http-health.log` records three consecutive `HTTP 200`
+  responses (~0.012 s each) plus the `curl -i` headers and the served HTML. An earlier `0.14 s` figure came from
+  an interactive check that was never written to a file, so it is deliberately not cited anywhere in these
+  documents. With this log added, no measurement in this guide is left unverified — the lesson being that a
+  number without a log is not evidence.
 - **`vinext` is a beta** (`1.0.0-beta.5`); its build/start behaviour may drift from this record over time.
 - **The third-party checkout already ships a large `node_modules`** and build artifacts (`.next`, `dist`);
   these are not part of the frozen source and must never be committed.

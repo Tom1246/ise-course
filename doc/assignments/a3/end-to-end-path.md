@@ -15,7 +15,7 @@ result cannot be explained by "the label is always there".
 ## Method (reproducible)
 
 1. Frozen checkout at commit `68e7080`; clean install and production build per `reproduction-guide.md`;
-   server running at `http://127.0.0.1:3000` (HTTP 200 in 0.14 s).
+   server running at `http://127.0.0.1:3000` (HTTP 200 x3, ~0.012 s; `evidence/logs/09-http-health.log`).
 2. Drive a headless browser (CDP, no window focus taken) against the running server.
 3. Write the plan into **the app's own storage contract** — `localStorage` key
    `ucas-graduate-course-planner-v3`, value `{storageVersion: 1, plan: [<courses exactly as they appear in the

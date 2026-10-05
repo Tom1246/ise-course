@@ -24,7 +24,7 @@ its identity, the evidence produced by running it, and the maps drawn from it.
 | --- | --- | --- |
 | Stable commit/tag + repository URL | this file + `reproduction-guide.md` §1 | done |
 | Reproduction guide and environment lock | `reproduction-guide.md` (+ the environment trap it documents) | done |
-| Raw execution evidence | `evidence/logs/01..08` + `evidence/e2e-*.png` | done |
+| Raw execution evidence | `evidence/logs/01..09` + `evidence/e2e-*.png` | done |
 | Architecture / call-path map | `architecture-map.md`; `figs/a3-modules.dot/.png`, `figs/a3-call-path.dot/.png`, `figs/render.sh` | done |
 | End-to-end path (facts vs inference) | `end-to-end-path.md` (with a negative control) | done |
 | Risk register | `risk-register.md` (5 risks, each with file/line evidence) | done |

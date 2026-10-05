@@ -145,3 +145,31 @@ Legend for **Judgement**: **Occurred** = already observable in the frozen commit
 | R3 | `public/data/courses.json` (1 524 809 B/2077/16 fields, `capacity`,`selected`); `app/page.tsx:69,563,566`; `public/data/README.md:21,23`; `README.md:135`; `A1-brief-en-2026-09-28.md:181,190` | — (static-file analysis) |
 | R4 | `app/page.tsx:112,567,570-578,587-600,619-631,854,1524` | — (static-file analysis) |
 | R5 | `package.json:39`; `vite.config.ts:1` | `01-npm-install.log:3,7-8`; `02-build.log:12,20,28,36-47,52`; `03-install-plugin.log:6`; `04-npm-ci.log:4-5,8`; `05-build.log:53,56` |
+
+---
+
+## Correction carried forward: one claim in A1 is not supported by the code
+
+**What A1 says.** `doc/assignments/a1/A1-brief-en-2026-09-28.md:123` lists what this tool *already does*:
+"campus filtering by the 18th digit of the code, **week-level conflict detection**, **capacity and number
+enrolled**, and degree-course credits with the "2 + 2" structure check".
+
+**What the frozen commit actually does.** Campus filtering, week-level conflict detection and the 2+2 check are
+all confirmed here (R1/R2 evidence, `architecture-map.md` §7, and the executed end-to-end run). **Capacity and
+number enrolled are not a feature of the application**: `capacity` appears in `app/page.tsx` exactly once, as a
+type declaration (`:69`, `capacity?: number`), and is never read; `selected` never appears as a data field at
+all. The only traces of the idea are two pieces of static advice text ("分班课名额有限…" `:1359`, "课程名额通常有限"
+`:1366`) and one filter labelled "只看当前课表空闲课程" (`:1644`), which consults the *chosen plan*, not enrolment
+numbers. The two fields exist in `public/data/courses.json` and are simply unused.
+
+**Why this is recorded here instead of edited there.** A1 was submitted inside its own seven-day window and is
+frozen at tag `a1-v2`; rewriting submitted work would break the provenance this project is built on. The
+correction therefore lives in A3, and is carried forward to A5 (quality and counter-examples), where
+"a claim in our own earlier deliverable that the evidence does not support" is exactly the kind of counter-example
+the course asks for.
+
+**How it changes the argument.** A1's conclusion — that this tool cannot answer "can this course wait until
+spring", has no order to register in, and carries no provenance for its data — is unaffected. What changes is
+one item in the list of features it *does* have: it shows clash information and a 2+2 credit check, but it never
+shows how full a section is. If anything, that strengthens A1's gap ③: the tool carries enrolment fields it
+never surfaces, which is precisely the "static, sourceless snapshot" problem A1 names.

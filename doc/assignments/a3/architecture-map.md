@@ -13,7 +13,7 @@ the source. Line numbers are from `app/page.tsx` at the frozen commit.
 
 | Entry | What it is | Evidence |
 | --- | --- | --- |
-| HTTP `GET /` | the only page; served by the `vinext` production server | **(ran)** `npm run start` → `vinext start (port 3000)`, `curl` returned HTTP 200 in 0.14 s |
+| HTTP `GET /` | the only page; served by the `vinext` production server | **(ran)** `npm run start` → `vinext start (port 3000)`; `curl` returned HTTP 200 three times, ~0.012 s each (`evidence/logs/09-http-health.log`) |
 | `app/layout.tsx` | root layout (456 B) | **(read)** |
 | `app/page.tsx` | **the entire application**: 1,879 lines / 63 KB, a single client component | **(read)** `wc -l` |
 | `package.json` scripts | `dev` / `build` / `start` (all `vinext`), `lint` (`oxlint`), `format` (`oxfmt`) | **(read)**; all three of build/start/lint were **(ran)** |
