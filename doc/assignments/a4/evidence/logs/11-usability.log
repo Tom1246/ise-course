@@ -1,0 +1,52 @@
+### A4 原始证据 11：代表性用户任务测试（三个任务，真跑）
+# 时间: 2026-10-05 12:55:48 +0800
+# URL: http://127.0.0.1:3001/
+
+input rows:
+  180080070100MX018Y 实用最优化算法                    cap=111   ['周三(5-7)', '周六(5-7)']
+  180081070100PX001Y 计算机代数在科学与工程中的应用            cap=40    ['周四(10-12)']
+  180081070200P1001Y 高等量子力学                     cap=40    ['周二(7-8)', '周四(7-9)']
+  180081070202P3007Y 物理中的概率和统计                  cap=40    ['周三(10-11)', '周一(10-11)', '周六(10-11)']
+  180081070206P2002Y 理论声学I                      cap=40    ['周日(2-4)', '周二(2-4)']
+   [task1] injection attempt 1: injected 5 rows, stored plan holds 5
+
+== task 1: five courses -> which first? ==
+steps for the user: open the app (the plan is already restored) and read the panel — 0 extra clicks
+panel says:
+   从容计算机代数在科学与工程中的应用180081070100PX001Y— 剩余 40 个名额
+   从容高等量子力学180081070200P1001Y— 剩余 40 个名额
+   从容物理中的概率和统计180081070202P3007Y— 剩余 40 个名额
+   从容理论声学I180081070206P2002Y— 剩余 40 个名额
+   从容实用最优化算法180080070100MX018Y— 剩余 111 个名额
+   本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
+screenshot: usability-t1-order.png
+   [task2] injection attempt 1: injected 3 rows, stored plan holds 3
+
+== task 2: a course with no capacity data ==
+panel says:
+   无法判断语言学与应用语言学研究方法180089050211D2001Y— 该班次没有容量数据，依据现有数据无法判断抢课风险
+   从容计算机代数在科学与工程中的应用180081070100PX001Y— 剩余 40 个名额
+   从容实用最优化算法180080070100MX018Y— 剩余 111 个名额
+   本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
+   有 1 门课没有容量数据：它们按其他属性参与排序并标记为"无法判断"，而不是假定还有名额（180089050211D2001Y）
+honest answer present (无法判断 + caveat): True
+screenshot: usability-t2-unknown.png
+   [task3] injection attempt 1: injected 5 rows, stored plan holds 5
+
+== task 3: remove courses -> does the order change? ==
+clicks made: 1 (the app's own 移出方案 button); remove buttons present: clicked 5 available
+order before:
+   从容计算机代数在科学与工程中的应用180081070100PX001Y— 剩余 40 个名额
+   从容高等量子力学180081070200P1001Y— 剩余 40 个名额
+   从容物理中的概率和统计180081070202P3007Y— 剩余 40 个名额
+   从容理论声学I180081070206P2002Y— 剩余 40 个名额
+   从容实用最优化算法180080070100MX018Y— 剩余 111 个名额
+   本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
+order after :
+   从容计算机代数在科学与工程中的应用180081070100PX001Y— 剩余 40 个名额
+   从容高等量子力学180081070200P1001Y— 剩余 40 个名额
+   从容物理中的概率和统计180081070202P3007Y— 剩余 40 个名额
+   从容理论声学I180081070206P2002Y— 剩余 40 个名额
+   本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
+changed: True
+screenshot: usability-t3-after-removal.png

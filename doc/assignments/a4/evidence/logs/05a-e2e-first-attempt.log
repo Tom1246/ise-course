@@ -1,0 +1,25 @@
+### A4 原始证据 05：切片的本地端到端（真实数据 + 合成容量夹具）
+# 时间: 2026-10-05 12:40:06 +0800
+
+URL http://127.0.0.1:3001/ | commit 68e7080
+case A rows (from the repository's own courses.json): 180089050201M2002Y, 180080070100MX018Y, 180086081202P3001Y
+-- case real --
+panel:
+先加入课程，这里会按"名额风险"给出先抢哪一门。
+本数据没有"开课学期"字段，因此"只在秋季开课"这一项无法计入（这是 A1 记录的缺口①）。
+not ranked because they clash inside this plan (resolve the clash first): 180089050201M2002Y, 180080070100MX018Y, 180086081202P3001Y
+screenshot: priority-real.png
+case B rows: SYNTHETIC capacity values on real course objects (no full section exists in the snapshot)
+-- case synthetic --
+panel:
+优先抢满员课（合成）TEST-FULL— section is full (265/265)
+无法判断无容量数据（合成）TEST-NODATA— no capacity data for this section — registration risk cannot be judged from the available sources
+尽快只剩 5 个名额（合成）TEST-FEW— only 5 places left
+从容很空（合成）TEST-ROOMY— 192 places left
+本数据没有"开课学期"字段，因此"只在秋季开课"这一项无法计入（这是 A1 记录的缺口①）。
+1 course(s) have no capacity data; they are ranked by their other properties and flagged "unknown" rather than assumed to have places: TEST-NODATA
+screenshot: priority-synthetic.png
+
+FACT A: real-data order -> 先加入课程，这里会按"名额风险"给出先抢哪一门。 | 本数据没有"开课学期"字段，因此"只在秋季开课"这一项无法计入（这是 A1 记录的缺口①）。 | not ranked because they clash inside this plan (resolve the clash first): 180089050201M2002Y, 180080070100MX018Y, 180086081202P3001Y
+FACT B: synthetic order -> 优先抢满员课（合成）TEST-FULL— section is full (265/265) | 无法判断无容量数据（合成）TEST-NODATA— no capacity data for this section — registration risk cannot be judged from the available sources | 尽快只剩 5 个名额（合成）TEST-FEW— only 5 places left | 从容很空（合成）TEST-ROOMY— 192 places left
+FACT: unknown label present in case A: False ; case B: True

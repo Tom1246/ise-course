@@ -1,0 +1,53 @@
+### A4 原始证据 05：切片的本地端到端（真实数据 + 合成容量夹具）
+# 时间: 2026-10-05 13:03:01 +0800
+
+URL http://127.0.0.1:3001/ | commit 7e17a21
+case A rows (from the repository's own courses.json): 180090125601M3012Y, 180086081200PB001Y, 180086081202PX005Y
+-- case real --
+panel:
+无法判断学术道德与学术写作规范-分论180086081200PB001Y— 只有班级容量、没有带采集时间的报名数，因此无法判断剩余名额与抢课风险
+无法判断面向对象程序设计—C++180086081202PX005Y— 只有班级容量、没有带采集时间的报名数，因此无法判断剩余名额与抢课风险
+无法判断创新方法理论与应用180090125601M3012Y— 该班次没有容量数据，依据现有数据无法判断抢课风险
+本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
+报名数没有采集时间，因此只报班级容量，不把它当作「剩余名额」——旧快照不等于当前状态（A1 教训）。
+有 3 门课无法判断剩余名额（缺容量数据，或只有容量而没有带采集时间的报名数）；它们按"是否学位课 + 课程代码"参与排序，并统一标记为"无法判断"，而不是假定还有名额（180086081200PB001Y、180086081202PX005Y、180090125601M3012Y）
+其中 2 门课有班级容量、但报名数没有采集时间：本切片只报容量，不把容量当成"剩余名额"（这正是 A1 记录的教训——旧快照被当成当前状态）
+screenshot: priority-real.png
+case B rows: SYNTHETIC capacity values on real course objects (no full section exists in the snapshot)
+-- case synthetic --
+panel:
+优先抢满员课（合成）TEST-FULL— 该班次已满（265/265）
+尽快只剩 5 个名额（合成）TEST-FEW— 只剩 5 个名额
+从容很空（合成）TEST-ROOMY— 剩余 192 个名额
+无法判断无容量数据（合成）TEST-NODATA— 该班次没有容量数据，依据现有数据无法判断抢课风险
+本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
+报名数没有采集时间，因此只报班级容量，不把它当作「剩余名额」——旧快照不等于当前状态（A1 教训）。
+有 1 门课无法判断剩余名额（缺容量数据，或只有容量而没有带采集时间的报名数）；它们按"是否学位课 + 课程代码"参与排序，并统一标记为"无法判断"，而不是假定还有名额（TEST-NODATA）
+screenshot: priority-synthetic.png
+case C rows (real, but they clash with each other -> the slice must refuse to order them): 180089050201M2002Y, 180080070100MX018Y, 180086081202P3001Y
+-- case clashing --
+panel:
+先加入课程，这里会按名额风险给出先抢哪一门。
+本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
+报名数没有采集时间，因此只报班级容量，不把它当作「剩余名额」——旧快照不等于当前状态（A1 教训）。
+未参与排序：它们在方案内部互相冲突，请先解决冲突（180089050201M2002Y、180080070100MX018Y、180086081202P3001Y）
+screenshot: priority-clashing.png
+case D rows (real, dated enrolment absent -> no number may be published): 180086081200PB001Y, 180086081202PX005Y
+-- case no-provenance --
+panel:
+无法判断学术道德与学术写作规范-分论180086081200PB001Y— 只有班级容量、没有带采集时间的报名数，因此无法判断剩余名额与抢课风险
+无法判断面向对象程序设计—C++180086081202PX005Y— 只有班级容量、没有带采集时间的报名数，因此无法判断剩余名额与抢课风险
+本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
+报名数没有采集时间，因此只报班级容量，不把它当作「剩余名额」——旧快照不等于当前状态（A1 教训）。
+有 2 门课无法判断剩余名额（缺容量数据，或只有容量而没有带采集时间的报名数）；它们按"是否学位课 + 课程代码"参与排序，并统一标记为"无法判断"，而不是假定还有名额（180086081200PB001Y、180086081202PX005Y）
+其中 2 门课有班级容量、但报名数没有采集时间：本切片只报容量，不把容量当成"剩余名额"（这正是 A1 记录的教训——旧快照被当成当前状态）
+screenshot: priority-no-provenance.png
+
+FACT A(expected: all unknown + provenance caveat): real-data order -> 无法判断学术道德与学术写作规范-分论180086081200PB001Y— 只有班级容量、没有带采集时间的报名数，因此无法判断剩余名额与抢课风险 | 无法判断面向对象程序设计—C++180086081202PX005Y— 只有班级容量、没有带采集时间的报名数，因此无法判断剩余名额与抢课风险 | 无法判断创新方法理论与应用180090125601M3012Y— 该班次没有容量数据，依据现有数据无法判断抢课风险 | 本数据没有开课学期字段，因此「只在秋季开课」这一项无法计入（这是 A1 记录的缺口①）。
+FACT B: synthetic order -> 优先抢满员课（合成）TEST-FULL— 该班次已满（265/265） | 尽快只剩 5 个名额（合成）TEST-FEW— 只剩 5 个名额 | 从容很空（合成）TEST-ROOMY— 剩余 192 个名额 | 无法判断无容量数据（合成）TEST-NODATA— 该班次没有容量数据，依据现有数据无法判断抢课风险
+FACT B(a dated figure IS published): True
+FACT A(no places figure published for real data): True
+FACT: unknown label present in case A: True ; case B: True
+FACT D: no-provenance plan publishes no places figure: True
+FACT D: provenance caveat present: True
+FACT C: clashing plan -> order empty, reason given: True

@@ -1,0 +1,154 @@
+TAP version 13
+# Subtest: a number is published only with a dated enrolment figure
+ok 1 - a number is published only with a dated enrolment figure
+  ---
+  duration_ms: 2.722138
+  type: 'test'
+  ...
+# Subtest: capacity without a capture time is not turned into "places left"
+ok 2 - capacity without a capture time is not turned into "places left"
+  ---
+  duration_ms: 2.791215
+  type: 'test'
+  ...
+# Subtest: a dated enrolment figure is published
+ok 3 - a dated enrolment figure is published
+  ---
+  duration_ms: 0.31275
+  type: 'test'
+  ...
+# Subtest: capacity 0 is a sentinel, not a full section
+ok 4 - capacity 0 is a sentinel, not a full section
+  ---
+  duration_ms: 0.270214
+  type: 'test'
+  ...
+# Subtest: corrupt capacity cannot outrank a genuinely full section
+ok 5 - corrupt capacity cannot outrank a genuinely full section
+  ---
+  duration_ms: 0.552753
+  type: 'test'
+  ...
+# Subtest: a negative enrolment count is not a figure
+ok 6 - a negative enrolment count is not a figure
+  ---
+  duration_ms: 0.295791
+  type: 'test'
+  ...
+# Subtest: non-numeric or missing fields never become numbers
+ok 7 - non-numeric or missing fields never become numbers
+  ---
+  duration_ms: 0.380828
+  type: 'test'
+  ...
+# Subtest: an over-subscribed section (more enrolled than places) is still critical
+ok 8 - an over-subscribed section (more enrolled than places) is still critical
+  ---
+  duration_ms: 0.227334
+  type: 'test'
+  ...
+# Subtest: urgency: full section is critical
+ok 9 - urgency: full section is critical
+  ---
+  duration_ms: 0.605776
+  type: 'test'
+  ...
+# Subtest: urgency: required + autumn-only + few places is critical
+ok 10 - urgency: required + autumn-only + few places is critical
+  ---
+  duration_ms: 0.834893
+  type: 'test'
+  ...
+# Subtest: urgency: few places without those flags is high
+ok 11 - urgency: few places without those flags is high
+  ---
+  duration_ms: 0.286191
+  type: 'test'
+  ...
+# Subtest: urgency: roomy section is normal
+ok 12 - urgency: roomy section is normal
+  ---
+  duration_ms: 0.164733
+  type: 'test'
+  ...
+# Subtest: unknown is distinguishable by reason
+ok 13 - unknown is distinguishable by reason
+  ---
+  duration_ms: 0.179493
+  type: 'test'
+  ...
+# Subtest: measured cases come before unmeasurable ones
+ok 14 - measured cases come before unmeasurable ones
+  ---
+  duration_ms: 0.28536
+  type: 'test'
+  ...
+# Subtest: critical beats high beats normal
+ok 15 - critical beats high beats normal
+  ---
+  duration_ms: 0.243963
+  type: 'test'
+  ...
+# Subtest: at the same urgency, required beats elective and autumn-only beats spring-capable
+ok 16 - at the same urgency, required beats elective and autumn-only beats spring-capable
+  ---
+  duration_ms: 0.42235
+  type: 'test'
+  ...
+# Subtest: among unknown courses the same tie-breaks apply, so the order is still useful
+ok 17 - among unknown courses the same tie-breaks apply, so the order is still useful
+  ---
+  duration_ms: 0.386307
+  type: 'test'
+  ...
+# Subtest: fewer places first when everything else ties
+ok 18 - fewer places first when everything else ties
+  ---
+  duration_ms: 0.405754
+  type: 'test'
+  ...
+# Subtest: full tie falls back to code, so output is deterministic
+ok 19 - full tie falls back to code, so output is deterministic
+  ---
+  duration_ms: 0.294445
+  type: 'test'
+  ...
+# Subtest: a plan that clashes internally is not given an order for the clashing courses
+ok 20 - a plan that clashes internally is not given an order for the clashing courses
+  ---
+  duration_ms: 0.243305
+  type: 'test'
+  ...
+# Subtest: empty plan yields an empty order and says so
+ok 21 - empty plan yields an empty order and says so
+  ---
+  duration_ms: 0.157806
+  type: 'test'
+  ...
+# Subtest: ranking is a permutation: nothing is lost or duplicated
+ok 22 - ranking is a permutation: nothing is lost or duplicated
+  ---
+  duration_ms: 0.261102
+  type: 'test'
+  ...
+# Subtest: ranks are contiguous starting at 1 for a mixed plan
+ok 23 - ranks are contiguous starting at 1 for a mixed plan
+  ---
+  duration_ms: 0.199299
+  type: 'test'
+  ...
+# Subtest: repeated calls on the same input give identical results and do not mutate the input
+ok 24 - repeated calls on the same input give identical results and do not mutate the input
+  ---
+  duration_ms: 17.566511
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 657.809596

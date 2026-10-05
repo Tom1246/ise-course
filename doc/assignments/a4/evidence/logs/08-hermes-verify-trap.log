@@ -1,0 +1,9 @@
+### A4 原始证据 08：hermes verify 踩中环境陷阱的独立复现（有价值的负面结果）
+# 时间: 2026-10-05 12:46:43 +0800
+# 事实: hermes verify 的 bootstrap 执行 'npm install'（不含 --include=dev）
+#       本机 npm config omit=dev 生效 → build 阶段 ERR_MODULE_NOT_FOUND: @openai/sites-vite-plugin → ok=false
+# 对照: 用 'npm ci --include=dev' 的本仓验证四项全绿（见 02/03/06/07 日志）
+# 意义: 独立复现了 A3 风险登记表的 R5（环境配置决定成败）
+
+added 560 packages in 1m
+重装 EXIT=0

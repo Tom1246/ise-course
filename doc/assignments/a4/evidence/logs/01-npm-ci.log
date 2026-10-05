@@ -1,0 +1,12 @@
+### A4 原始证据 01：依赖安装（npm ci --include=dev）
+# 时间: 2026-10-05 12:37:16 +0800
+# 命令: npm ci --include=dev --registry=https://registry.npmmirror.com --no-audit --no-fund
+# 说明: --include=dev 是必需的（本机 npm config omit=dev，A3 已记录该陷阱）
+
+
+added 560 packages in 29s
+
+real	0m29.081s
+user	0m16.622s
+sys	0m28.228s
+EXIT=0

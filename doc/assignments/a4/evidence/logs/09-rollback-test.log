@@ -1,0 +1,64 @@
+### A4 原始证据 09：回滚测试（真做一次）
+# 时间: 2026-10-05 12:49:56 +0800
+# 切片 commit: 7e17a21
+revert 退出码=0
+M  .gitignore
+M  app/page.tsx
+D  lib/priority-mapping.ts
+D  lib/priority.ts
+D  tests/priority.test.ts
+M  tsconfig.json
+?? tsconfig.tsbuildinfo
+---- 回滚后与上游的差异（应为空）----
+== 回滚后与上游的差异 ==
+?? tsconfig.tsbuildinfo
+(以上为空 = 与上游完全一致)
+== 回滚后构建 ==
+
+> ucas-graduate-course-planner@0.1.0 build
+> vinext build
+
+
+  vinext build  (Vite 8.0.13)
+
+[1/5] analyze client references...
+[2K
+transforming...✓ 225 modules transformed.
+rendering chunks...
+✓ built in 1.79s
+[2/5] analyze server references...
+[2K
+transforming...✓ 104 modules transformed.
+rendering chunks...
+✓ built in 351ms
+[3/5] build rsc environment...
+[2K
+transforming...✓ 222 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.46s
+[4/5] build client environment...
+[2K
+transforming...✓ 1903 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 4.04s
+[5/5] build ssr environment...
+[2K
+transforming...✓ 110 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.13s
+[0m
+  Route (app)
+  ─ ? /
+
+  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+
+构建 EXIT=0
