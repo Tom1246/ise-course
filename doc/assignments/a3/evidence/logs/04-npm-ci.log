@@ -1,0 +1,13 @@
+### 04 干净的依赖安装（修正 omit=dev 陷阱）
+# 命令: npm ci --include=dev --registry=https://registry.npmmirror.com
+# 时间: 2026-10-05 12:24:16 +0800
+# 前置: 从冻结克隆件恢复原始 package-lock.json，删除 node_modules
+# 环境陷阱: 本机 npm config omit=dev（故显式 --include=dev）
+
+
+added 560 packages in 58s
+
+real	0m58.081s
+user	0m19.524s
+sys	0m27.676s
+EXIT=0

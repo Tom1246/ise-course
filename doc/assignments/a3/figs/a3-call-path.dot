@@ -1,0 +1,41 @@
+// A3 — call path for one end-to-end run: "input a plan → get a conflict verdict"
+// Line numbers are from app/page.tsx @ 68e7080. Render: bash render.sh
+digraph callpath {
+  graph [fontname="PingFang SC", rankdir=TB, bgcolor="white", pad=0.3, nodesep=0.35, ranksep=0.5];
+  node  [fontname="PingFang SC", shape=box, style="rounded,filled", fillcolor="#eef4ff", color="#4a6fa5"];
+  edge  [fontname="PingFang SC", color="#4a6fa5"];
+
+  start  [label="浏览器请求 http://host:3000/", shape=oval, fillcolor="#e8f7ee", color="#2f855a"];
+  server [label="vinext 生产服务器\n（实测：port 3000，HTTP 200 0.14 s）", shape=box3d, fillcolor="#f3e8ff", color="#6b46c1"];
+  hydrate[label="app/page.tsx 水合（客户端组件）"];
+  fetch  [label="L562 useEffect → L563 fetch('/data/courses.json')\n1.52 MB / 2077 门"];
+  norm   [label="L225 normalizeCourse()\n（hoursCredits→credit、sessions 归一化）"];
+  stored [label="L567 localStorage.getItem(PLAN_STORAGE_KEY)"];
+  gate   [label="L578 storageVersion === 1 ?", shape=diamond, fillcolor="#fff6e5", color="#b7791f"];
+  reset  [label="L587-600 静默重置整份方案", fillcolor="#fdecea", color="#c0392b"];
+  plan   [label="plan state（已选课程）"];
+
+  memo   [label="L661 conflicts = useMemo(...)\n调用 L447 coursesConflict", fillcolor="#fff6e5", color="#b7791f"];
+  codes  [label="L669 conflictCodes = useMemo(...)", fillcolor="#fff6e5", color="#b7791f"];
+  filter [label="L748 filteredCatalog = useMemo(...)\n按已选课程排除冲突课", fillcolor="#fff6e5", color="#b7791f"];
+  rule   [label="L447 coursesConflict(a,b) =\n同一天 ∧ 周次集合相交 ∧ 节次区间相交", shape=note, fillcolor="#fdecea", color="#c0392b", penwidth=2];
+
+  badge  [label="L1167 徽章「N 处时间冲突 / 无时间冲突」"];
+  cell   [label="L1462 课表格内「冲突」标签"];
+  card   [label="L1493 红色浮动卡片「与其他课程冲突」"];
+  save   [label="L621 localStorage.setItem(...)\n（仅当 planDirty）"];
+
+  start -> server -> hydrate -> fetch -> norm -> stored -> gate;
+  gate -> reset [label="否 / 解析异常"];
+  gate -> plan  [label="是"];
+  plan -> memo -> codes;
+  memo -> rule  [label="每个课程对", style=dashed];
+  rule -> memo [label="布尔", style=dashed];
+  memo -> badge;
+  memo -> cell;
+  memo -> card;
+  plan -> filter -> rule [label="每个候选项", style=dashed];
+  filter -> catalogue [label="只留下不冲突的候选"];
+  plan -> save  [label="方案变更后", style=dotted];
+  catalogue [label="课程目录列表（UI）", fillcolor="#e8f7ee", color="#2f855a"];
+}

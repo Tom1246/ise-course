@@ -1,0 +1,17 @@
+### A3 端到端复现（第三方应用 UCAS-course-planner，commit 68e7080，运行于 http://127.0.0.1:3000）
+# 时间: 2026-10-05 12:28:27 +0800
+# 方法: 通过应用自身的持久化契约（localStorage ucas-graduate-course-planner-v3）注入方案，再让应用按自己的代码路径恢复并渲染
+
+input rows:
+  180081070100PX001Y 计算机代数在科学与工程中的应用          周四(10-12)
+  180206085406P3002Y 深度学习方法与应用                周四(10-12)
+  180093081002P3008Y 数字图像处理与分析                周四(10-12)
+  negative control adds: 180081070200P1001Y (高等量子力学)
+
+== case 1: positive (three courses sharing 周四 10-12) ==
+  [positive] badge='3 处时间冲突' conflictCellLabels=3  screenshot=e2e-positive.png
+== case 2: negative control (no shared slot) ==
+  [negative] badge='无时间冲突' conflictCellLabels=0  screenshot=e2e-negative.png
+
+verdict (fact): positive case renders 3 conflict cell label(s) and badge '3 处时间冲突'
+verdict (fact): control case renders 0 conflict cell label(s) and badge '无时间冲突'

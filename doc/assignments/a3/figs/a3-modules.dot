@@ -1,0 +1,38 @@
+// A3 — module map of HMBlankcat/UCAS-course-planner @ 68e7080 (ver 1.4)
+// Facts only: sizes and counts measured on the frozen checkout. Render: bash render.sh
+digraph modules {
+  graph [fontname="PingFang SC", rankdir=LR, bgcolor="white", pad=0.3, nodesep=0.4, ranksep=0.7];
+  node  [fontname="PingFang SC", shape=box, style="rounded,filled", fillcolor="#eef4ff", color="#4a6fa5"];
+  edge  [fontname="PingFang SC", color="#4a6fa5"];
+
+  subgraph cluster_app {
+    label="app/  (the whole application)";
+    style="rounded,dashed"; color="#c0392b"; fontcolor="#c0392b";
+    layout  [label="layout.tsx\n456 B"];
+    page    [label="page.tsx\n1879 行 / 63 KB\n（唯一页面，业务逻辑全在此）", fillcolor="#fdecea", color="#c0392b", penwidth=2];
+  }
+
+  rules [label="业务规则（都在 page.tsx 内）\nL447 coursesConflict\nL464 conflictsWithPlan\nL642-748 学分/学位课 useMemo\nL748 filteredCatalog", shape=note, fillcolor="#fff6e5", color="#b7791f"];
+
+  ui    [label="components/ui/\n60 个 shadcn 原语\n（零应用级组件）"];
+  hook  [label="hooks/use-mobile.ts\n585 B"];
+  util  [label="lib/utils.ts\n169 B"];
+
+  data  [label="public/data/courses.json\n1.52 MB / 2077 门 / 16 字段\n（静态随仓库提交）", shape=cylinder, fillcolor="#e8f7ee", color="#2f855a"];
+  store [label="localStorage\nkey: ucas-graduate-course-planner-v3", shape=cylinder, fillcolor="#e8f7ee", color="#2f855a"];
+
+  vinext [label="vinext 1.0.0-beta.5\n(dev / build / start)", shape=box3d, fillcolor="#f3e8ff", color="#6b46c1"];
+  plugin [label="vite.config.ts\n+ @openai/sites-vite-plugin\n+ .openai/hosting.json {d1:null, r2:null}", fillcolor="#f3e8ff", color="#6b46c1"];
+  cfg    [label="next.config.ts (空)\ntsconfig / components.json\n.oxlintrc.json / .oxfmtrc.json", shape=note, fillcolor="#f5f5f5", color="#888888"];
+
+  layout -> page   [label="renders"];
+  page   -> rules  [label="contains", style=dashed];
+  page   -> ui     [label="imports"];
+  page   -> hook   [label="0 处引用（未被使用）", style=dotted, color="#999999"];
+  page   -> util   [label="imports cn()"];
+  page   -> data   [label="L563 fetch('/data/courses.json')", color="#2f855a", penwidth=2];
+  page   -> store  [label="L567 读 / L621 写 / L854 清", color="#2f855a", penwidth=2];
+  plugin -> vinext [label="构建入口"];
+  vinext -> page   [label="服务端渲染 + 打包"];
+  cfg    -> page   [style=dotted, label="（next.config 未生效：无 next 依赖）"];
+}

@@ -1,0 +1,11 @@
+### 06 静态检查
+# 命令: npm run lint
+# 时间: 2026-10-05 12:25:37 +0800
+
+
+> ucas-graduate-course-planner@0.1.0 lint
+> oxlint
+
+Found 0 warnings and 0 errors.
+Finished in 2.6s on 5 files with 208 rules using 8 threads.
+EXIT=0

@@ -1,0 +1,7 @@
+### 03 显式安装缺失的 devDependency（诊断）
+# 命令: npm install --save-dev @openai/sites-vite-plugin@0.2.0 (镜像)
+# 时间: 2026-10-05 12:23:40 +0800
+
+
+up to date in 4s
+EXIT=0

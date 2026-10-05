@@ -20,7 +20,7 @@ evidence behind a result as much as the result itself:
 | --- | --- | --- | --- | --- | --- |
 | **A1** | Problem and Stakeholder Evidence Brief | 2026-09-28 | **submitted** | [`doc/assignments/a1/`](doc/assignments/a1/) — brief (zh + en), platform summary | `a1-v2` |
 | **A2** | Domain Model and Testable Specification | 2026-10-12 | artifacts built — platform submission opens 2026-10-05 | [`doc/assignments/a2/`](doc/assignments/a2/) — glossary, diagrams, data dictionary, invariants + check, decision table, data governance, walkthrough, notebook | `a2-v1` |
-| A3 | Repository Investigation and Reproducible Build | 2026-10-26 | not started | — | — |
+| **A3** | Repository Investigation and Reproducible Build | 2026-10-26 | artifacts built — platform submission opens 2026-10-19 | [`doc/assignments/a3/`](doc/assignments/a3/) — reproduction guide, architecture + call-path map, end-to-end run with a control, risk register, ADR, raw execution logs | `a3-v1` |
 | A4 | End-to-End Vertical Slice and Automated Verification | 2026-11-09 | not started | — | — |
 | A5 | Quality and Security Counterexample Study | 2026-11-23 | not started | — | — |
 | A6 | Reliability and Observability Evidence Lab | 2026-12-07 | not started | — | — |
@@ -84,6 +84,8 @@ Planning one semester cannot be done from any single source, and it is not only 
 │   ├── assignments/a1/           ★ A1 submission: brief (zh + en) and the platform summary
 │   ├── assignments/a2/           ★ A2 submission: glossary, figs/ (.dot + .png), data dictionary,
 │   │                               invariants, decision table, data governance, walkthrough, summary
+│   ├── assignments/a3/           ★ A3 submission: reproduction guide, architecture + call-path maps,
+│   │                               end-to-end path, risk register, ADR, evidence/ (logs + screenshots)
 │   ├── evidence-ledger.md        claim -> source -> method -> file
 │   ├── data-authority.md         which source is authoritative for which field
 │   ├── priority-rules.md         the two orders: plan order vs grab order

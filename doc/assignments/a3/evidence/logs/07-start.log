@@ -1,0 +1,12 @@
+### 07 启动生产服务器
+# 命令: npm run start (vinext start)
+# 时间: 2026-10-05 12:25:45 +0800
+
+
+> ucas-graduate-course-planner@0.1.0 start
+> vinext start
+
+
+  vinext start  (port 3000)
+
+[vinext] Production server running at http://0.0.0.0:3000
